@@ -20,10 +20,17 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 	parada15 = new cParada("15", "", "");
 
 	colectivo = new cColectivo();
+	ramal1 = new cRamal(parada1, parada2, parada3, parada4, parada5);
+	ramal2 = new cRamal();//poner otras paradas
+	ramal3 = new cRamal();
 
 	parada = new cParada();
+	ListaParadas = new cParada[N];
 
-	parada->Llenar_Listas(parada1);
+	ListaParadas[0] = *parada1;
+
+
+/*	parada->Llenar_Listas(parada1);
 	parada->Llenar_Listas(parada2);
 	parada->Llenar_Listas(parada3);
 	parada->Llenar_Listas(parada4);
@@ -37,7 +44,9 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 	parada->Llenar_Listas(parada12);
 	parada->Llenar_Listas(parada13);
 	parada->Llenar_Listas(parada14);
-	parada->Llenar_Listas(parada15);
+	parada->Llenar_Listas(parada15);*/
+
+
 
 
 	cListaT<class cPersona> *persona;
@@ -58,11 +67,12 @@ int cSistema_Rutatlantica::cant_Personas()
 			//Hacer random para generar destino
 			int y = rand() % 1 - 5;
 		
-			if(ListaParadas[i]==y)
+			//if(ListaParadas[i]==y)
+			if (ListaParadas() == y)
 			{
 
 			}
-			cListaT<class cPersona> persona->getitem(i)->getListaPersonas()->agregarItem(new cPersona())
+			//cListaT<class cPersona> persona->getitem(i)->getListaPersonas()->agregarItem(new cPersona())
 
 		}
 
@@ -119,6 +129,37 @@ void cSistema_Rutatlantica::TICK_GPS()
 	system("pause");
 
 }
+
+/*void cSistema_Rutatlantica::Llenar_Listas()
+{
+	int TAM = N;
+	//ListaParadas = new cParada[TAM];
+	//ListaParadas = NULL;
+
+	/*for (int i = 0; i < TAM; i++)
+	{
+		ListaParadas[i] = NULL;
+	}*/
+
+	//int ca = 0;
+
+	/*for (int i = 0; i < TAM; i++)
+	{
+		if (ca < TAM)
+		{
+			ListaParadas[i] = *parada1;
+
+		}
+	}
+	
+	if (ca < N)
+	{
+		ListaParadas[0] = *parada1;
+
+
+	}
+
+}*/
 
 
 double cSistema_Rutatlantica::total_cant_monto()

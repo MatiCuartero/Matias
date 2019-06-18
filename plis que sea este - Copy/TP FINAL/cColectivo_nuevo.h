@@ -13,6 +13,7 @@ protected:
 	bool direccion_electrica;
 	cRamal *ramal;
 
+
 public:
 	cColectivo_nuevo();
 	void Abrir_Puerta();

@@ -7,20 +7,28 @@
 #include "cColectivo_viejo.h"
 #include "cAcordeon.h"
 #include "cListaT.h"
+#include "cRamal.h"
+#include "cParada.h"
+#define N 15
 
 using namespace std;
 
+
 class cSistema_Rutatlantica
 {
-
+	friend class cParada;
 protected:
 
+	
 	cColectivo_nuevo *colectivonuevo;
 	cColectivo_viejo *colectivoviejo;
 	cAcordeon* acordeon;
 	cColectivo *colectivo;
 	cParada *parada;
 	cPersona *persona;
+	cRamal *ramal1;
+	cRamal *ramal2;
+	cRamal *ramal3;
 
 	cParada *parada1;
 	cParada *parada2;
@@ -37,6 +45,7 @@ protected:
 	cParada *parada13;
 	cParada *parada14;
 	cParada *parada15;
+	static cParada *ListaParadas;
 
 public:
 
@@ -49,6 +58,7 @@ public:
 	int total_cant_Personas();
 	void setRamales();
 	string getParada();
+	void Llenar_Listas();
 	~cSistema_Rutatlantica();
 
 };

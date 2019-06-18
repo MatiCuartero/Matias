@@ -12,10 +12,11 @@ cParada::cParada(string _cod, string _dir, string _nom)
 	direccion = _dir;
 }
 
-void cParada::Llenar_Listas(cParada * parada)
+/*void cParada::Llenar_Listas(cParada * parada)
 {
 	int TAM = N;
-	*ListaParadas = new cParada[TAM];
+	ListaParadas = new cParada[TAM];
+	ListaParadas = NULL;
 
 	for (int i = 0; i < TAM; i++)
 	{
@@ -24,15 +25,27 @@ void cParada::Llenar_Listas(cParada * parada)
 
 	int ca = 0;
 
-	if (ca < TAM)
+	for (int i = 0; i < TAM; i++)
 	{
-		ListaParadas[ca++] = parada;
+		if (ca < TAM)
+		{
+			ListaParadas = parada;
+		}
 	}
-	
-}
+}*/
+
+/*cParada cParada::getListaParadas() 
+{
+	return *ListaParadas;
+}*/
 
 
 cParada::~cParada()
 {
 	//destructor
+}
+
+cParada getListaParadas()
+{
+	return *ListaParadas;
 }

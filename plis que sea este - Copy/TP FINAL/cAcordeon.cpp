@@ -10,7 +10,7 @@ cAcordeon::cAcordeon()
 
 void cAcordeon::Abrir_Puerta()
 {
-
+	
 }
 
 
