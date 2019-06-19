@@ -10,6 +10,7 @@
 #include "cRamal.h"
 #include "cParada.h"
 #define N 15
+#define M 20
 
 using namespace std;
 
@@ -25,7 +26,8 @@ protected:
 	cAcordeon* acordeon;
 	cColectivo *colectivo;
 	cParada *parada;
-	cPersona *persona;
+	cListaT <class cPersona> *ListaPersona;
+	//cPersona *persona;
 	cRamal *ramal1;
 	cRamal *ramal2;
 	cRamal *ramal3;
@@ -45,7 +47,7 @@ protected:
 	cParada *parada13;
 	cParada *parada14;
 	cParada *parada15;
-	static cParada *ListaParadas;
+	static cParada **ListaParadas;
 
 public:
 

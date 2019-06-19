@@ -12,16 +12,20 @@ class cParada
 	friend class cParada;
 	//agregar al uml
 protected:
-	string const codigo_identificativo;
-	string direccion;
+	//string const codigo_identificativo;
+	int const codigo_identificativo;
 	string const nombre;
+	string direccion;
 	//static cParada *ListaParadas;
 	//static cParada **ListaParadas;
 	//static string ListaPersonas[M];
 
 public:
-	cParada();
-	cParada(string _cod, string _dir, string _nom);
+	//cParada();
+	cParada(int _cod);
+	cParada(int _cod, string _dir, string _nom);
+	int getCodigo() { return codigo_identificativo; }
+	string getNombre() { return nombre; }
 	//15 de 15 paradas.
 	//void Llenar_Listas(cParada *parada);
 	//friend cParada getListaParadas();

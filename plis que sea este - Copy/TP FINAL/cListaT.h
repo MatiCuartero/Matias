@@ -1,5 +1,5 @@
 ﻿#pragma once
-#define NMAX 10
+#define NMAX 20
 
 #include <string>
 

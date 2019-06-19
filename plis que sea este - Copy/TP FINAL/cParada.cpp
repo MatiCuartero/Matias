@@ -1,13 +1,16 @@
 #include "cParada.h"
 
 
+cParada::cParada()
+{
+}
 
-cParada::cParada():codigo_identificativo(""), nombre("")
+cParada::cParada(int _cod) :codigo_identificativo(_cod), nombre("")
 {
 	direccion = "";
 }
 
-cParada::cParada(string _cod, string _dir, string _nom)
+cParada::cParada(int _cod, string _dir, string _nom): codigo_identificativo()
 {
 	direccion = _dir;
 }
@@ -25,12 +28,9 @@ cParada::cParada(string _cod, string _dir, string _nom)
 
 	int ca = 0;
 
-	for (int i = 0; i < TAM; i++)
+	if (ca < TAM)
 	{
-		if (ca < TAM)
-		{
-			ListaParadas = parada;
-		}
+		ListaParadas[ca++] = *parada;
 	}
 }*/
 
