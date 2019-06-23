@@ -27,7 +27,7 @@ protected:
 	cColectivo *colectivo;
 	cParada *parada;
 	cListaT <class cPersona> *ListaPersona;
-	//cPersona *persona;
+	cPersona *persona;
 	cRamal *ramal1;
 	cRamal *ramal2;
 	cRamal *ramal3;
@@ -48,6 +48,7 @@ protected:
 	cParada *parada14;
 	cParada *parada15;
 	static cParada **ListaParadas;
+	//static int contTICKS;
 
 public:
 

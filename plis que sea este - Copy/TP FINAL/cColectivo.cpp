@@ -9,7 +9,7 @@ cColectivo::cColectivo()
 	Estado = NULL;
 }
 
-cColectivo::cColectivo(int _canmax, string _cod, bool _est, Recorrido _recorrido)
+cColectivo::cColectivo(int _cantmax, string _cod, bool _est, Recorrido recorrido, cRamal *ramal)
 {
 }
 

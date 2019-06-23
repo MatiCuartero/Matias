@@ -10,7 +10,7 @@ class cPersona
 {
 
 protected:
-	string codigo;
+	int codigo;
 	string parada;
 	bool silla_ruedas;
 	static int cont_codigo;

@@ -5,15 +5,16 @@
 
 cPersona::cPersona()
 {
-	codigo = "";
+	codigo = 1;
 	parada = "";
 	silla_ruedas = NULL;
 }
 
 int cPersona::cont_codigo = 1;
 
-cPersona::cPersona(/*int codigo,*/ string parada, bool silla_ruedas)
+cPersona::cPersona(/*int codigo,*/ string parada, bool silla_ruedas) /*{ cont_codigo++; }*/
 {
+	cont_codigo++;
 	codigo = cont_codigo;
 	this->parada = parada;
 	this->silla_ruedas = silla_ruedas;
