@@ -1,6 +1,6 @@
 
 #include "cColectivo.h"
-ссссс
+
 
 cColectivo::cColectivo()
 {
