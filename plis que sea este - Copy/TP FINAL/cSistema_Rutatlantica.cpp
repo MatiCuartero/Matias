@@ -1,7 +1,7 @@
 #include "cSistema_Rutatlantica.h"
 
 //holahola
-
+//arranco
 cSistema_Rutatlantica::cSistema_Rutatlantica()
 {
 	parada1 = new cParada(1, "Salta y Rivadavia", "Constitucion"); //parada[i]->getcod()==rand if == ...
