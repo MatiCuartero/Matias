@@ -17,6 +17,7 @@ protected:
 
 public:
 	cColectivo_viejo();
+	cColectivo_viejo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
 	void Abrir_Puerta();
 	void Asignar_Nuevo_Ramal();
 	int Bajar_Personas();
@@ -25,6 +26,8 @@ public:
 	int Subir_Personas();
 	bool Verificar_Capacidad();
 	~cColectivo_viejo();
+	void imprimir_info();
+
 
 
 };

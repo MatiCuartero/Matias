@@ -21,16 +21,13 @@ class cSistema_Rutatlantica
 protected:
 
 	
-	cColectivo_nuevo *colectivonuevo;
-	cColectivo_viejo *colectivoviejo;
-	cAcordeon *acordeon;
-	cColectivo *colectivo;
-	cParada *parada;
-	cListaT <class cPersona> *ListaPersona;
-	cPersona *persona;
+	
+	//////RAMALES///////
 	cRamal *ramal1;
 	cRamal *ramal2;
 	cRamal *ramal3;
+	//////PARADAS//////
+	cParada *parada;
 
 	cParada *parada1;
 	cParada *parada2;
@@ -41,21 +38,41 @@ protected:
 	cParada *parada7;
 	cParada *parada8;
 	cParada *parada9;
-	cParada *parada10;
-	cParada *parada11;
-	cParada *parada12;
-	cParada *parada13;
-	cParada *parada14;
-	cParada *parada15;
+
+	/////////////////////////////////////////
+	cPersona*persona;
+	cListaT <class cPersona> *ListaPersona;
 
 	//Fijarse inicializacion, porque lo hago en una funcion, no como dice la teoria
 	static cParada **ListaParadas;
-
 	//static int contTICKS;
+
+	//////////////COLECTIVOS/////////
+	cListaT<class cColectivo>*lista_colectivos;
+
+	cColectivo_nuevo*colectivo1;
+	cColectivo_nuevo*colectivo2;
+	cColectivo_nuevo*colectivo3;
+	cColectivo_viejo*colectivo4;
+	cColectivo_viejo*colectivo5;
+	cColectivo_viejo*colectivo6;
+	cColectivo_viejo*colectivo7;
+	cAcordeon*colectivo8;
+	cAcordeon*colectivo9;
+	cAcordeon*colectivo10;
+
+
+
+
+
+
+
+
 
 public:
 
 	cSistema_Rutatlantica();
+
 	int cant_Personas();
 	double monto_porColectivo();
 	void TICK_Estado();
@@ -67,6 +84,8 @@ public:
 	string getParada();
 	void Llenar_Listas();
 	~cSistema_Rutatlantica();
+	////AGREGAR UML//
+	void agregar_colectivos();//llenamos las listas con los colectivos
 
 };
 

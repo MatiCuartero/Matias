@@ -17,9 +17,9 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 	
 
 
-	ramal1 = new cRamal(parada1, parada2, parada3, parada4, parada5);
-	ramal2 = new cRamal(parada6, parada7, parada8, parada9, parada1);
-	ramal3 = new cRamal(parada9, parada6, parada5, parada2, parada1);
+	ramal1 = new cRamal(parada1, parada3, parada5, parada7, parada9);
+	ramal2 = new cRamal(parada9, parada8, parada6, parada4, parada1);
+	ramal3 = new cRamal(parada9, parada7, parada5, parada2, parada1);
 
 	
 	ListaPersona = new cListaT<class cPersona>();
