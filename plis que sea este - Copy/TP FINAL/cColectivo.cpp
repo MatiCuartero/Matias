@@ -1,66 +1,28 @@
 
 #include "cColectivo.h"
 
-
 cColectivo::cColectivo()
 {
-	cant_max = NULL;
-	codigo = "";
-	Estado = NULL;
-}
-
-cColectivo::cColectivo(int _cantmax, string _cod, bool _est, Recorrido recorrido, cRamal *ramal)
-{
-}
-
-
-void cColectivo::Abrir_Puerta()
-{
+	CA = 0;
+	CAPMAX = 60;
+	precio = 0;
+	ramal = new cRamal();
+	Estado = true;
 
 }
 
-
-void cColectivo::Asignar_Nuevo_Ramal()
+cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codigo(_codigo)
 {
+	Estado = _estado;
+	this->ramal = ramal;
+
 
 }
 
-
-int cColectivo::Bajar_Personas()
+cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 {
-
-	return 0;
-}
+	cout << "destruyendo colectivo" << endl;
 
 
-double cColectivo::Cobrar_Boleto(string l)
-{
-
-	return 0;
-}
-
-
-void cColectivo::SistemaGPS()
-{
-
-}
-
-
-int cColectivo::Subir_Personas()
-{
-
-	return 0;
-}
-
-
-bool cColectivo::Verificar_Capacidad()
-{
-
-	return false;
-}
-
-
-cColectivo::~cColectivo()
-{
-
+	sistema->getParada
 }

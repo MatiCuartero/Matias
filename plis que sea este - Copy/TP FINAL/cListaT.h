@@ -81,8 +81,6 @@ cListaT<T>::~cListaT()
 		}
 		delete[] vector;
 	}
-
-
 }
 
 template<class T>

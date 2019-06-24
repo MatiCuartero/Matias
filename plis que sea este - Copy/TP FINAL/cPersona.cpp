@@ -7,7 +7,7 @@ cPersona::cPersona()
 {
 	codigo = 1;
 	parada = "";
-	silla_ruedas = NULL;
+	silla_ruedas = true;
 }
 
 int cPersona::cont_codigo = 1;

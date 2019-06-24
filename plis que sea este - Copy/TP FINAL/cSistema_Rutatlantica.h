@@ -23,7 +23,7 @@ protected:
 	
 	cColectivo_nuevo *colectivonuevo;
 	cColectivo_viejo *colectivoviejo;
-	cAcordeon* acordeon;
+	cAcordeon *acordeon;
 	cColectivo *colectivo;
 	cParada *parada;
 	cListaT <class cPersona> *ListaPersona;
@@ -47,7 +47,10 @@ protected:
 	cParada *parada13;
 	cParada *parada14;
 	cParada *parada15;
+
+	//Fijarse inicializacion, porque lo hago en una funcion, no como dice la teoria
 	static cParada **ListaParadas;
+
 	//static int contTICKS;
 
 public:
