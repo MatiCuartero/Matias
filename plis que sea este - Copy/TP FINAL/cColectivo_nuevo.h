@@ -16,7 +16,7 @@ protected:
 
 public:
 	cColectivo_nuevo();
-	cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal);
+	cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal,bool _aire,bool _direccion);
 	void Abrir_Puerta();
 	void Asignar_Nuevo_Ramal();
 	int Bajar_Personas();
