@@ -1,14 +1,14 @@
 #include "cParada.h"
 
 
-cParada::cParada(int _cod) :codigo_identificativo(_cod)
-{
-	direccion = "";
-}
-
 cParada::cParada(int _cod, string _dir, string _nom): codigo_identificativo(_cod), nombre("")
 {
 	direccion = _dir;
+}
+
+cParada::cParada() : codigo_identificativo(0)
+{
+	direccion = "";
 }
 
 /*void cParada::Llenar_Listas(cParada * parada)

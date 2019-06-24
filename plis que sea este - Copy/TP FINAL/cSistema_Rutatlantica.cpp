@@ -1,4 +1,5 @@
 #include "cSistema_Rutatlantica.h"
+#include <ctime>
 
 //holahola
 //arranco
@@ -57,6 +58,7 @@ void cSistema_Rutatlantica::TICK_Estado()
 		while (tiempoEspera>duracion) {
 			duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
 		}
+
 
 		for (int i = 1; i <= N; i++)
 		{

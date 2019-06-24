@@ -63,6 +63,7 @@ public:
 	double total_cant_monto();
 	int total_cant_Personas();
 	void setRamales();
+
 	string getParada();
 	void Llenar_Listas();
 	~cSistema_Rutatlantica();

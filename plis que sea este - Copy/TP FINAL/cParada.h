@@ -13,16 +13,16 @@ class cParada
 	//agregar al uml
 protected:
 	//string const codigo_identificativo;
-	int const codigo_identificativo;
-	string const nombre;
+	int codigo_identificativo;
+	const string nombre;
 	string direccion;
 	//static cParada *ListaParadas;
 	//static cParada **ListaParadas;
 	//static string ListaPersonas[M];
-
+	 
 public:
 	//cParada();
-	cParada(int _cod);
+	cParada();
 	cParada(int _cod, string _dir, string _nom);
 	int getCodigo() { return codigo_identificativo; }
 	string getNombre() { return nombre; }
