@@ -1,8 +1,12 @@
 
 #include "cAcordeon.h"
 
-
 cAcordeon::cAcordeon()
+{
+
+}
+
+cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo,_estado,ramal,_aire,_direccion)
 {
 
 }
@@ -50,6 +54,17 @@ bool cAcordeon::Verificar_Capacidad()
 {
 
 	return false;
+}
+
+void cAcordeon::set_CAPMAX(int capacidad)
+{	
+	CAPMAX = capacidad;
+
+}
+
+int cAcordeon::get_CAPMAX()
+{
+	return CAPMAX;
 }
 
 

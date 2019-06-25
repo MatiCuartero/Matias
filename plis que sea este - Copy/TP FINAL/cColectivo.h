@@ -37,7 +37,8 @@ public:
 	bool Verificar_Capacidad();
 	void setParada_Actual(cRamal *ramal);
 	~cColectivo();
-
+	void set_CAPMAX(int capacidad);
+	int get_CAPMAX();
 	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico
 
