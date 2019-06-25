@@ -186,3 +186,15 @@ cSistema_Rutatlantica::~cSistema_Rutatlantica()
 	delete[]ListaParadas;
 	//destrcutor
 }
+
+void cSistema_Rutatlantica::agregar_colectivos()
+{
+
+
+	lista_colectivos->AgregarItem->(colectivo1 = new cColectivo_nuevo("AG-JI-34",true,ramal1,true,true));
+	lista_colectivos->AgregarItemn->(colectivo2=new cColectivo_nuevo());
+}
+
+
+
+

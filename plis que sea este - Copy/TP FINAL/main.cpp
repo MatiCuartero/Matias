@@ -14,11 +14,11 @@ using namespace std;
 
 int main()
 {
-	cColectivo *colectivo = new cColectivo();
-	cParada *parada = new cParada();
-	cRamal *ramal = new cRamal();
-	cPersona *persona = new cPersona();
+	
 	cSistema_Rutatlantica *sistema = new cSistema_Rutatlantica();
+	sistema->getParada;
+
+	
 
 	
 	int opcion;

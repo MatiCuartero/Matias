@@ -35,7 +35,8 @@ public:
 	int Subir_Personas();
 	bool Verificar_Capacidad();
 	~cColectivo();
-
+	void set_CAPMAX(int capacidad);
+	int get_CAPMAX();
 	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico
 
