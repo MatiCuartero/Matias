@@ -21,7 +21,7 @@ protected:
 	//static string ListaPersonas[M];
 	 
 public:
-	//cParada();
+
 	cParada();
 	cParada(int _cod, string _dir, string _nom);
 	int getCodigo() { return codigo_identificativo; }

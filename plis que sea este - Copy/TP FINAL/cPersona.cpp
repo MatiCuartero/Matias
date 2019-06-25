@@ -12,13 +12,11 @@ cPersona::cPersona()
 
 int cPersona::cont_codigo = 1;
 
-cPersona::cPersona( int _codigo, string parada, bool silla_ruedas):codigo(_codigo)
+cPersona::cPersona(string parada, bool silla_ruedas):codigo(cont_codigo)
 {
-
 	cont_codigo++;
 	this->parada = parada;
 	this->silla_ruedas = silla_ruedas;
-	codigo = cont_codigo;
 }
 
 

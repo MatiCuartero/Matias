@@ -20,8 +20,9 @@ protected:
 	cListaT<class cPersonas>*lista_persona;
 	double precio;
 	cRamal *ramal;
+	cParada *Parada_Actual;
 
-	cSistema_Rutatlantica*sistema;
+	cSistema_Rutatlantica *sistema;
 
 public:
 	cColectivo();
@@ -34,6 +35,7 @@ public:
 	void SistemaGPS();
 	int Subir_Personas();
 	bool Verificar_Capacidad();
+	void setParada_Actual(cRamal *ramal);
 	~cColectivo();
 
 	////AGREGAR EN EL UML//////

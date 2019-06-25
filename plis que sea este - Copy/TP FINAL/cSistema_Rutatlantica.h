@@ -63,12 +63,6 @@ protected:
 
 
 
-
-
-
-
-
-
 public:
 
 	cSistema_Rutatlantica();
