@@ -20,8 +20,12 @@ protected:
 	cListaT<class cPersonas>*lista_persona;
 	double precio;
 	cRamal *ramal;
+	cPersona**Lista_Personas;
 
 	cSistema_Rutatlantica*sistema;
+
+
+
 
 public:
 	cColectivo();
@@ -32,10 +36,10 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	int Subir_Personas();
+	 virtual int Subir_Personas()=0;
 	bool Verificar_Capacidad();
 	void Abrir_Puerta();
-	~cColectivo();
+	virtual ~cColectivo();
 	virtual void set_CAPMAX(int capacidad)=0;
 	int get_CAPMAX();
 	////AGREGAR EN EL UML//////
@@ -44,3 +48,9 @@ public:
 
 };
 ///hacer sobrecarga del cout y del cin
+
+
+
+//colectivo->lista_personas->agregarItem(paradaActual->lista_personas->QuitarItem(i))
+//UTILIZAR ATRIBUTO DE PARADA ACTUAL;
+//sistema GPS : HACER EL METODO GPS MATI SEGUN LAS PARADAS QUE HAY EN RAMAL AVANZAR Y TENER EN CUENTA EL CAMBIO DE RAMAL 

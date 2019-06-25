@@ -9,6 +9,7 @@ cColectivo::cColectivo()
 	ramal = new cRamal();
 	Estado = true;
 	Parada_Actual = new cParada();
+	*Lista_Personas = new cPersona()/
 }
 
 cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codigo(_codigo)
@@ -34,6 +35,36 @@ void cColectivo::setParada_Actual(cRamal *ramal)
 	
 }
 
+int cColectivo::Subir_Personas()
+{
+
+
+
+
+
+}
+
+
+bool cColectivo::Verificar_Capacidad()
+{
+
+	if (CA < CAPMAX)
+	{
+
+
+	
+
+
+	}
+
+
+	else
+
+	 throw new exception "NO HAY LUGAR PARA SUBIR MAS PERSONAS";
+		return false;
+
+
+}
 cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 {
 	cout << "destruyendo colectivo" << endl;
@@ -45,3 +76,7 @@ int cColectivo::get_CAPMAX()
 {
 	return CAPMAX;
 }
+
+///SOLO USAR EL COUT PARA SOBRECARGA
+//CONST T   (CONST INT Y)
+

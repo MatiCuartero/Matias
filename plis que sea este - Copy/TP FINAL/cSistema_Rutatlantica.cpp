@@ -22,7 +22,7 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 
 	
 	ListaPersona = new cListaT<class cPersona>();
-
+	lista_colectivos = new cListaT<class cColectivo>();
 
 }
 

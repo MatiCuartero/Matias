@@ -4,6 +4,7 @@
 #include "cColectivo.h"
 #include "cRamal.h"
 using namespace std;
+#define N 50
 
 class cColectivo_nuevo : public cColectivo
 {
@@ -12,6 +13,7 @@ protected:
 	bool aire;
 	bool direccion_electrica;
 	cRamal *ramal;
+	cPersona**Lista_Personas;
 
 
 public:
@@ -25,7 +27,7 @@ public:
 	int Subir_Personas();
 	bool Verificar_Capacidad();
 	void imprimir_info();
-	void set_CAPMAX(int capacidad);
+	/*void set_CAPMAX(int capacidad);*/
 	int get_CAPMAX();
 	~cColectivo_nuevo();
 

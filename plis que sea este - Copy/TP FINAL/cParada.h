@@ -6,7 +6,7 @@ using namespace std;
 #define N 15
 #define M 20
 
-
+////////TENEMOS QUE CREAR UNA LISTA DE PERSONAS Y AGREGAR PARADAS 
 class cParada
 
 {

@@ -19,11 +19,12 @@ int main()
 	sistema->agregar_colectivos();
 
 	
-
+	///se rompre el colectivo se bajan todas las personas 
+	//sigue andando pero no levanta  a las personas
 	
 	int opcion;
 
-	do
+	/*do
 	{
 		cout << "--------~~MENU~~--------\n" << endl;
 		cout << "1) Estado de Objetos.\n" << endl; //Cambiar los segundos/minutos para listar los estados de todos los objetos de las clases.
@@ -64,6 +65,9 @@ int main()
 	} while (opcion != 7);
 
 
+
 	system("pause");
+
+	delete sistema;
 	return 0;
 }

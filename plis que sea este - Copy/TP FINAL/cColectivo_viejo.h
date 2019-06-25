@@ -14,6 +14,7 @@ protected:
 	bool aire;
 	bool direccion_hidraulica;
 	cRamal *ramal;
+	cPersona**Lista_Personas;
 
 public:
 	cColectivo_viejo();
