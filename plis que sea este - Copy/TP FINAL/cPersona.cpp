@@ -3,9 +3,9 @@
 #include "cPersona.h"
 
 
-cPersona::cPersona()
+cPersona::cPersona():codigo(cont_codigo)
 {
-	codigo = 1;
+	cont_codigo++;
 	parada = "";
 	silla_ruedas = true;
 }

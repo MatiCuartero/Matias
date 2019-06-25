@@ -22,7 +22,28 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 
 }
 
-void cColectivo::setParada_Actual(cRamal *ramal)
+void cColectivo::SistemaGPS(cRamal *ramal)
+{
+	//tengo que comparar segun que ramal tenga(1, 2, 3) y hacer que este en la primer parada de ese ramal y actualizarlo cada 5 min.
+
+	clock_t comienzo;
+	double duracion;
+	double tiempoEspera;
+
+	cout << "Ingrese el tiempo que desea esperar: ";
+	cin >> tiempoEspera;
+	comienzo = clock();
+	duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
+
+	while (tiempoEspera > duracion) {
+		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
+	}
+
+
+
+}
+
+/*void cColectivo::setParada_Actual(cRamal *ramal)
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -32,7 +53,7 @@ void cColectivo::setParada_Actual(cRamal *ramal)
 		}
 	}
 	
-}
+}*/
 
 cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 {

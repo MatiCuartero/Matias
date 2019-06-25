@@ -4,6 +4,7 @@
 #include "cPersona.h"
 #include "cListaT.h"
 #include "cRamal.h"
+#include <ctime>
 using namespace std;
 #define M 20
 
@@ -20,7 +21,7 @@ protected:
 	cListaT<class cPersonas>*lista_persona;
 	double precio;
 	cRamal *ramal;
-
+	cParada *Parada_Actual;
 	cSistema_Rutatlantica*sistema;
 
 public:
@@ -31,7 +32,7 @@ public:
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
-	void SistemaGPS();
+	void SistemaGPS(cRamal *ramal);
 	int Subir_Personas();
 	bool Verificar_Capacidad();
 	void Abrir_Puerta();

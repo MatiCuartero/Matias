@@ -22,24 +22,26 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 
 	
 	ListaPersona = new cListaT<class cPersona>();
-
+	lista_colectivos = new cListaT<class cColectivo>();
 
 }
 
 //este metodo va a gregar a la lista_colectivos mis colectivos,nuevos,viejos, acordeon
 void cSistema_Rutatlantica::agregar_colectivos()
 {
-	lista_colectivos->AgregarItem->(colectivo1 = new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
-	lista_colectivos->AgregarItemn->(colectivo2 = new cColectivo_nuevo("AS-JT-77", true, ramal2, true, true));
-	lista_colectivos->AgregarItem->(colectivo3 = new cColectivo_nuevo("AS-JY-33", true, ramal3, true, true);
-	lista_colectivos->AgregarItem->(colectivo4 = new cColectivo_viejo("BB-GG-77", true, ramal2, false, false));
-	lista_colectivos->AgregarItem->(colectivo5 = new cColectivo_viejo("BR-GT-89", true, ramal1, false, false));
-	lista_colectivos->AgregarItem->(colectivo6 = new cColectivo_viejo("BF-GL-11", true, ramal3, false, false));
-	lista_colectivos->AgregarItem->(colectivo7 = new cColectivo_viejo("BQ-GM-99", true, ramal1, false, false));
-	lista_colectivos->AgregarItem->(colectivo8 = new cAcordeon("AF-RT-45", true, ramal2, true, true));
-	lista_colectivos->AgregarItem->(colectivo9 = new cAcordeon("AS-FE-22", true, ramal3, true, true));
-	lista_colectivos->AgregarItem->(colectivo10 = new cAcordeon("AL-FD-55", true, ramal2, true, true));
+	lista_colectivos->AgregarItem(colectivo1 = new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
+	lista_colectivos->AgregarItem(colectivo2 = new cColectivo_nuevo("AS-JT-77", true, ramal2, true, true));
+	lista_colectivos->AgregarItem(colectivo3 = new cColectivo_nuevo("AS-JY-33", true, ramal3, true, true);
+	lista_colectivos->AgregarItem(colectivo4 = new cColectivo_viejo("BB-GG-77", true, ramal2, false, false));
+	lista_colectivos->AgregarItem(colectivo5 = new cColectivo_viejo("BR-GT-89", true, ramal1, false, false));
+	lista_colectivos->AgregarItem(colectivo6 = new cColectivo_viejo("BF-GL-11", true, ramal3, false, false));
+	lista_colectivos->AgregarItem(colectivo7 = new cColectivo_viejo("BQ-GM-99", true, ramal1, false, false));
+	lista_colectivos->AgregarItem(colectivo8 = new cAcordeon("AF-RT-45", true, ramal2, true, true));
+	lista_colectivos->AgregarItem(colectivo9 = new cAcordeon("AS-FE-22", true, ramal3, true, true));
+	lista_colectivos->AgregarItem(colectivo10 = new cAcordeon("AL-FD-55", true, ramal2, true, true));
 
+	/*colectivo1 = new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true);
+	lista_colectivos->AgregarItem(colectivo1);*/
 
 }
 
@@ -78,13 +80,13 @@ void cSistema_Rutatlantica::TICK_Estado()
 				if (cont_silla_ruedas == 5)
 				{
 					//que reciba por parametro la persona todo
-					cPersona *persona = new cPersona(/*tengo que pasarle el codigo*/ListaParadas[y]->getNombre(), true);
+					cPersona *persona = new cPersona(ListaParadas[y]->getNombre(), true);
 					ListaPersona->AgregarItem(persona);
 					cont_silla_ruedas = 0;
 				}
 				else
 				{
-					cPersona *persona = new cPersona(/*tengo que pasarle el codigo*/ListaParadas[y]->getNombre(), false);
+					cPersona *persona = new cPersona(ListaParadas[y]->getNombre(), false);
 					ListaPersona->AgregarItem(persona);
 				}
 

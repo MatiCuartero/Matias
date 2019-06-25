@@ -18,12 +18,6 @@ protected:
 	cParada*parada7;
 	cParada*parada8;
 	cParada*parada9;
-	cParada*parada10;
-	cParada*parada11;
-	cParada*parada12;
-	cParada*parada13;
-	cParada*parada14;
-	cParada*parada15;
 
 	cParada **ListaParadas;
 
