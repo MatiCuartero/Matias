@@ -1,13 +1,15 @@
 #include "cParada.h"
 
 
-cParada::cParada(int _cod, string _dir, string _nom): codigo_identificativo(_cod), nombre("")
+cParada::cParada(int _cod, string _dir, string _nom): nombre("")
 {
+	codigo_identificativo = _cod;
 	direccion = _dir;
 }
 
-cParada::cParada() : codigo_identificativo(0)
+cParada::cParada() : nombre("")
 {
+	codigo_identificativo = 0;
 	direccion = "";
 }
 
@@ -42,6 +44,6 @@ cParada::~cParada()
 }
 
 cParada getListaParadas()
-{
+{	
 	return *ListaParadas;
 }

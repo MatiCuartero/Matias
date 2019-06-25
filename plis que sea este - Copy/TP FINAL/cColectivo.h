@@ -34,8 +34,9 @@ public:
 	void SistemaGPS();
 	int Subir_Personas();
 	bool Verificar_Capacidad();
+	void Abrir_Puerta();
 	~cColectivo();
-	void set_CAPMAX(int capacidad);
+	virtual void set_CAPMAX(int capacidad)=0;
 	int get_CAPMAX();
 	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico

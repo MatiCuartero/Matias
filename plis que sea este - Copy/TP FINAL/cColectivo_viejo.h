@@ -26,8 +26,9 @@ public:
 	int Subir_Personas();
 	bool Verificar_Capacidad();
 	~cColectivo_viejo();
+	///Agrgar al uml///
 	void imprimir_info();
-
-
+	void set_CAPMAX(int capacidad);
+	int get_CAPMAX();
 
 };

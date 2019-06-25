@@ -50,18 +50,18 @@ protected:
 	//////////////COLECTIVOS/////////
 	cListaT<class cColectivo>*lista_colectivos;
 
-	cColectivo_nuevo*colectivo1;
-	cColectivo_nuevo*colectivo2;
-	cColectivo_nuevo*colectivo3;
-	cColectivo_viejo*colectivo4;
-	cColectivo_viejo*colectivo5;
-	cColectivo_viejo*colectivo6;
-	cColectivo_viejo*colectivo7;
-	cAcordeon*colectivo8;
-	cAcordeon*colectivo9;
-	cAcordeon*colectivo10;
+	cColectivo*colectivo1;
+	cColectivo*colectivo2;
+	cColectivo*colectivo3;
+	cColectivo*colectivo4;
+	cColectivo*colectivo5;
+	cColectivo*colectivo6;
+	cColectivo*colectivo7;
+	cColectivo*colectivo8;
+	cColectivo*colectivo9;
+	cColectivo*colectivo10;
 
-
+	cColectivo*colectivo;
 
 
 
@@ -80,12 +80,11 @@ public:
 	double total_cant_monto();
 	int total_cant_Personas();
 	void setRamales();
-
 	string getParada();
-	void Llenar_Listas();
+	
 	~cSistema_Rutatlantica();
 	////AGREGAR UML//
 	void agregar_colectivos();//llenamos las listas con los colectivos
-
+	void agregar_personas();//lenamos las listas con las personas
 };
 

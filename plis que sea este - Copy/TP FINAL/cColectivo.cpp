@@ -26,3 +26,10 @@ cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 
 	sistema->getParada
 }
+
+
+
+int cColectivo::get_CAPMAX()
+{
+	return CAPMAX;
+}

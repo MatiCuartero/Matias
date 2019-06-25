@@ -21,6 +21,17 @@ void cColectivo_nuevo::imprimir_info()
 	cout << "Soy un colectivo nuevo " << endl;
 }
 
+void cColectivo_nuevo::set_CAPMAX(int capacidad)
+{
+	capacidad = 30;
+	CAPMAX = capacidad;
+}
+
+int cColectivo_nuevo::get_CAPMAX()
+{
+	return CAPMAX;
+}
+
 cColectivo_nuevo::~cColectivo_nuevo()
 {
 	cout << "destruyendo el colectivo nuevo" << endl;

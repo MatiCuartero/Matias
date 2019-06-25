@@ -16,7 +16,7 @@ int main()
 {
 	
 	cSistema_Rutatlantica *sistema = new cSistema_Rutatlantica();
-	sistema->getParada;
+	sistema->agregar_colectivos();
 
 	
 

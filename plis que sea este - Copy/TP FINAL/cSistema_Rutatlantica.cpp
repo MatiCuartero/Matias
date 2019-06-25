@@ -1,8 +1,7 @@
 #include "cSistema_Rutatlantica.h"
 #include <ctime>
 
-//holahola
-//arranco
+
 cSistema_Rutatlantica::cSistema_Rutatlantica()
 {
 	parada1 = new cParada(1, "Salta y Rivadavia", "Constitucion"); 
@@ -27,21 +26,24 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 
 }
 
-//int::cSistema_Rutatlantica contTICKS=0;
-
-int cSistema_Rutatlantica::cant_Personas()
+//este metodo va a gregar a la lista_colectivos mis colectivos,nuevos,viejos, acordeon
+void cSistema_Rutatlantica::agregar_colectivos()
 {
+	lista_colectivos->AgregarItem->(colectivo1 = new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
+	lista_colectivos->AgregarItemn->(colectivo2 = new cColectivo_nuevo("AS-JT-77", true, ramal2, true, true));
+	lista_colectivos->AgregarItem->(colectivo3 = new cColectivo_nuevo("AS-JY-33", true, ramal3, true, true);
+	lista_colectivos->AgregarItem->(colectivo4 = new cColectivo_viejo("BB-GG-77", true, ramal2, false, false));
+	lista_colectivos->AgregarItem->(colectivo5 = new cColectivo_viejo("BR-GT-89", true, ramal1, false, false));
+	lista_colectivos->AgregarItem->(colectivo6 = new cColectivo_viejo("BF-GL-11", true, ramal3, false, false));
+	lista_colectivos->AgregarItem->(colectivo7 = new cColectivo_viejo("BQ-GM-99", true, ramal1, false, false));
+	lista_colectivos->AgregarItem->(colectivo8 = new cAcordeon("AF-RT-45", true, ramal2, true, true));
+	lista_colectivos->AgregarItem->(colectivo9 = new cAcordeon("AS-FE-22", true, ramal3, true, true));
+	lista_colectivos->AgregarItem->(colectivo10 = new cAcordeon("AL-FD-55", true, ramal2, true, true));
 
-	
-	return 0;
+
 }
 
 
-double cSistema_Rutatlantica::monto_porColectivo()
-{
-
-	return 0;
-}
 
 //cada 1 minuto actualiza el estado de los objetos
 void cSistema_Rutatlantica::TICK_Estado() 
@@ -76,15 +78,18 @@ void cSistema_Rutatlantica::TICK_Estado()
 				if (cont_silla_ruedas == 5)
 				{
 					//que reciba por parametro la persona todo
-					cPersona *persona = new cPersona(ListaParadas[y]->getNombre(), true);
+					cPersona *persona = new cPersona(/*tengo que pasarle el codigo*/ListaParadas[y]->getNombre(), true);
 					ListaPersona->AgregarItem(persona);
 					cont_silla_ruedas = 0;
 				}
 				else
 				{
-					cPersona *persona = new cPersona(ListaParadas[y]->getNombre(), false);
+					cPersona *persona = new cPersona(/*tengo que pasarle el codigo*/ListaParadas[y]->getNombre(), false);
 					ListaPersona->AgregarItem(persona);
 				}
+
+
+
 				//cListaT<class cPersona> persona->getitem(i)->getListaPersonas()->agregarItem(new cPersona())
 			}
 		}
@@ -125,7 +130,7 @@ void cSistema_Rutatlantica::TICK_GPS()
 	system("pause");
 }
 
-void cSistema_Rutatlantica::Llenar_Listas()
+void cSistema_Rutatlantica::agregar_personas()
 {
 	int TAM = N;
 	//PROBLEMA DE QUE NO HAY CONSTRUCTOR POR DEFECTO POR ATRIBUTO CONST
@@ -151,27 +156,7 @@ void cSistema_Rutatlantica::Llenar_Listas()
 }
 
 
-double cSistema_Rutatlantica::total_cant_monto()
-{
 
-	return 0;
-}
-
-
-int cSistema_Rutatlantica::total_cant_Personas()
-{
-
-	return 0;
-}
-
-void cSistema_Rutatlantica::setRamales()
-{
-}
-
-string cSistema_Rutatlantica::getParada()
-{
-	return ;
-}
 
 
 cSistema_Rutatlantica::~cSistema_Rutatlantica()
@@ -184,16 +169,26 @@ cSistema_Rutatlantica::~cSistema_Rutatlantica()
 		}
 	}
 	delete[]ListaParadas;
-	//destrcutor
+
+
+	//ADEMAS BORRAR LAS LISTAS DE PERSONAS Y PARADAS
+	
 }
 
-void cSistema_Rutatlantica::agregar_colectivos()
-{
+
+/*sobrecarga del cout y cin
+cColectivo
 
 
-	lista_colectivos->AgregarItem->(colectivo1 = new cColectivo_nuevo("AG-JI-34",true,ramal1,true,true));
-	lista_colectivos->AgregarItemn->(colectivo2=new cColectivo_nuevo());
-}
+
+
+
+
+
+
+
+
+*/
 
 
 

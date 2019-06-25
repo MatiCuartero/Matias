@@ -23,10 +23,10 @@ public:
 	string get_Parada();
 	void set_Parada(string l);
 	string Prioridad_Indicador(bool l);
-	static int getCont_Codigo();
-	
+	static int getCont_Codigo();/*agregar al uml*/
 	~cPersona();
-
+	//agregar al uml 
+	int get_contador();
 
 };
 

@@ -33,3 +33,14 @@ void cColectivo_viejo::imprimir_info()
 	cout << "Direccion hidraulica:" << direccion_hidraulica << endl;
 
 }
+
+void cColectivo_viejo::set_CAPMAX(int capacidad)
+{
+	capacidad = 20;
+	CAPMAX = capacidad;
+}
+
+int cColectivo_viejo::get_CAPMAX()
+{
+	return CAPMAX;
+}

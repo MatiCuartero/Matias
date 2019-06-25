@@ -25,6 +25,8 @@ public:
 	int Subir_Personas();
 	bool Verificar_Capacidad();
 	void imprimir_info();
+	void set_CAPMAX(int capacidad);
+	int get_CAPMAX();
 	~cColectivo_nuevo();
 
 
