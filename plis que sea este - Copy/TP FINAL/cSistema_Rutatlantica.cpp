@@ -26,7 +26,7 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 
 }
 
-//este metodo va a gregar a la lista_colectivos mis colectivos,nuevos,viejos, acordeon
+//este metodo va a gregar a la lista_colectivos mis colectivos,nuevos,viejos y acordeon
 void cSistema_Rutatlantica::agregar_colectivos()
 {
 	lista_colectivos->AgregarItem(colectivo1 = new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
