@@ -9,7 +9,7 @@ cColectivo::cColectivo()
 	ramal = new cRamal();
 	Estado = true;
 	Parada_Actual = new cParada();
-	*Lista_Personas = new cPersona()/
+	/*Lista_Personas = new cPersona(); */
 }
 
 cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codigo(_codigo)
@@ -20,6 +20,15 @@ cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codi
 
 void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
+
+}
+
+void cColectivo::Bajar_Personas()
+{//primero antes de subir bajan los pasajeros que esten en la parada en la que deban bajar
+	//debo eliminarlas del colectivo
+	
+
+
 
 }
 
@@ -56,39 +65,25 @@ void cColectivo::SistemaGPS(cRamal *ramal)
 	
 }*/
 
-int cColectivo::Subir_Personas()
-{
-
-
-
-
-
-}
 
 
 bool cColectivo::Verificar_Capacidad()
 {
 
 	if (CA < CAPMAX)
-	{
-
-
 	
-
-
-	}
-
+		return true;
 
 	else
-
-	 throw new exception "NO HAY LUGAR PARA SUBIR MAS PERSONAS";
 		return false;
 
 
 }
+
 cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 {
 	cout << "destruyendo colectivo" << endl;
+
 }
 
 

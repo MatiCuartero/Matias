@@ -16,7 +16,7 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	int Subir_Personas();
+	void Subir_Personas(cColectivo*colectivo);
 	bool Verificar_Capacidad();
 	void set_CAPMAX(int capacidad);
 	int get_CAPMAX();

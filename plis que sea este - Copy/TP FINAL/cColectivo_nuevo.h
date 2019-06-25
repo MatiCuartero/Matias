@@ -13,7 +13,9 @@ protected:
 	bool aire;
 	bool direccion_electrica;
 	cRamal *ramal;
-	cPersona**Lista_Personas;
+	int CA;
+	int CAPMAX;
+	/*cPersona**Lista_Personas;*/
 
 
 public:
@@ -24,11 +26,13 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	int Subir_Personas();
+	void Subir_Personas(cColectivo *colectivo[10]);
 	bool Verificar_Capacidad();
 	void imprimir_info();
+	void set_CAPMAX(int capacidad);
 	/*void set_CAPMAX(int capacidad);*/
 	int get_CAPMAX();
+	string get_codigo() const;
 	~cColectivo_nuevo();
 
 

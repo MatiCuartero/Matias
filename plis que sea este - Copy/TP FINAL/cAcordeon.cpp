@@ -26,14 +26,14 @@ void cAcordeon::Asignar_Nuevo_Ramal()
 
 int cAcordeon::Bajar_Personas()
 {
-	return 0;
+
 }
 
 
-double cAcordeon::Cobrar_Boleto(string l)
+double cAcordeon::Cobrar_Boleto(string destino)
 {
 
-	return 0;
+
 }
 
 
@@ -43,17 +43,21 @@ void cAcordeon::SistemaGPS()
 }
 
 
-int cAcordeon::Subir_Personas()
+void cAcordeon::Subir_Personas(cColectivo*colectivo)
 {
 
-	return 0;
+	
 }
 
 
 bool cAcordeon::Verificar_Capacidad()
 {
+	if (CA < CAPMAX)
 
-	return false;
+		return true;
+
+	else
+		return false;
 }
 
 void cAcordeon::set_CAPMAX(int capacidad)

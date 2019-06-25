@@ -24,7 +24,7 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	int Subir_Personas();
+	void Subir_Personas(cColectivo*colectivo[10]);
 	bool Verificar_Capacidad();
 	~cColectivo_viejo();
 	///Agrgar al uml///
