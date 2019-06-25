@@ -8,6 +8,7 @@ using namespace std;
 class cRamal
 {
 protected: 
+
 	cParada*parada1;
 	cParada*parada2;
 	cParada*parada3;
@@ -24,12 +25,14 @@ protected:
 	cParada*parada14;
 	cParada*parada15;
 
+	cParada **ListaParadas;
 
 
 public:
 
 	cRamal();
 	cRamal(cParada *parada1, cParada *parada2, cParada *parada3, cParada *parada4, cParada *parada5);
+	cParada getLista();
 	~cRamal();
 };
 

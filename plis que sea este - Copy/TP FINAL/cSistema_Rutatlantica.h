@@ -63,12 +63,6 @@ protected:
 
 	cColectivo*colectivo;
 
-
-
-
-
-
-
 public:
 
 	cSistema_Rutatlantica();
