@@ -26,7 +26,7 @@ public:
 	string getNombre() { return nombre; }
 	//15 de 15 paradas.
 	void Llenar_Listas(cPersona *persona);
-	//friend cParada getListaParadas();
+	cPersona getListaPersonas();
 	~cParada();
 };
 

@@ -1,5 +1,3 @@
-
-
 #include "cColectivo_nuevo.h"
 
 cColectivo_nuevo::cColectivo_nuevo()
@@ -19,11 +17,9 @@ cColectivo_nuevo::cColectivo_nuevo(const string _codigo, bool _estado, cRamal * 
 
 }
 
-void cColectivo_nuevo::Subir_Personas(cColectivo*colectivo[10])
+void cColectivo_nuevo::Subir_Personas(/*cColectivo*colectivo[10]*/)
 {
-	
-
-	for (int i = 0; i < 10; i++)
+	/*for (int i = 0; i < 10; i++)
 	{
 		cAcordeon*a = dynamic_cast <cAcordeon*>(colectivo[i]);
 		if (a != NULL)
@@ -47,8 +43,34 @@ void cColectivo_nuevo::Subir_Personas(cColectivo*colectivo[10])
 			cout << "El COLECTIVO VIEJO no permite personas con silas de ruedas" << endl;
 			cout << "En el colectivo N°:" << i << "Codigo:" << colectivo[i]->get_codigo() << endl;
 
+	}*/
+	int ca = 0;
+
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
 	}
 
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre())
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
+	}
 }
 
 

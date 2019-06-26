@@ -64,7 +64,6 @@ void cColectivo::SistemaGPS()
 		Parada_Actual = ramal->getLista[ca];
 	}
 
-
 	clock_t comienzo;
 	double duracion;
 	double tiempoEspera;
@@ -95,26 +94,11 @@ void cColectivo::SistemaGPS()
 	}
 }
 
-/*void cColectivo::setParada_Actual(cRamal *ramal)
-{
-	for (int i = 0; i < 5; i++)
-	{
-		if (ramal->getLista[i]->getCodigo() == 1)
-		{
-
-		}
-	}
-	
-}*/
 
 
 int cColectivo::Subir_Personas()
 {
-
-
-
-
-
+	
 }
 
 

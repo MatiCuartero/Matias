@@ -4,7 +4,8 @@
 #include "cColectivo.h"
 #include "cRamal.h"
 using namespace std;
-#define N 50
+#define N 50 //Cantidad de personas Maxima
+#define M 20 //Cantidad de personas Maxima por Parada
 
 class cColectivo_nuevo : public cColectivo
 {
@@ -26,7 +27,7 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	void Subir_Personas(cColectivo *colectivo[10]);
+	void Subir_Personas(/*cColectivo *colectivo[10]*/);
 	bool Verificar_Capacidad();
 	void imprimir_info();
 	void set_CAPMAX(int capacidad);

@@ -38,7 +38,7 @@ cParada::~cParada()
 	//destructor
 }
 
-cParada getListaParadas()
+cPersona cParada::getListaPersonas()
 {	
-	return *ListaParadas;
+	return *ListaPersonas;
 }

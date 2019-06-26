@@ -16,7 +16,8 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	void Subir_Personas(cColectivo*colectivo);
+	//Fijarse el error sale que supuestamente en la clase padre pasa algo
+	void Subir_Personas(/*cColectivo*colectivo*/);
 	bool Verificar_Capacidad();
 	void set_CAPMAX(int capacidad);
 	int get_CAPMAX();

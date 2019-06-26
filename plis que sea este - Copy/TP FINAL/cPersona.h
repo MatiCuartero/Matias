@@ -24,9 +24,14 @@ public:
 	void set_Parada(string l);
 	string Prioridad_Indicador(bool l);
 	static int getCont_Codigo();/*agregar al uml*/
+	bool getSilla_ruedas() { return silla_ruedas; }
 	~cPersona();
 	//agregar al uml 
 	int get_contador();
 
 };
 
+//if(paradaactual->getNombre()==ramal->getListaParadas()->getNombre)
+{
+
+}

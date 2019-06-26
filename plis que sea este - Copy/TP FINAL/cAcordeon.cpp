@@ -43,9 +43,35 @@ void cAcordeon::SistemaGPS()
 }
 
 
-void cAcordeon::Subir_Personas(cColectivo*colectivo)
+void cAcordeon::Subir_Personas(/*cColectivo*colectivo*/)
 {
+	int ca = 0;
 
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre())
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
+	}
 	
 }
 
