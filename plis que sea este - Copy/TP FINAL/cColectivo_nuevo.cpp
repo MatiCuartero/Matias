@@ -71,7 +71,7 @@ void cColectivo_nuevo::imprimir_info()
 	cout << "Soy un colectivo nuevo " << endl;
 }
 
-void cColectivo_nuevo::set_CAPMAX(int capacidad)
+void cColectivo_nuevo::set_CAPMAX(int capacidad) 
 {
 	capacidad = 30;
 	CAPMAX = capacidad;
