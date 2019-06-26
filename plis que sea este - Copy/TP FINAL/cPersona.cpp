@@ -50,5 +50,5 @@ void cPersona::set_Parada(string l)
 
 cPersona::~cPersona()
 {
-
+	cont_codigo--;
 }
