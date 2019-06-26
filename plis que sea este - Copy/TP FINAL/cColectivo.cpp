@@ -45,6 +45,11 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 	}*/
 }
 
+double cColectivo::Cobrar_Boleto(string l)
+{
+	return 0.0;
+}
+
 void cColectivo::SistemaGPS()
 {
 	//tengo que comparar segun que ramal tenga(1, 2, 3) y hacer que este en la primer parada de ese ramal y actualizarlo cada 5 min.
