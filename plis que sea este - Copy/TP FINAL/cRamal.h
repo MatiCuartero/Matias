@@ -28,7 +28,7 @@ public:
 	cRamal();
 	cRamal(string nombre, cParada *parada1, cParada *parada2, cParada *parada3, cParada *parada4, cParada *parada5);
 	string getNombre() { return nombre; }
-	cParada getLista();
+	cParada** getLista();
 	~cRamal();
 };
 

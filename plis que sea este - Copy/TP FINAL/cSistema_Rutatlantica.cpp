@@ -168,8 +168,8 @@ void cSistema_Rutatlantica::subir_pasajeros()
 	for (int i = 0; i < 10; i++)
 	{
 
-		cColectivo_viejo*v = dynamic_cast<cColectivo_viejo*>(lista_colectivos[i]);
-		cAcordeon*c = dynamic_cast<cAcordeon*>(lista_colectivos[i]);
+		cColectivo_viejo*v = dynamic_cast<cColectivo_viejo*>((*lista_colectivos)[i]);
+		cAcordeon*c = dynamic_cast<cAcordeon*>(lista_colectivos->getItem(i));
 		cColectivo_nuevo*n = dynamic_cast<cColectivo_nuevo*>(lista_colectivos[i]);
 		
 	

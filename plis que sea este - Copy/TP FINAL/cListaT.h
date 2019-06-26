@@ -33,6 +33,7 @@ public:
 	T* getItem(unsigned int pos);
 
 	unsigned int getItemPos(string clave);
+	T* operator[](int pos);
 
 	unsigned int getCA();
 	unsigned int getTAM();
@@ -206,4 +207,13 @@ unsigned int cListaT<T>::getItemPos(string clave)
 	}
 
 	return INT_MAX;
+}
+
+template<class T>
+T * cListaT<T>::operator[](int pos)
+{
+	if (pos > CA)
+		return NULL;
+	else
+		return lista[pos];
 }

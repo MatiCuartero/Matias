@@ -30,9 +30,9 @@ cRamal::cRamal(string nombre, cParada *parada1, cParada *parada2, cParada *parad
 	ListaParadas[4] = this->parada5;
 }
 
-cParada cRamal::getLista()
+cParada** cRamal::getLista()
 {
-	return **ListaParadas;
+	return ListaParadas;
 }
 
 

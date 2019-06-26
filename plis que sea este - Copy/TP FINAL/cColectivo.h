@@ -43,10 +43,12 @@ public:
 	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico
 
+	friend ostream& operator<<(ostream& o, cColectivo& colec); 
 
 };
 ///hacer sobrecarga del cout y del cin
 
+ostream& operator<<(ostream& o, cColectivo& colec);
 
 
 //colectivo->lista_personas->agregarItem(paradaActual->lista_personas->QuitarItem(i))
