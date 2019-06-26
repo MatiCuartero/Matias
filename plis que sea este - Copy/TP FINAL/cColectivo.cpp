@@ -9,7 +9,7 @@ cColectivo::cColectivo()
 	ramal = new cRamal();
 	Estado = true;
 	Parada_Actual = new cParada();
-	*Lista_Personas = new cPersona()/
+	*Lista_Personas = new cPersona();
 }
 
 cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codigo(_codigo)
@@ -20,12 +20,50 @@ cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codi
 
 void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
+	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
+	{
+		int y = rand() % 2 - 3;
+		if (y == 2)
+			ramal = ramal2;
+		else
+			ramal = ramal3;
+	}
 
+	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista[4]->getCodigo())
+	{
+		ramal = ramal1;
+	}
+
+	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista[4]->getCodigo())
+	{
+		ramal = ramal1;
+	}
+
+	/*if (Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
+	{
+
+	}*/
 }
 
-void cColectivo::SistemaGPS(cRamal *ramal)
+void cColectivo::SistemaGPS()
 {
 	//tengo que comparar segun que ramal tenga(1, 2, 3) y hacer que este en la primer parada de ese ramal y actualizarlo cada 5 min.
+	int ca = 0;
+	if (ramal->getNombre() == "Ramal1")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
+
+	if (ramal->getNombre() == "Ramal2")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
+
+	if (ramal->getNombre() == "Ramal3")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
+
 
 	clock_t comienzo;
 	double duracion;
@@ -40,8 +78,21 @@ void cColectivo::SistemaGPS(cRamal *ramal)
 		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
 	}
 
+	ca++;
+	if (ramal->getNombre() == "Ramal1")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
 
+	if (ramal->getNombre() == "Ramal2")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
 
+	if (ramal->getNombre() == "Ramal3")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
 }
 
 /*void cColectivo::setParada_Actual(cRamal *ramal)
@@ -55,6 +106,7 @@ void cColectivo::SistemaGPS(cRamal *ramal)
 	}
 	
 }*/
+
 
 int cColectivo::Subir_Personas()
 {
@@ -81,7 +133,7 @@ bool cColectivo::Verificar_Capacidad()
 
 	else
 
-	 throw new exception "NO HAY LUGAR PARA SUBIR MAS PERSONAS";
+	 throw new exception ("NO HAY LUGAR PARA SUBIR MAS PERSONAS");
 		return false;
 
 

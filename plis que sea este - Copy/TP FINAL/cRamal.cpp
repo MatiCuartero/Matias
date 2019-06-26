@@ -5,9 +5,10 @@
 cRamal::cRamal()
 {
 //////////agregar algo/////////////
+	nombre = "";
 }
 
-cRamal::cRamal(cParada *parada1, cParada *parada2, cParada *parada3, cParada *parada4, cParada *parada5)
+cRamal::cRamal(string nombre, cParada *parada1, cParada *parada2, cParada *parada3, cParada *parada4, cParada *parada5)
 {
 	this->parada1 = parada1;
 	this->parada2 = parada2;

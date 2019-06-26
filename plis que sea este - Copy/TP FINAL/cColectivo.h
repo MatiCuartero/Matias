@@ -21,10 +21,8 @@ protected:
 	double precio;
 	cRamal *ramal;
 	cPersona**Lista_Personas;
-
+	cParada *Parada_Actual;
 	cSistema_Rutatlantica*sistema;
-
-
 
 
 public:

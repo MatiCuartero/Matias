@@ -9,7 +9,7 @@
 #include "cListaT.h"
 #include "cRamal.h"
 #include "cParada.h"
-#define N 15
+#define N 9
 #define M 20
 
 using namespace std;

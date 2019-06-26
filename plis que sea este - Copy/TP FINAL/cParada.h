@@ -3,7 +3,7 @@
 #include <string>
 #include "cSistema_Rutatlantica.h"
 using namespace std;
-#define N 15
+#define N 9
 #define M 20
 
 ////////TENEMOS QUE CREAR UNA LISTA DE PERSONAS Y AGREGAR PARADAS 
@@ -15,6 +15,7 @@ protected:
 	int codigo_identificativo;
 	const string nombre;
 	string direccion;
+	cPersona *ListaPersonas;
 
 	 
 public:
@@ -24,7 +25,7 @@ public:
 	int getCodigo() { return codigo_identificativo; }
 	string getNombre() { return nombre; }
 	//15 de 15 paradas.
-	//void Llenar_Listas(cParada *parada);
+	void Llenar_Listas(cPersona *persona);
 	//friend cParada getListaParadas();
 	~cParada();
 };

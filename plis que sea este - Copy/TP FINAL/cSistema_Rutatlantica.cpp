@@ -16,9 +16,9 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 	
 
 
-	ramal1 = new cRamal(parada1, parada3, parada5, parada7, parada9);
-	ramal2 = new cRamal(parada9, parada8, parada6, parada4, parada1);
-	ramal3 = new cRamal(parada9, parada7, parada5, parada2, parada1);
+	ramal1 = new cRamal("Ramal1",parada1, parada3, parada5, parada7, parada9);
+	ramal2 = new cRamal("Ramal2", parada9, parada8, parada6, parada4, parada1);
+	ramal3 = new cRamal("Ramal3", parada9, parada7, parada5, parada2, parada1);
 
 	
 	ListaPersona = new cListaT<class cPersona>();
@@ -70,10 +70,10 @@ void cSistema_Rutatlantica::TICK_Estado()
 
 			int cont_silla_ruedas = 0;
 
-			for (int j = 1; j <= cantPersonas; j++)
+			for (int j = 0; j <= cantPersonas; j++)
 			{
 				//Random para generar destino 
-				int y = rand() % 1 - 15;
+				int y = rand() % 1 - 9;
 
 				cont_silla_ruedas++;
 
@@ -82,12 +82,14 @@ void cSistema_Rutatlantica::TICK_Estado()
 					//que reciba por parametro la persona todo
 					cPersona *persona = new cPersona(ListaParadas[y]->getNombre(), true);
 					ListaPersona->AgregarItem(persona);
+					parada->Llenar_Listas(persona);
 					cont_silla_ruedas = 0;
 				}
 				else
 				{
 					cPersona *persona = new cPersona(ListaParadas[y]->getNombre(), false);
 					ListaPersona->AgregarItem(persona);
+					parada->Llenar_Listas(persona);
 				}
 
 
@@ -135,7 +137,6 @@ void cSistema_Rutatlantica::TICK_GPS()
 void cSistema_Rutatlantica::agregar_personas()
 {
 	int TAM = N;
-	//PROBLEMA DE QUE NO HAY CONSTRUCTOR POR DEFECTO POR ATRIBUTO CONST
 	*ListaParadas = new cParada[TAM];
 	ListaParadas = NULL;
 
