@@ -160,8 +160,49 @@ void cSistema_Rutatlantica::agregar_personas()
 
 
 
+//va a subir o no pasajeros con sillas de ruedas
+void cSistema_Rutatlantica::subir_pasajeros()
+{
 
 
+	for (int i = 0; i < 10; i++)
+	{
+
+		cColectivo_viejo*v = dynamic_cast<cColectivo_viejo*>(lista_colectivos[i]);
+		cAcordeon*c = dynamic_cast<cAcordeon*>(lista_colectivos[i]);
+		cColectivo_nuevo*n = dynamic_cast<cColectivo_nuevo*>(lista_colectivos[i]);
+		
+	
+		{	if(c!=NULL)
+			c->Subir_Personas();
+			cout << "Se permiten subir pasajeros con sillas de ruedas en el colectivo acordeon" << endl;
+
+		}
+
+		
+		if (n != NULL)
+
+		{
+			n->Subir_Personas();
+			cout << "Se permiten subir pasajeros con sillas de ruedas en el colectivo tipo nuevo" << endl;
+		}
+
+		else
+		{	
+			v->Subir_Personas();
+			cout << "El colectivo viejo no permite subir pasajeron con sillas de ruedas " << endl;
+		}
+
+	}
+	
+
+
+
+
+
+
+
+}
 cSistema_Rutatlantica::~cSistema_Rutatlantica()
 {
 	for (int i = 0; i < N; i++)

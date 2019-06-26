@@ -43,7 +43,7 @@ void cAcordeon::SistemaGPS()
 }
 
 
-void cAcordeon::Subir_Personas(/*cColectivo*colectivo*/)
+void cAcordeon::Subir_Personas()
 {
 	int ca = 0;
 

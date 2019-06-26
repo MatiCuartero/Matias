@@ -75,7 +75,7 @@ public:
 	int total_cant_Personas();
 	void setRamales();
 	string getParada();
-	
+	void  subir_pasajeros();
 	~cSistema_Rutatlantica();
 	////AGREGAR UML//
 	void agregar_colectivos();//llenamos las listas con los colectivos

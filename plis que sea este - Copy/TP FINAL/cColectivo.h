@@ -34,7 +34,7 @@ public:
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
-	 virtual int Subir_Personas()=0;
+	virtual void Subir_Personas()=0;
 	bool Verificar_Capacidad();
 	void Abrir_Puerta();
 	virtual ~cColectivo();

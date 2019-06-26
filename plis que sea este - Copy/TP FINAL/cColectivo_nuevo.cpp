@@ -17,33 +17,8 @@ cColectivo_nuevo::cColectivo_nuevo(const string _codigo, bool _estado, cRamal * 
 
 }
 
-void cColectivo_nuevo::Subir_Personas(/*cColectivo*colectivo[10]*/)
+void cColectivo_nuevo::Subir_Personas()
 {
-	/*for (int i = 0; i < 10; i++)
-	{
-		cAcordeon*a = dynamic_cast <cAcordeon*>(colectivo[i]);
-		if (a != NULL)
-		{
-			a->lista_personas->AgregarItem(Parada_Actual->lista_personas->QuitarItem(i))
-			cout <<"Se permiten personas con sillas de ruedas en el colectivo tipo :ACORDEON" << endl;
-			cout << "En el colectivo N°:" <<i<< "Codigo:" << colectivo[i]->get_codigo() << endl;
-		}
-
-
-		cColectivo_nuevo*n = dynamic_cast<cColectivo_nuevo*>(colectivo[i]);
-		if (n != NULL)
-		{	
-			n->lista_personas->AgregarItem(Parada_Actual->Lista_personas->QuitarItem(i)
-			cout << "Se permiten personas con sillas de ruedas en el colectivo de tipo: COLECTIVO NUEVO " << endl;
-			cout << "En el colectivo N°:" << i << "Codigo:" << colectivo[i]->get_codigo() << endl;
-		}
-
-		else
-
-			cout << "El COLECTIVO VIEJO no permite personas con silas de ruedas" << endl;
-			cout << "En el colectivo N°:" << i << "Codigo:" << colectivo[i]->get_codigo() << endl;
-
-	}*/
 	int ca = 0;
 
 	for (int i = 0; i < 5; i++)
