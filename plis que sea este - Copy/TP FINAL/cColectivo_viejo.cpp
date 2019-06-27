@@ -5,6 +5,8 @@
 cColectivo_viejo::cColectivo_viejo()
 {
 	ramal = new cRamal();
+	CA = 0;
+	CAPMAX = L;
 }
 
 cColectivo_viejo::cColectivo_viejo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo(_codigo,_estado,ramal)
@@ -14,6 +16,63 @@ cColectivo_viejo::cColectivo_viejo(const string _codigo, bool _estado, cRamal * 
 
 }
 
+void cColectivo_viejo::Asignar_Nuevo_Ramal()
+{
+	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
+	{
+		int y = rand() % 2 - 3;
+		if (y == 2)
+			ramal = ramal2;
+		else
+			ramal = ramal3;
+	}
+
+	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista[4]->getCodigo())
+	{
+		ramal = ramal1;
+	}
+
+	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista[4]->getCodigo())
+	{
+		ramal = ramal1;
+	}
+}
+
+
+void cColectivo_viejo::SistemaGPS()
+{
+	int ca = 0;
+	clock_t comienzo;
+	double duracion;
+	double tiempoEspera=5.5;
+
+
+	comienzo = clock();
+	duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
+
+	while (tiempoEspera > duracion) {
+		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;	
+{
+	
+	if (ramal->getNombre() == "Ramal1")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
+
+	if (ramal->getNombre() == "Ramal2")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
+
+	if (ramal->getNombre() == "Ramal3")
+	{
+		Parada_Actual = ramal->getLista[ca];
+	}
+
+	
+	ca++;
+
+}
 
 void cColectivo_viejo::Subir_Personas()
 {
@@ -49,8 +108,10 @@ void cColectivo_viejo::Subir_Personas()
 
 }
 
-bool cColectivo_viejo::Verificar_Capacidad()
+bool cColectivo_viejo::Verificar_Capacidad()//para verificar necesito las personas que ya estan en el colectivo para comparar con mi capacidad maxima dependiendo del tipo
 {
+	for(int i =0;i<   ,i++)
+
 	if (CA < CAPMAX)
 
 		return true;
@@ -62,6 +123,8 @@ bool cColectivo_viejo::Verificar_Capacidad()
 cColectivo_viejo::~cColectivo_viejo()
 {
 	cout << "destruyendo colectivo viejo" << endl;
+	delete ramal;
+	delete Lista_Personas;
 }
 
 void cColectivo_viejo::imprimir_info()
@@ -73,11 +136,7 @@ void cColectivo_viejo::imprimir_info()
 
 }
 
-void cColectivo_viejo::set_CAPMAX(int capacidad)
-{
-	capacidad = 20;
-	CAPMAX = capacidad;
-}
+
 
 int cColectivo_viejo::get_CAPMAX()
 {

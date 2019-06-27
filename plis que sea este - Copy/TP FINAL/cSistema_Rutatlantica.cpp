@@ -40,8 +40,6 @@ void cSistema_Rutatlantica::agregar_colectivos()
 	lista_colectivos->AgregarItem(colectivo9 = new cAcordeon("AS-FE-22", true, ramal3, true, true));
 	lista_colectivos->AgregarItem(colectivo10 = new cAcordeon("AL-FD-55", true, ramal2, true, true));
 
-	/*colectivo1 = new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true);
-	lista_colectivos->AgregarItem(colectivo1);*/
 
 }
 
@@ -98,6 +96,7 @@ void cSistema_Rutatlantica::TICK_Estado()
 			}
 		}
 		//hacer para la lista entera de colectivos
+
 		colectivo->Abrir_Puerta();
 		colectivo->Asignar_Nuevo_Ramal(ramal1, ramal2, ramal3);
 		colectivo->Bajar_Personas();
@@ -220,19 +219,6 @@ cSistema_Rutatlantica::~cSistema_Rutatlantica()
 }
 
 
-/*sobrecarga del cout y cin
-cColectivo
-
-
-
-
-
-
-
-
-
-
-*/
 
 
 

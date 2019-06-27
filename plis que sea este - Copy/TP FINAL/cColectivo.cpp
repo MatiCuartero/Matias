@@ -101,10 +101,7 @@ void cColectivo::SistemaGPS()
 
 
 
-int cColectivo::Subir_Personas()
-{
-	
-}
+
 
 
 bool cColectivo::Verificar_Capacidad()
@@ -112,11 +109,7 @@ bool cColectivo::Verificar_Capacidad()
 
 	if (CA < CAPMAX)
 	{
-
-
-	
-
-
+		return true;
 	}
 
 
@@ -127,9 +120,11 @@ bool cColectivo::Verificar_Capacidad()
 
 
 }
-cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
+ virtual cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 {
 	cout << "destruyendo colectivo" << endl;
+	delete Parada_Actual;
+		delete Lista_Personas;
 }
 
 
@@ -139,6 +134,5 @@ int cColectivo::get_CAPMAX()
 	return CAPMAX;
 }
 
-///SOLO USAR EL COUT PARA SOBRECARGA
-//CONST T   (CONST INT Y)
 
+}

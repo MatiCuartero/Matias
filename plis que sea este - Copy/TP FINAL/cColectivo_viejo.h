@@ -5,12 +5,13 @@
 #include "cRamal.h"
 using namespace std;
 
-
+#define L 35 
 class cColectivo_viejo : public cColectivo
 {
 
 protected:
-
+	int CA;
+	int CAPMAX;
 	bool aire;
 	bool direccion_hidraulica;
 	cRamal *ramal;
@@ -19,7 +20,7 @@ protected:
 public:
 	cColectivo_viejo();
 	cColectivo_viejo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
-	void Abrir_Puerta();
+	/*void Abrir_Puerta();*/
 	void Asignar_Nuevo_Ramal();
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
@@ -29,7 +30,7 @@ public:
 	~cColectivo_viejo();
 	///Agrgar al uml///
 	void imprimir_info();
-	void set_CAPMAX(int capacidad);
 	int get_CAPMAX();
 
 };
+

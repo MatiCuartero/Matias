@@ -3,7 +3,8 @@
 
 cAcordeon::cAcordeon()
 {
-
+	CA = 0;
+	CAPMAX = D;
 }
 
 cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo,_estado,ramal,_aire,_direccion)
@@ -12,10 +13,6 @@ cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _a
 }
 
 
-void cAcordeon::Abrir_Puerta()
-{
-	
-}
 
 
 void cAcordeon::Asignar_Nuevo_Ramal()
@@ -40,6 +37,7 @@ double cAcordeon::Cobrar_Boleto(string destino)
 void cAcordeon::SistemaGPS()
 {
 
+	
 }
 
 
@@ -47,7 +45,7 @@ void cAcordeon::Subir_Personas()
 {
 	int ca = 0;
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 5; i++)//no son 10
 	{
 
 		for (int j = 0; j < M; j++)
@@ -86,11 +84,6 @@ bool cAcordeon::Verificar_Capacidad()
 		return false;
 }
 
-void cAcordeon::set_CAPMAX(int capacidad)
-{	
-	CAPMAX = capacidad;
-
-}
 
 int cAcordeon::get_CAPMAX()
 {

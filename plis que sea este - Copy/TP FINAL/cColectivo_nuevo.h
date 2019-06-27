@@ -22,7 +22,7 @@ protected:
 public:
 	cColectivo_nuevo();
 	cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal,bool _aire,bool _direccion);
-	void Abrir_Puerta();
+	/*void Abrir_Puerta();*/
 	void Asignar_Nuevo_Ramal();
 	int Bajar_Personas();
 	double Cobrar_Boleto(string l);
@@ -30,11 +30,14 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	void imprimir_info();
-	void set_CAPMAX(int capacidad);
+
 	/*void set_CAPMAX(int capacidad);*/
 	int get_CAPMAX();
 	string get_codigo() const;
+
+	 friend ostream& operator<<(ostream& o, cColectivo_nuevo& colec);
 	~cColectivo_nuevo();
 
 
 };
+ostream& operator<<(ostream& o, cColectivo_nuevo& colec);

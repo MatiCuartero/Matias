@@ -18,7 +18,7 @@ protected:
 	const string codigo;
 	bool Estado;//true si esta andando false si no
 	cListaT<class cPersonas>*lista_persona;
-	double precio;
+	/*double precio;*/
 	cRamal *ramal;
 	cPersona**Lista_Personas;
 	cParada *Parada_Actual;
@@ -31,24 +31,24 @@ public:
 	/*void Abrir_Puerta();*/
 
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
-	int Bajar_Personas();
+	void Bajar_Personas();
 	double Cobrar_Boleto(string l);
 	void SistemaGPS();
 	virtual void Subir_Personas()=0;
-	bool Verificar_Capacidad();
-	void Abrir_Puerta();
+	bool Verificar_Capacidad();//verifica que la capacidad actual no sobrepase la capacidad maxima
+	virtual void Abrir_Puerta()=0;//abrir puerta va a ser un metodo polimorfico que se redefine en las clases hijas dependiendo del colectivo
+	//suben o no las personas con sillas de ruedas
 	virtual ~cColectivo();
 	virtual void set_CAPMAX(int capacidad)=0;
 	int get_CAPMAX();
 	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico
 
-	friend ostream& operator<<(ostream& o, cColectivo& colec); 
 
 };
-///hacer sobrecarga del cout y del cin
 
-ostream& operator<<(ostream& o, cColectivo& colec);
+
+
 
 
 //colectivo->lista_personas->agregarItem(paradaActual->lista_personas->QuitarItem(i))
