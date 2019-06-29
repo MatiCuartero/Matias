@@ -1,0 +1,406 @@
+﻿  cAcordeon.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(11): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(23): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\cparada.h(6): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(53): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(53): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(55): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(55): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(66): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(66): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(68): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\cacordeon.cpp(68): error C2109: el subíndice requiere una matriz o tipo de puntero
+  cColectivo.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(12): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(25): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(11): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(23): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cacordeon.h(17): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cparada.h(6): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(53): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(53): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(77): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(77): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(82): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(82): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(87): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(87): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(106): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(106): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(111): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(111): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(116): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(116): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo.cpp(142): error C2723: 'cColectivo::~cColectivo': el especificador 'virtual' no es válido en la definición de función
+  cColectivo_nuevo.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(11): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(23): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cacordeon.h(9): error C2504: 'cColectivo_nuevo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\cacordeon.h(17): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\cparada.h(6): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(25): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(25): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(30): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(30): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(35): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(35): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(54): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(54): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(59): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(59): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(64): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(64): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(78): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(78): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(80): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(80): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(91): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(91): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(93): error C3867: 'cParada::getListaPersonas': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.cpp(93): error C2109: el subíndice requiere una matriz o tipo de puntero
+  cColectivo_viejo.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(12): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(25): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cacordeon.h(17): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cparada.h(6): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(21): error C2065: 'ramal1': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(25): error C2065: 'ramal2': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(27): error C2065: 'ramal3': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(30): error C2065: 'ramal2': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(32): error C2065: 'ramal1': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(35): error C2065: 'ramal3': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(37): error C2065: 'ramal1': identificador no declarado
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(59): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(59): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(64): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(64): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(69): error C3867: 'cRamal::getLista': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(69): error C2109: el subíndice requiere una matriz o tipo de puntero
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(78): error C2601: 'cColectivo_viejo::Subir_Personas': las definiciones de funciones locales no son válidas
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(53): note: esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(112): error C2601: 'cColectivo_viejo::Verificar_Capacidad': las definiciones de funciones locales no son válidas
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(53): note: esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(125): error C2059: error de sintaxis: ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(131): error C2601: 'cColectivo_viejo::imprimir_info': las definiciones de funciones locales no son válidas
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(53): note: esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(142): error C2601: 'cColectivo_viejo::get_CAPMAX': las definiciones de funciones locales no son válidas
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(53): note: esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.cpp(53): fatal error C1075: "{": no se encontró ningún token coincidente
+  cParada.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\cramal.h(13): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(13): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(13): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(14): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(14): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(14): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(15): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(15): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(15): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(16): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(16): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(16): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(17): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(17): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(17): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(19): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(19): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(19): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(20): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(20): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(20): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(21): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(21): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(21): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(23): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(23): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(23): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(29): error C2061: error de sintaxis: identificador 'cParada'
+c:\users\merlina\source\repos\project34\project34\cramal.h(31): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(31): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(31): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\cramal.h(5): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(12): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+  cParadas.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\cramal.h(13): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(13): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(13): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(14): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(14): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(14): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(15): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(15): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(15): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(16): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(16): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(16): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(17): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(17): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(17): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(19): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(19): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(19): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(20): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(20): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(20): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(21): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(21): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(21): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(23): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(23): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(23): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\cramal.h(29): error C2061: error de sintaxis: identificador 'cParada'
+c:\users\merlina\source\repos\project34\project34\cramal.h(31): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\cramal.h(31): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\cramal.h(31): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\cramal.h(5): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(12): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\cparadas.h(6): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(12): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(6): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(6): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(7): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(7): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(8): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(8): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(9): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(9): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(10): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(10): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(11): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(11): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(12): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(12): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(13): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(13): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(14): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(14): note: No existe un contexto en el que sea posible realizar esta conversión
+c:\users\merlina\source\repos\project34\project34\cparadas.cpp(15): error C2664: 'cParada::cParada(const cParada &)': el argumento 1 no puede convertirse de 'const char [1]' a 'int'
+  c:\users\merlina\source\repos\project34\project34\cparadas.cpp(15): note: No existe un contexto en el que sea posible realizar esta conversión
+  cPersona.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\cpersona.cpp(41): error C2374: 'cont_codigo': nueva definición; inicialización múltiple
+  c:\users\merlina\source\repos\project34\project34\cpersona.cpp(13): note: vea la declaración de 'cont_codigo'
+  cRamal.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(23): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(23): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(23): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(25): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(31): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(34): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(25): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(23): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cacordeon.h(17): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cparada.h(6): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2238: símbolos (token) inesperados delante de ';'
+  cSistema_Rutatlantica.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\cparada.h(6): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(12): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(32): error C2259: 'cColectivo_nuevo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(32): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(32): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(32): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(33): error C2259: 'cColectivo_nuevo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(33): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(33): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(33): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(34): error C2259: 'cColectivo_nuevo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(34): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(34): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(34): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(34): error C2143: error de sintaxis: falta ')' delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(35): error C2259: 'cColectivo_viejo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(35): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(35): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(35): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(36): error C2259: 'cColectivo_viejo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(36): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(36): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(36): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(37): error C2259: 'cColectivo_viejo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(37): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(37): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(37): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(38): error C2259: 'cColectivo_viejo': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(38): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(38): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(38): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(39): error C2259: 'cAcordeon': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(39): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(39): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(39): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(40): error C2259: 'cAcordeon': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(40): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(40): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(40): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(41): error C2259: 'cAcordeon': no se puede crear una instancia de una clase abstract
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(41): note: debido a los siguientes miembros:
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(41): note: 'void cColectivo::Abrir_Puerta(void)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(40): note: vea la declaración de 'cColectivo::Abrir_Puerta'
+  c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(41): note: 'void cColectivo::set_CAPMAX(int)': es abstracto
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(43): note: vea la declaración de 'cColectivo::set_CAPMAX'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(104): error C2660: 'cColectivo::Cobrar_Boleto': la función no acepta 1 argumentos
+  c:\users\merlina\source\repos\project34\project34\ccolectivo.h(36): note: vea la declaración de 'cColectivo::Cobrar_Boleto'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.cpp(172): error C2682: no se puede utilizar 'dynamic_cast' para convertir de 'cListaT<cColectivo>' en 'cColectivo_nuevo *'
+  main.cpp
+c:\users\merlina\source\repos\project34\project34\clistat.h(218): error C3861: 'lista': no se encontró el identificador
+c:\users\merlina\source\repos\project34\project34\cpersona.h(35): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(12): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(17): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(25): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(11): error C2504: 'cColectivo': clase base sin definir
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(18): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\ccolectivo_viejo.h(23): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cacordeon.h(17): error C2061: error de sintaxis: identificador 'cRamal'
+c:\users\merlina\source\repos\project34\project34\cparada.h(6): warning C4005: 'N': redefinición de macro
+  c:\users\merlina\source\repos\project34\project34\ccolectivo_nuevo.h(8): note: vea la definición anterior de 'N'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(26): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(27): error C2238: símbolos (token) inesperados delante de ';'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\merlina\source\repos\project34\project34\csistema_rutatlantica.h(28): error C2238: símbolos (token) inesperados delante de ';'
+  Generando código...
