@@ -11,26 +11,13 @@ cParada::cParada() : nombre("")
 {
 	codigo_identificativo = 0;
 	direccion = "";
-	ListaPersonas = new cPersona[N];
-	ListaPersonas = NULL;
+	persona = new cListaT<cPersona>();
 }
 
 void cParada::Llenar_Listas(cPersona *persona)
 {
-	int TAM = N;
-
-	int ca = 0;
-
-	if (ca < TAM)
-	{
-		ListaPersonas[ca++] = *persona;
-	}
+	this->persona->AgregarItem(persona);
 }
-
-/*cParada cParada::getListaParadas() 
-{
-	return *ListaParadas;
-}*/
 
 
 cParada::~cParada()

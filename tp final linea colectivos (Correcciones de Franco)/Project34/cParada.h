@@ -15,16 +15,15 @@ protected:
 	int codigo_identificativo;
 	const string nombre;
 	string direccion;
-	cPersona *ListaPersonas;
+	cListaT<cPersona>*persona;
 
-	 
+
 public:
 
 	cParada();
 	cParada(int _cod, string _dir, string _nom);
 	int getCodigo() { return codigo_identificativo; }
 	string getNombre() { return nombre; }
-	//15 de 15 paradas.
 	void Llenar_Listas(cPersona *persona);
 	cPersona getListaPersonas();
 	~cParada();

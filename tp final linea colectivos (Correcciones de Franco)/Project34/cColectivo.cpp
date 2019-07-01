@@ -1,5 +1,5 @@
-
 #include "cColectivo.h"
+#include <ctime>
 
 cColectivo::cColectivo()
 {
@@ -9,7 +9,7 @@ cColectivo::cColectivo()
 	ramal = new cRamal();
 	Estado = true;
 	Parada_Actual = new cParada();
-	*Lista_Personas = new cPersona();
+	ListaPersona = new cListaT<cPersona>();
 }
 
 cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codigo(_codigo)
@@ -67,8 +67,8 @@ double cColectivo::Cobrar_Boleto()
 		}
 
 		*/
-		ramal->getLista()[i]->getListaPersonas[i];
-
+		//ramal->getLista()[i]->getListaPersonas[i];
+		
 		for (int j = 0; j < M; j++);
 		{
 			Parada_Actual->getNombre();
@@ -88,20 +88,19 @@ double cColectivo::Cobrar_Boleto()
 void cColectivo::SistemaGPS()
 {
 	//tengo que comparar segun que ramal tenga(1, 2, 3) y hacer que este en la primer parada de ese ramal y actualizarlo cada 5 min.
-	int ca = 0;
 	if (ramal->getNombre() == "Ramal1")
 	{
-		Parada_Actual = ramal->getLista[ca];
+		Parada_Actual = ramal->getLista()->getItem(1);
 	}
 
 	if (ramal->getNombre() == "Ramal2")
 	{
-		Parada_Actual = ramal->getLista[ca];
+		Parada_Actual = ramal->getLista()->getItem(9);
 	}
 
 	if (ramal->getNombre() == "Ramal3")
 	{
-		Parada_Actual = ramal->getLista[ca];
+		Parada_Actual = ramal->getLista()->getItem(9);
 	}
 
 	clock_t comienzo;
@@ -117,20 +116,37 @@ void cColectivo::SistemaGPS()
 		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
 	}
 
-	ca++;
+
+	//Asigno nueva parada Segun Ramal:
+	
+	//Para Ramal1
 	if (ramal->getNombre() == "Ramal1")
 	{
-		Parada_Actual = ramal->getLista[ca];
+		for (int i = 3; i <=N;i++)
+		{
+			if (ramal->getLista()->getItem(i)->getCodigo() == i)
+				Parada_Actual = ramal->getLista()->getItem(i);
+		}
 	}
-
+	
+	//Para Ramal2
 	if (ramal->getNombre() == "Ramal2")
 	{
-		Parada_Actual = ramal->getLista[ca];
+		for (int i = 8; i >= 1; i++)
+		{
+			if (ramal->getLista()->getItem(i)->getCodigo() == i)
+				Parada_Actual = ramal->getLista()->getItem(i);
+		}
 	}
 
+	//Para Ramal3
 	if (ramal->getNombre() == "Ramal3")
 	{
-		Parada_Actual = ramal->getLista[ca];
+		for (int i = 7; i >= 1; i++)
+		{
+			if (ramal->getLista()->getItem(i)->getCodigo() == i)
+				Parada_Actual = ramal->getLista()->getItem(i);
+		}
 	}
 }
 
@@ -158,8 +174,8 @@ bool cColectivo::Verificar_Capacidad()
  virtual cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
 {
 	cout << "destruyendo colectivo" << endl;
-	delete Parada_Actual;
-		delete Lista_Personas;
+	delete[] Parada_Actual;
+		//delete Lista_Personas;
 }
 
 

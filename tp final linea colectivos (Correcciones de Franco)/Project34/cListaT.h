@@ -17,7 +17,7 @@ public:
 	cListaT(unsigned int TAM = NMAX);
 	~cListaT();
 
-	bool AgregarItem(T *item);
+	bool operator +(T *item);
 	bool AgregarItemOrdenado(const T *item);
 
 	T* Quitar(string clave);
@@ -95,7 +95,7 @@ void cListaT<T>::Listar()
 }
 
 template<class T>
-bool cListaT<T>::AgregarItem(T * item)
+bool cListaT<T>::operator+(T * item)
 {
 
 	T *i_f = BuscarItem(item->getclave());
@@ -212,5 +212,5 @@ unsigned int cListaT<T>::getItemPos(string clave)
 template<class T>
 T * cListaT<T>::operator[](int pos)
 {
-		return lista->getItem(pos);
+	return lista->getItem(pos);
 }

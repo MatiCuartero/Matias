@@ -29,28 +29,30 @@ protected:
 	//////PARADAS//////
 	cParada *parada;
 
-	cParada *parada1;
+	//Cree las paradas directamente adentro de la lista template de personas como habia dicho franco.
+	/*cParada *parada1;
 	cParada *parada2;
 	cParada *parada3;
 	cParada *parada4;
 	cParada *parada5;
 	cParada *parada6;
 	cParada *parada7;
-	cParada *parada8;
+	cParada *parada8;*/
 	cParada *parada9;
 
 	/////////////////////////////////////////
 	cPersona*persona;
 	cListaT <class cPersona> *ListaPersona;
+	cListaT <cParada>*ListaParadas;
 
 	//Fijarse inicializacion, porque lo hago en una funcion, no como dice la teoria
-	static cParada **ListaParadas;
+	//static cParada **ListaParadas;
 	//static int contTICKS;
 
 	//////////////COLECTIVOS/////////
 	cListaT<class cColectivo>*lista_colectivos;
 
-	cColectivo*colectivo1;
+	/*cColectivo*colectivo1;
 	cColectivo*colectivo2;
 	cColectivo*colectivo3;
 	cColectivo*colectivo4;
@@ -59,7 +61,7 @@ protected:
 	cColectivo*colectivo7;
 	cColectivo*colectivo8;
 	cColectivo*colectivo9;
-	cColectivo*colectivo10;
+	cColectivo*colectivo10;*/
 
 	cColectivo*colectivo;
 
@@ -70,7 +72,7 @@ public:
 	int cant_Personas();
 	double monto_porColectivo();
 	void TICK_Estado();
-	void TICK_GPS();
+	//void TICK_GPS();
 	double total_cant_monto();
 	int total_cant_Personas();
 	void setRamales();
@@ -79,6 +81,6 @@ public:
 	~cSistema_Rutatlantica();
 	////AGREGAR UML//
 	void agregar_colectivos();//llenamos las listas con los colectivos
-	void agregar_personas();//lenamos las listas con las personas
+	void agregar_paradas();//lenamos las listas con las personas
 };
 

@@ -4,7 +4,6 @@
 #include "cPersona.h"
 #include "cListaT.h"
 #include "cRamal.h"
-#include <ctime>
 using namespace std;
 #define M 20
 
@@ -14,14 +13,14 @@ class cColectivo
 {
 
 protected:
+
 	int CAPMAX;//cap maxima de personas que pueden estar
 	int CA;//capacidad actual, cantidad de persona que van a estar en el colectvio
 	const string codigo;
 	bool Estado;//true si esta andando false si no
-	cListaT<class cPersonas>*lista_persona;
+	cListaT<cPersona>*ListaPersona;
 	/*double precio;*/
 	cRamal *ramal;
-	cPersona**Lista_Personas;
 	cParada *Parada_Actual;
 	cSistema_Rutatlantica*sistema;
 
@@ -42,6 +41,7 @@ public:
 	virtual ~cColectivo();
 	virtual void set_CAPMAX(int capacidad)=0;
 	int get_CAPMAX();
+	cParada* getParada_Actual() { return Parada_Actual; }
 	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico
 
