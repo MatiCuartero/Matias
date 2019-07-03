@@ -15,7 +15,7 @@ protected:
 	int codigo_identificativo;
 	const string nombre;
 	string direccion;
-	cListaT<cPersona>*persona;
+	cListaT<cPersona>* ListaPersonas;
 
 
 public:
@@ -25,7 +25,7 @@ public:
 	int getCodigo() { return codigo_identificativo; }
 	string getNombre() { return nombre; }
 	void Llenar_Listas(cPersona *persona);
-	cPersona getListaPersonas();
+	cListaT<cPersona> *getListaPersonas() { return ListaPersonas; }
 	~cParada();
 };
 

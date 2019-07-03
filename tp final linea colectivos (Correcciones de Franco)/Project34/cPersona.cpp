@@ -6,24 +6,17 @@
 cPersona::cPersona():codigo(cont_codigo)
 {
 	cont_codigo++;
-	parada = "";
+	destino = "";
 	silla_ruedas = true;
 }
 
 int cPersona::cont_codigo = 1;
 
-cPersona::cPersona(string parada, bool silla_ruedas):codigo(cont_codigo)
+cPersona::cPersona(string destino, bool silla_ruedas):codigo(cont_codigo)
 {
 	cont_codigo++;
-	this->parada = parada;
+	this->destino = destino;
 	this->silla_ruedas = silla_ruedas;
-}
-
-
-string cPersona::get_Parada()
-{
-
-	return  NULL;
 }
 
 

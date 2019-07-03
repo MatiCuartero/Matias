@@ -17,22 +17,25 @@ public:
 	cListaT(unsigned int TAM = NMAX);
 	~cListaT();
 
+	//Operator+ Agrega items a la lista.
 	bool operator +(T *item);
 	bool AgregarItemOrdenado(const T *item);
 
-	T* Quitar(string clave);
+	//Operator-- Quita elementos de la la lista segun su codigo.
+	T* operator--(int clave);
 	T* Quitar(const T *item);
 	T* QuitarenPos(unsigned int pos);
 
-	void Eliminar(string clave);
+	//Operator- Elimina elementos de la lista.
+	void operator-(int clave);
 	void Eliminar(const T *item);
 	void Eliminar(unsigned int pos);
 
 	void Listar();
-	T* BuscarItem(string clave);
+	T* BuscarItem(int clave);
 	T* getItem(unsigned int pos);
 
-	unsigned int getItemPos(string clave);
+	unsigned int getItemPos(int clave);
 	T* operator[](int pos);
 
 	unsigned int getCA();
@@ -119,7 +122,7 @@ bool cListaT<T>::AgregarItemOrdenado(const T * item)
 	return false;
 }
 template<class T>
-T* cListaT<T>::Quitar(string clave) {
+T* cListaT<T>::operator--(int clave) {
 
 	unsigned int pos = getItemPos(clave);
 	if (pos >= CA)return NULL;
@@ -151,7 +154,7 @@ T* cListaT<T>::QuitarenPos(unsigned int pos) {
 
 
 template<class T>
-void cListaT<T>::Eliminar(string clave) {
+void cListaT<T>::operator-(int clave) {
 
 	unsigned int pos = getItemPos(clave);
 
@@ -180,7 +183,7 @@ void cListaT<T>::Eliminar(unsigned int pos) {
 }
 
 template<class T>
-T* cListaT<T>::BuscarItem(string clave)
+T* cListaT<T>::BuscarItem(int clave)
 {
 	for (unsigned int i = 0; i < CA; i++)
 	{
@@ -198,7 +201,7 @@ T* cListaT<T>::getItem(unsigned int pos)
 	else return NULL;
 }
 template<class T>
-unsigned int cListaT<T>::getItemPos(string clave)
+unsigned int cListaT<T>::getItemPos(int clave)
 {
 	for (unsigned int i = 0; i < CA; i++)
 	{

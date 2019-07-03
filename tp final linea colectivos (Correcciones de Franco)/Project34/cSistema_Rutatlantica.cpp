@@ -132,7 +132,6 @@ void cSistema_Rutatlantica::TICK_Estado()
 
 
 
-
 	/*for (int i = 1; i <= N; i++)
 	{
 		if (ramal1->getLista()->getItem(i)->getCodigo == i)

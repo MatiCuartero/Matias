@@ -11,24 +11,24 @@ class cPersona
 
 protected:
 	int codigo;
-	string parada;
+	string destino;
 	bool silla_ruedas;
 	static int cont_codigo;
 	cListaT<class cPersona> *persona;
 
 public:
 	cPersona();
+	//agregar al uml 
 	//Llamo al construcotr de personas una vez que pasen los ticks desde la clase sistema con los random.
 	cPersona(string parada, bool silla_ruedas);
-	string get_Parada();
+	string getDestino() { return destino; }
+	int getCodigo() { return codigo; }
 	void set_Parada(string l);
 	string Prioridad_Indicador(bool l);
 	static int getCont_Codigo();/*agregar al uml*/
 	bool getSilla_ruedas() { return silla_ruedas; }
 	~cPersona();
-	//agregar al uml 
-	int get_contador();
-
+	
 };
 
 //if(paradaactual->getNombre()==ramal->getListaParadas()->getNombre)

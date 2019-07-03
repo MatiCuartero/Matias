@@ -17,13 +17,30 @@ cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _a
 
 void cAcordeon::Asignar_Nuevo_Ramal()
 {
+	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem(9)->getCodigo())
+	{
+		int y = rand() % 2 - 3;
+		if (y == 2)
+			ramal = ramal2;
+		else
+			ramal = ramal3;
+	}
 
+	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()->getItem(1)->getCodigo())
+	{
+		ramal = ramal1;
+	}
+
+	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()->getItem(1)->getCodigo())
+	{
+		ramal = ramal1;
+	}
 }
 
 
 int cAcordeon::Bajar_Personas()
 {
-
+	
 }
 
 

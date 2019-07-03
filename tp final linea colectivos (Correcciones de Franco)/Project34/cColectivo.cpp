@@ -20,7 +20,7 @@ cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codi
 
 void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()[4]->getCodigo())
+	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem(9)->getCodigo())
 	{
 		int y = rand() % 2 - 3;
 		if (y == 2)
@@ -29,60 +29,59 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 			ramal = ramal3;
 	}
 
-	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()[4]->getCodigo()) 
+	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()->getItem(1)->getCodigo()) 
 	{
 		ramal = ramal1;
 	}
 
-	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()[4]->getCodigo())
+	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()->getItem(1)->getCodigo())
 	{
 		ramal = ramal1;
 	}
-
-	/*if (Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
-	{
-
-	}*/
 }
+
+void cColectivo::Bajar_Personas()
+{
+	for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
+	{
+		if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == Parada_Actual->getNombre())
+		{
+			Parada_Actual->getListaPersonas()->operator--(j);
+		}
+	}	
+}
+
 
 double cColectivo::Cobrar_Boleto()
 {
+	int posActual = 0, posDestino = 0, distancia = 0;
 
-	for (int i = 0; i < 5; i++)
-	{
-		/*int posActual = 0;
-		if (Parada_Actual->getCodigo() == ramal->getLista()->getItem(i)->getCodigo()) {
-
+	for (int i = 0; i < 9; i++)
+	{	
+		if (Parada_Actual->getCodigo() == ramal->getLista()->getItem(i)->getCodigo()) 
+		{
 			posActual = i;
-
 		}
-		int posDestino = 0;
-		if (pasajero->getNombreParadaDestino() == ramal->getLista()->getItem(i)->getNombre())
-		{
-
-			posDestino = i;
-
-			int distancia = posDestino - posActual;
-
-		}
-
-		*/
-		//ramal->getLista()[i]->getListaPersonas[i];
 		
-		for (int j = 0; j < M; j++);
+		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
 		{
-			Parada_Actual->getNombre();
-
-
-			//queremos cobrar el boleto segun la persona que esta en la parada actual hasta su destino
-			//entonces hacemos un contador si esta el destino de la persona en el ramal
-			//a tantos contadores, tanta plata. 
-
-
-			//no sabemos como hacer que nos sume 1 al contador desde la parada actual hasta la de destino.
+			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista()->getItem(i)->getNombre())
+			{
+				posDestino = j;
+				distancia = posDestino - posActual;
+			}
 		}
 	}
-	return 0.0;
+		
+
+	float precio;
+	//Calculo el precio Segun Cuantas parads tenga hsat el destino la persona:
+	if (distancia <= 3)
+		precio = distancia * 5.5;
+	else
+		precio = distancia * 7.5;
+	
+	return precio;
 }
 
 void cColectivo::SistemaGPS()
@@ -122,7 +121,7 @@ void cColectivo::SistemaGPS()
 	//Para Ramal1
 	if (ramal->getNombre() == "Ramal1")
 	{
-		for (int i = 3; i <=N;i++)
+		for (int i = 3; i <= N; i++)
 		{
 			if (ramal->getLista()->getItem(i)->getCodigo() == i)
 				Parada_Actual = ramal->getLista()->getItem(i);
@@ -149,9 +148,6 @@ void cColectivo::SistemaGPS()
 		}
 	}
 }
-
-
-
 
 
 

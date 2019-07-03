@@ -4,108 +4,72 @@ cColectivo_nuevo::cColectivo_nuevo()
 {
 	aire = true;
 	direccion_electrica = true;
-	ramal = new cRamal();
-	CA = 0;
-	CAPMAX = M;
-
+	CantidadPersonas = 0;
 }
 
 cColectivo_nuevo::cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal,bool _aire,bool _direccion):cColectivo(_codigo,_estado,ramal)
 {
 	aire =_aire;
 	direccion_electrica = _direccion;
+}
 
+void cColectivo_nuevo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
+{
+	Asignar_Nuevo_Ramal(ramal1, ramal2, ramal3);
+}
+
+void cColectivo_nuevo::Bajar_Personas()
+{
+	Bajar_Personas();
+}
+
+float cColectivo_nuevo::Cobrar_Boleto()
+{
+	return Cobrar_Boleto();
 }
 
 void cColectivo_nuevo::SistemaGPS()
 {
-	int ca = 0;
-	if (ramal->getNombre() == "Ramal1")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal2")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal3")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	clock_t comienzo;
-	double duracion;
-	double tiempoEspera;
-
-	cout << "Ingrese el tiempo que desea esperar: ";
-	cin >> tiempoEspera;
-	comienzo = clock();
-	duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
-
-	while (tiempoEspera > duracion) {
-		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
-	}
-
-	ca++;
-	if (ramal->getNombre() == "Ramal1")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal2")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal3")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
+	SistemaGPS();
 }
 
 void cColectivo_nuevo::Subir_Personas()
 {
-	int ca = 0;
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 9; i++)
 	{
-
-		for (int j = 0; j < M; j++)
+		for (int j = 0; j < Parada_Actual->getListaPersonas()->getCA(); j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista()->getItem(i)->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
 			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
+				ListaPersona->operator+(Parada_Actual->getListaPersonas()->operator--(Parada_Actual->getListaPersonas()->getItem(j)->getCodigo()));
+				//Una vez que quito las personas de la lista de personas de la parada y la asigno a la lista de personas del colectivo, Hace falta eliminarlas de la parada tambien??
+				//ListaPersona->operator+(Parada_Actual->getListaPersonas[j]->quitar(Parada_Actual->getListaPersonas->getCodigo()));
+				CantidadPersonas++;
 			}
 		}
 	}
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 9; i++)
 	{
 
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()->getItem(i)->getNombre())
 			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
+				//Lo mismo aca.
+				ListaPersona->operator+(Parada_Actual->getListaPersonas()->operator--(Parada_Actual->getListaPersonas()->getItem(j)->getCodigo()));
+				CantidadPersonas++;
 			}
 		}
 	}
 }
 
-
-
-//colectivo->lista_personas->agregarItem(paradaActual->lista_personas->QuitarItem(i))
 
 
 bool cColectivo_nuevo::Verificar_Capacidad()
 {
 	if (CA < CAPMAX)
-
 		return true;
 
 	else
@@ -119,15 +83,10 @@ void cColectivo_nuevo::imprimir_info()
 
 
 
-int cColectivo_nuevo::get_CAPMAX()
-{
-	return CAPMAX;
-}
-
-string cColectivo_nuevo::get_codigo() const
+/*string cColectivo_nuevo::get_codigo() const
 {
 	return codigo;
-}
+}*/
 
 cColectivo_nuevo::~cColectivo_nuevo()
 {

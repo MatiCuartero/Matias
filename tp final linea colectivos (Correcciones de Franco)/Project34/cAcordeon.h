@@ -10,9 +10,12 @@ class cAcordeon : public cColectivo_nuevo
 private:
 	int CA;
 	int CAPMAX;
-
+	bool aire;
+	bool direccion_electrica;
+	cRamal *ramal;
 
 public:
+
 	cAcordeon();
 	cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
 	/*void Abrir_Puerta();*/
