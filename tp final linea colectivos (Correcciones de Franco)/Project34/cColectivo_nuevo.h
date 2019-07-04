@@ -41,7 +41,7 @@ public:
 	string get_codigo() const { return codigo; }
 
 	friend ostream& operator<<(ostream& o, cColectivo_nuevo& colec);
-	~cColectivo_nuevo();
+	virtual ~cColectivo_nuevo();
 
 
 };

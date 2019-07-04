@@ -88,7 +88,7 @@ void cColectivo_nuevo::imprimir_info()
 	return codigo;
 }*/
 
-cColectivo_nuevo::~cColectivo_nuevo()
+ cColectivo_nuevo::~cColectivo_nuevo()
 {
 	cout << "destruyendo el colectivo nuevo" << endl;
 	delete ramal;

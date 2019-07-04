@@ -167,11 +167,9 @@ bool cColectivo::Verificar_Capacidad()
 
 
 }
- virtual cColectivo::~cColectivo()//hay que agregar el virtual al destructor?
+ cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
 {
-	cout << "destruyendo colectivo" << endl;
-	delete[] Parada_Actual;
-		//delete Lista_Personas;
+	
 }
 
 

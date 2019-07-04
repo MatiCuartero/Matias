@@ -1,30 +1,46 @@
 #include "cSistema_Rutatlantica.h"
 #include <ctime>
 
-
+/*
 cSistema_Rutatlantica::cSistema_Rutatlantica()
 {
-	/*parada1 = new cParada(1, "Salta y Rivadavia", "Constitucion"); 
-	parada2 = new cParada(2, "Junin y Av. Las Heras", "Recoleta");
-	parada3 = new cParada(3, "Plaza Italia", "Palermo");
-	parada4 = new cParada(4, "Av. Cabildo y Av. Juramento", "Cabildo y Juramento");
-	parada5 = new cParada(5, "Puente Saavedra", "Puente Saavedra");
-	parada6 = new cParada(6, "Panamericana y Laprida", "Panamericana y Laprida");
-	parada7 = new cParada(7, "Panamericana y Ugarte", "Panamericana y Ugarte");
-	parada8 = new cParada(8, "Fleming y Edison", "Fleming y Edison");*/
-	parada9 = new cParada(9, "Rolon y Marquez", "Boulonge Sur Mer");
-	
-
 	ListaParadas = new cListaT<cParada>(9);
 	ListaPersona = new cListaT<class cPersona>();
 	lista_colectivos = new cListaT<class cColectivo>();
 
-}
-
 //este metodo va a gregar a la lista_colectivos mis colectivos,nuevos,viejos y acordeon
+}
+*/
 void cSistema_Rutatlantica::agregar_colectivos()
 {
-	lista_colectivos->operator+(new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
+	int total_colectivos;
+	int cv,cn,ca;
+	cout << "Ingrese la cantidad de colectivos viejos:" << endl,
+	cin >> cv;
+	cout << "Ingrese la cantidad de colectivos nuevos: " << endl;
+	cin >> cn;
+	cout << "Ingrese la cantidad de colectivos Acordeon:" << endl;
+	cin >> ca;
+	
+	total_colectivos = ca + cv + cn;
+
+	for (int i = 0; i < total_colectivos; i++)
+	{
+		string tipo;
+		cout << "Ingrese el tipo de colectivo en minusculas:" << endl;
+		cin >> tipo;
+		
+		if (tipo == "colectivo nuevo")
+		{
+			cout ""
+
+		}
+		
+
+
+	}
+	
+	/*lista_colectivos->operator+(new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
 	lista_colectivos->operator+(new cColectivo_nuevo("AS-JT-77", true, ramal2, true, true));
 	lista_colectivos->operator+(new cColectivo_nuevo("AS-JY-33", true, ramal3, true, true);
 	lista_colectivos->operator+(new cColectivo_viejo("BB-GG-77", true, ramal2, false, false));
@@ -36,7 +52,7 @@ void cSistema_Rutatlantica::agregar_colectivos()
 	lista_colectivos->operator+(new cAcordeon("AL-FD-55", true, ramal2, true, true));
 }
 
-
+/*
 void cSistema_Rutatlantica::agregar_paradas()
 {
 	*ListaParadas+(new cParada(1, "Salta y Rivadavia", "Constitucion"));
@@ -57,7 +73,7 @@ void cSistema_Rutatlantica::agregar_paradas()
 
 
 //cada 1 minuto actualiza el estado de los objetos
-void cSistema_Rutatlantica::TICK_Estado() 
+void //cSistema_Rutatlantica::TICK_Estado() 
 {
 	int p = 0, r = 0;
 	int cont_silla_ruedas = 0;
@@ -258,7 +274,7 @@ void cSistema_Rutatlantica::TICK_Estado()
 		}*/
 		
 
-		//hacer para la lista entera de colectivos
+	/*/hacer para la lista entera de colectivos
 		colectivo->Abrir_Puerta();
 		colectivo->Asignar_Nuevo_Ramal(ramal1, ramal2, ramal3);
 		colectivo->Bajar_Personas();
@@ -297,7 +313,7 @@ void cSistema_Rutatlantica::TICK_Estado()
 
 
 //va a subir o no pasajeros con sillas de ruedas
-void cSistema_Rutatlantica::subir_pasajeros()
+/*void cSistema_Rutatlantica::subir_pasajeros()
 {
 
 	for (int i = 0; i < 10; i++)
