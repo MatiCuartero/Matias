@@ -1,10 +1,12 @@
 
 #include "cAcordeon.h"
+#include <stdlib.h>
 
 cAcordeon::cAcordeon()
 {
 	CA = 0;
 	CAPMAX = D;
+	ramal = new cRamal();
 }
 
 cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo,_estado,ramal,_aire,_direccion)
@@ -13,13 +15,11 @@ cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _a
 }
 
 
-
-
-void cAcordeon::Asignar_Nuevo_Ramal()
+void cAcordeon::Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2,cRamal *ramal3)
 {
 	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem(9)->getCodigo())
 	{
-		int y = rand() % 2 - 3;
+		int y = rand() % (2-3);
 		if (y == 2)
 			ramal = ramal2;
 		else
@@ -44,7 +44,7 @@ int cAcordeon::Bajar_Personas()
 }
 
 
-double cAcordeon::Cobrar_Boleto(string destino)
+double cAcordeon::Cobrar_Boleto()
 {
 
 
@@ -90,7 +90,7 @@ void cAcordeon::Subir_Personas()
 	
 }
 
-
+//agregar el try cath
 bool cAcordeon::Verificar_Capacidad()
 {
 	if (CA < CAPMAX)
@@ -111,7 +111,7 @@ int cAcordeon::get_CAPMAX()
 
 cAcordeon::~cAcordeon()
 {
-
+	ramal=NULL;
 }
 
 

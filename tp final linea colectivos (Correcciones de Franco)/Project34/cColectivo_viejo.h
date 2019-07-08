@@ -16,15 +16,15 @@ protected:
 	bool aire;
 	bool direccion_hidraulica;
 	cRamal *ramal;
-	cPersona**Lista_Personas;
+
 
 public:
 	cColectivo_viejo();
 	cColectivo_viejo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
 	/*void Abrir_Puerta();*/
-	void Asignar_Nuevo_Ramal();
+	void Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3);
 	int Bajar_Personas();
-	double Cobrar_Boleto(string l);
+	double Cobrar_Boleto();
 	void SistemaGPS();
 	void Subir_Personas();
 	bool Verificar_Capacidad();

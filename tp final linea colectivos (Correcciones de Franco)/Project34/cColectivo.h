@@ -28,23 +28,18 @@ protected:
 public:
 	cColectivo();
 	cColectivo(const string _codigo,bool _estado, cRamal *ramal);
-	/*void Abrir_Puerta();*/
-
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
 	void Bajar_Personas();
 	double Cobrar_Boleto();
 	void SistemaGPS();
 	virtual void Subir_Personas()=0;
 	bool Verificar_Capacidad();//verifica que la capacidad actual no sobrepase la capacidad maxima
-
 	virtual void Abrir_Puerta()=0;//abrir puerta va a ser un metodo polimorfico que se redefine en las clases hijas dependiendo del colectivo
 
 	//suben o no las personas con sillas de ruedas
-	virtual void set_CAPMAX(int capacidad)=0;
 	int get_CAPMAX();
 	cParada* getParada_Actual() { return Parada_Actual; }
 
-	////AGREGAR EN EL UML//////
 	virtual void imprimir_info() = 0;//metodo polimorfico
 	virtual ~cColectivo();
 

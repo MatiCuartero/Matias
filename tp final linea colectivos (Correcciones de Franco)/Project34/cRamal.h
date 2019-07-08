@@ -12,13 +12,13 @@ protected:
 	string nombre;
 	cListaT<cParada>*ListaParadas;
 
-
 public:
 
 	cRamal();
 	cRamal(string nombre, cParada *parada1, cParada *parada2, cParada *parada3, cParada *parada4, cParada *parada5);
 	string getNombre() { return nombre; }
-	cListaT<cParada>* getLista(){ return ListaParadas; }
+	cListaT<cParada>* getLista(){ return ListaParadas; }//que es esto????????????????? creo que esta mal 
 	~cRamal();
 };
+
 

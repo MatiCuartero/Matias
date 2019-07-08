@@ -16,7 +16,7 @@ cColectivo_viejo::cColectivo_viejo(const string _codigo, bool _estado, cRamal * 
 
 }
 
-void cColectivo_viejo::Asignar_Nuevo_Ramal()
+void cColectivo_viejo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
 	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
 	{
@@ -123,20 +123,16 @@ bool cColectivo_viejo::Verificar_Capacidad()//para verificar necesito las person
 cColectivo_viejo::~cColectivo_viejo()
 {
 	cout << "destruyendo colectivo viejo" << endl;
-	delete ramal;
-	delete Lista_Personas;
+	 ramal=NULL;
+	
+
 }
 
 void cColectivo_viejo::imprimir_info()
 {
-	cout << "Soy un colectivo viejo" << endl;
-	cout << "Si el colectivo tiene aire=1, si no =0" << endl;
-	cout << "Aire:" << aire << endl;
-	cout << "Direccion hidraulica:" << direccion_hidraulica << endl;
+	//////
 
 }
-
-
 
 int cColectivo_viejo::get_CAPMAX()
 {

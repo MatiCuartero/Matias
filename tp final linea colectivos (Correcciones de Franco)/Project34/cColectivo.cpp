@@ -1,11 +1,11 @@
 #include "cColectivo.h"
-#include <ctime>
+#include <time.h>
 
 cColectivo::cColectivo()
 {
 	CA = 0;
 	CAPMAX = 60;
-	//precio = 0;
+
 	ramal = new cRamal();
 	Estado = true;
 	Parada_Actual = new cParada();
@@ -18,9 +18,11 @@ cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codi
 	this->ramal = ramal;
 }
 
-void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
+void cColectivo::Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3)//podria ser asi
+//Asignar_Nuevo_Ramal (cRamal*ramal)
+
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem(9)->getCodigo())
+	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem[9]->getCodigo())
 	{
 		int y = rand() % 2 - 3;
 		if (y == 2)
@@ -29,12 +31,12 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 			ramal = ramal3;
 	}
 
-	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()->getItem(1)->getCodigo()) 
+	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()->getItem[1]->getCodigo()) 
 	{
 		ramal = ramal1;
 	}
 
-	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()->getItem(1)->getCodigo())
+	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()->getItem[1]->getCodigo())
 	{
 		ramal = ramal1;
 	}
@@ -44,9 +46,9 @@ void cColectivo::Bajar_Personas()
 {
 	for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
 	{
-		if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == Parada_Actual->getNombre())
+		if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == Parada_Actual->getNombre())
 		{
-			Parada_Actual->getListaPersonas()->operator--(j);
+			Parada_Actual->getListaPersonas()->operator--[j];
 		}
 	}	
 }
@@ -58,14 +60,14 @@ double cColectivo::Cobrar_Boleto()
 
 	for (int i = 0; i < 9; i++)
 	{	
-		if (Parada_Actual->getCodigo() == ramal->getLista()->getItem(i)->getCodigo()) 
+		if (Parada_Actual->getCodigo() == ramal->getLista()->getItem[i]->getCodigo()) 
 		{
 			posActual = i;
 		}
 		
 		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
 		{
-			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista()->getItem(i)->getNombre())
+			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista[]->getItem[i]->getNombre())
 			{
 				posDestino = j;
 				distancia = posDestino - posActual;
@@ -89,17 +91,17 @@ void cColectivo::SistemaGPS()
 	//tengo que comparar segun que ramal tenga(1, 2, 3) y hacer que este en la primer parada de ese ramal y actualizarlo cada 5 min.
 	if (ramal->getNombre() == "Ramal1")
 	{
-		Parada_Actual = ramal->getLista()->getItem(1);
+		Parada_Actual = ramal->getLista()->getItem[1];
 	}
 
 	if (ramal->getNombre() == "Ramal2")
 	{
-		Parada_Actual = ramal->getLista()->getItem(9);
+		Parada_Actual = ramal->getLista()->getItem[9];
 	}
 
 	if (ramal->getNombre() == "Ramal3")
 	{
-		Parada_Actual = ramal->getLista()->getItem(9);
+		Parada_Actual = ramal->getLista()->getItem[9];
 	}
 
 	clock_t comienzo;
@@ -123,8 +125,8 @@ void cColectivo::SistemaGPS()
 	{
 		for (int i = 3; i <= N; i++)
 		{
-			if (ramal->getLista()->getItem(i)->getCodigo() == i)
-				Parada_Actual = ramal->getLista()->getItem(i);
+			if (ramal->getLista()->getItem[i]->getCodigo() == i)
+				Parada_Actual = ramal->getLista()->getItem[i];
 		}
 	}
 	
@@ -133,8 +135,8 @@ void cColectivo::SistemaGPS()
 	{
 		for (int i = 8; i >= 1; i++)
 		{
-			if (ramal->getLista()->getItem(i)->getCodigo() == i)
-				Parada_Actual = ramal->getLista()->getItem(i);
+			if (ramal->getLista()->getItem[i]->getCodigo() == i)
+				Parada_Actual = ramal->getLista()->getItem[i];
 		}
 	}
 
@@ -143,36 +145,34 @@ void cColectivo::SistemaGPS()
 	{
 		for (int i = 7; i >= 1; i++)
 		{
-			if (ramal->getLista()->getItem(i)->getCodigo() == i)
-				Parada_Actual = ramal->getLista()->getItem(i);
+			if (ramal->getLista()->getItem[i]->getCodigo() == i)
+				Parada_Actual = ramal->getLista()->getItem[i];
 		}
 	}
 }
 
 
-
 bool cColectivo::Verificar_Capacidad()
 {
-
 	if (CA < CAPMAX)
 	{
 		return true;
 	}
 
-
 	else
 
 	 throw new exception ("NO HAY LUGAR PARA SUBIR MAS PERSONAS");
-		return false;
-
-
+	return false;
 }
+
+
  cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
 {
-	
+	 Parada_Actual = NULL;
+	 ramal = NULL;
+	 ListaPersona->~cListaT;
+
 }
-
-
 
 int cColectivo::get_CAPMAX()
 {

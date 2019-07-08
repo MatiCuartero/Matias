@@ -18,7 +18,7 @@ public:
 	~cListaT();
 
 	//Operator+ Agrega items a la lista.
-	bool operator +(T *item);
+	bool operator+(T *item);
 	bool AgregarItemOrdenado(const T *item);
 
 	//Operator-- Quita elementos de la la lista segun su codigo.
