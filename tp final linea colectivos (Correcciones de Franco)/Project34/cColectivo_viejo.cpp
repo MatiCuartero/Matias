@@ -13,12 +13,11 @@ cColectivo_viejo::cColectivo_viejo(const string _codigo, bool _estado, cRamal * 
 {
 	aire = _aire;
 	direccion_hidraulica = _direccion;
-
 }
 
 void cColectivo_viejo::Asignar_Nuevo_Ramal()
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
+	/*if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
 	{
 		int y = rand() % 2 - 3;
 		if (y == 2)
@@ -35,89 +34,45 @@ void cColectivo_viejo::Asignar_Nuevo_Ramal()
 	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista[4]->getCodigo())
 	{
 		ramal = ramal1;
-	}
+	}*/
 }
 
 
+float cColectivo_viejo::Cobrar_Boleto()
+{
+	return Cobrar_Boleto();
+}
+
 void cColectivo_viejo::SistemaGPS()
 {
-	int ca = 0;
-	clock_t comienzo;
-	double duracion;
-	double tiempoEspera=5.5;
-
-
-	comienzo = clock();
-	duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
-
-	while (tiempoEspera > duracion) {
-		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;	
-{
-	
-	if (ramal->getNombre() == "Ramal1")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal2")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal3")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	
-	ca++;
-
+	SistemaGPS();
 }
 
 void cColectivo_viejo::Subir_Personas()
 {
-	int ca = 0;
 
 	for (int i = 0; i < 5; i++)
 	{
-
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas()[j]->getDestino() == ramal->getLista[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
 			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
+				ListaPersona + (Parada_Actual->getListaPersonas--(j));
 			}
 		}
 	}
-
-	for (int i = 0; i < 5; i++)
-	{
-
-		for (int j = 0; j < M; j++)
-		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre())
-			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
-			}
-		}
-	}
-	
-
-
 }
 
 bool cColectivo_viejo::Verificar_Capacidad()//para verificar necesito las personas que ya estan en el colectivo para comparar con mi capacidad maxima dependiendo del tipo
 {
-	for(int i =0;i<   ,i++)
+	/*for(int i =0;i<   ,i++)
 
 	if (CA < CAPMAX)
 
 		return true;
 
 	else
-		return false;
+		return false;*/
 }
 
 cColectivo_viejo::~cColectivo_viejo()

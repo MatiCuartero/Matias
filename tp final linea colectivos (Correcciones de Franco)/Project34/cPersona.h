@@ -32,6 +32,4 @@ public:
 };
 
 //if(paradaactual->getNombre()==ramal->getListaParadas()->getNombre)
-{
 
-}

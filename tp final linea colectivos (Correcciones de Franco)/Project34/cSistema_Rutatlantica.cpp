@@ -47,7 +47,7 @@ void cSistema_Rutatlantica::agregar_paradas()
 	ListaParadas->operator+(new cParada(6, "Panamericana y Laprida", "Panamericana y Laprida"));
 	ListaParadas->operator+(new cParada(7, "Panamericana y Ugarte", "Panamericana y Ugarte"));
 	ListaParadas->operator+(new cParada(8, "Fleming y Edison", "Fleming y Edison"));
-	ListaParadas+(new cParada(9, "Rolon y Marquez", "Boulonge Sur Mer"));
+	*ListaParadas+(new cParada(9, "Rolon y Marquez", "Boulonge Sur Mer"));
 
 	ramal1 = new cRamal("Ramal1", ListaParadas->getItem(1), ListaParadas->getItem(3), ListaParadas->getItem(5), ListaParadas->getItem(7), ListaParadas->getItem(9));
 	ramal2 = new cRamal("Ramal2", ListaParadas->getItem(9), ListaParadas->getItem(8), ListaParadas->getItem(6), ListaParadas->getItem(4), ListaParadas->getItem(1));
@@ -81,13 +81,13 @@ void cSistema_Rutatlantica::TICK_Estado()
 	//Para Ramal1
 	for (int i = 1; i <= N; i++)
 	{
-		if (ramal1->getLista()->getItem(i)->getCodigo == i)
+		if (ramal1->getLista()->getItem(i)->getCodigo() == i)
 		{
 			for (int t = colectivo->getParada_Actual()->getCodigo(); i <= N; i++)
 			{
 				r = rand() % colectivo->getParada_Actual()->getCodigo() - N;
 
-				if (ramal1->getLista()->getItem(i)->getCodigo == r)
+				if (ramal1->getLista()->getItem(i)->getCodigo() == r)
 				{
 					//creo personas random en paradas.
 				}
@@ -98,13 +98,13 @@ void cSistema_Rutatlantica::TICK_Estado()
 	//Para Ramal2
 	for (int i = 9; i >=1; i--)
 	{
-		if (ramal2->getLista()->getItem(i)->getCodigo == i)
+		if (ramal2->getLista()->getItem(i)->getCodigo() == i)
 		{
 			for (int t = colectivo->getParada_Actual()->getCodigo(); i >= 1; i--)
 			{
 				r = rand() % colectivo->getParada_Actual()->getCodigo() - 1;
 
-				if (ramal1->getLista()->getItem(i)->getCodigo == r)
+				if (ramal1->getLista()->getItem(i)->getCodigo() == r)
 				{
 					//creo personas random en paradas.
 				}
@@ -115,13 +115,13 @@ void cSistema_Rutatlantica::TICK_Estado()
 	//Para Ramal3
 	for (int i = 9; i >= 1; i--)
 	{
-		if (ramal3->getLista()->getItem(i)->getCodigo == i)
+		if (ramal3->getLista()->getItem(i)->getCodigo() == i)
 		{
 			for (int t = colectivo->getParada_Actual()->getCodigo(); i >= 1; i--)
 			{
 				r = rand() % colectivo->getParada_Actual()->getCodigo() - 1;
 
-				if (ramal1->getLista()->getItem(i)->getCodigo == r)
+				if (ramal1->getLista()->getItem(i)->getCodigo() == r)
 				{
 					//creo personas random en paradas.
 				}
@@ -263,7 +263,7 @@ void cSistema_Rutatlantica::TICK_Estado()
 		colectivo->Asignar_Nuevo_Ramal(ramal1, ramal2, ramal3);
 		colectivo->Bajar_Personas();
 		colectivo->Subir_Personas();
-		colectivo->Cobrar_Boleto("");
+//		colectivo->Cobrar_Boleto("");
 
 		system("pause");
 }
@@ -326,10 +326,8 @@ void cSistema_Rutatlantica::subir_pasajeros()
 			v->Subir_Personas();
 			cout << "El colectivo viejo no permite subir pasajeron con sillas de ruedas " << endl;
 		}
-
 	}
 	
-
 }
 cSistema_Rutatlantica::~cSistema_Rutatlantica()
 {

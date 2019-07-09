@@ -42,7 +42,7 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 
 void cColectivo::Bajar_Personas()
 {
-	for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
+	for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA(); j++)
 	{
 		if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == Parada_Actual->getNombre())
 		{
@@ -52,7 +52,7 @@ void cColectivo::Bajar_Personas()
 }
 
 
-double cColectivo::Cobrar_Boleto()
+float cColectivo::Cobrar_Boleto()
 {
 	int posActual = 0, posDestino = 0, distancia = 0;
 
@@ -63,7 +63,7 @@ double cColectivo::Cobrar_Boleto()
 			posActual = i;
 		}
 		
-		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
+		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA(); j++)
 		{
 			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista()->getItem(i)->getNombre())
 			{
@@ -179,4 +179,9 @@ bool cColectivo::Verificar_Capacidad()
 int cColectivo::get_CAPMAX()
 {
 	return CAPMAX;
+}
+
+cParada * cColectivo::getParada_Actual()
+{
+	return Parada_Actual;
 }

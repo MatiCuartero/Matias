@@ -73,7 +73,7 @@ public:
 	double monto_porColectivo();
 	void TICK_Estado();
 	//void TICK_GPS();
-	double total_cant_monto();
+	float total_cant_monto();
 	int total_cant_Personas();
 	void setRamales();
 	string getParada();

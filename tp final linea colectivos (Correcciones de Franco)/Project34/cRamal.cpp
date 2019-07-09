@@ -17,11 +17,11 @@ cRamal::cRamal(string nombre, cParada *parada1, cParada *parada2, cParada *parad
 	this->parada5 = parada5;*/
 
 	//Por cada Ramal que me cree voy a tener una lista diferente con las paradas del ramal respectivamente.
-	ListaParadas->AgregarItem(parada1);
-	ListaParadas->AgregarItem(parada2);
-	ListaParadas->AgregarItem(parada3);
-	ListaParadas->AgregarItem(parada4);
-	ListaParadas->AgregarItem(parada5);
+	*ListaParadas+(parada1);
+	*ListaParadas+(parada2);
+	*ListaParadas+(parada3);
+	*ListaParadas+(parada4);
+	*ListaParadas+(parada5);
 }
 
 

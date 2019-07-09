@@ -22,7 +22,7 @@ protected:
 
 public:
 	cColectivo_nuevo();
-	cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
+	cColectivo_nuevo(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion);
 	/*void Abrir_Puerta();*/
 	void Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3);
 	void Bajar_Personas();

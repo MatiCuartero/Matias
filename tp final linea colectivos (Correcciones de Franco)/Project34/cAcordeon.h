@@ -21,7 +21,7 @@ public:
 	/*void Abrir_Puerta();*/
 	void Asignar_Nuevo_Ramal();
 	int Bajar_Personas();
-	double Cobrar_Boleto(string l);
+	float Cobrar_Boleto();
 	void SistemaGPS();
 	//Fijarse el error sale que supuestamente en la clase padre pasa algo
 	void Subir_Personas();

@@ -31,9 +31,6 @@ int cPersona::getCont_Codigo()
 	return cont_codigo;
 }
 
-int cPersona::cont_codigo = 0;
-
-
 
 void cPersona::set_Parada(string l)
 {

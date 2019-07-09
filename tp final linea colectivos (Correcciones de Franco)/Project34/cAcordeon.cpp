@@ -17,77 +17,31 @@ cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _a
 
 void cAcordeon::Asignar_Nuevo_Ramal()
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem(9)->getCodigo())
-	{
-		int y = rand() % 2 - 3;
-		if (y == 2)
-			ramal = ramal2;
-		else
-			ramal = ramal3;
-	}
-
-	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()->getItem(1)->getCodigo())
-	{
-		ramal = ramal1;
-	}
-
-	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()->getItem(1)->getCodigo())
-	{
-		ramal = ramal1;
-	}
+	Asignar_Nuevo_Ramal();
 }
 
 
 int cAcordeon::Bajar_Personas()
 {
-	
+	Bajar_Personas();
 }
 
 
-double cAcordeon::Cobrar_Boleto(string destino)
+float cAcordeon::Cobrar_Boleto()
 {
-
-
+	return Cobrar_Boleto();
 }
 
 
 void cAcordeon::SistemaGPS()
 {
-
-	
+	SistemaGPS();
 }
 
 
 void cAcordeon::Subir_Personas()
 {
-	int ca = 0;
-
-	for (int i = 0; i < 5; i++)//no son 10
-	{
-
-		for (int j = 0; j < M; j++)
-		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
-			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
-			}
-		}
-	}
-
-	for (int i = 0; i < 5; i++)
-	{
-
-		for (int j = 0; j < M; j++)
-		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
-			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
-			}
-		}
-	}
-	
+	Subir_Personas();
 }
 
 
