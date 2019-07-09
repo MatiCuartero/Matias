@@ -1,19 +1,21 @@
 #include "cColectivo.h"
 #include <time.h>
 
-cColectivo::cColectivo()
+int cColectivo::contador_codigo = 0;
+cColectivo::cColectivo():codigo(0)
 {
 	CA = 0;
 	CAPMAX = 60;
-
 	ramal = new cRamal();
 	Estado = true;
+	contador_codigo++;
 	Parada_Actual = new cParada();
 	ListaPersona = new cListaT<cPersona>();
 }
 
-cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codigo(_codigo)
+cColectivo::cColectivo( int _codigo, bool _estado, cRamal * ramal): codigo(contador_codigo)
 {
+	contador_codigo++;
 	Estado = _estado;
 	this->ramal = ramal;
 }
@@ -171,6 +173,7 @@ bool cColectivo::Verificar_Capacidad()
 	 Parada_Actual = NULL;
 	 ramal = NULL;
 	 ListaPersona->~cListaT;
+	 contador_codigo--;
 
 }
 

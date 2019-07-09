@@ -7,8 +7,8 @@ cColectivo_nuevo::cColectivo_nuevo()
 	CantidadPersonas = 0;
 }
 
-cColectivo_nuevo::cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal,bool _aire,bool _direccion):cColectivo(_codigo,_estado,ramal)
-{
+cColectivo_nuevo::cColectivo_nuevo( int _codigo, bool _estado, cRamal * ramal,bool _aire,bool _direccion):cColectivo(_codigo,_estado,ramal)
+{   
 	aire =_aire;
 	direccion_electrica = _direccion;
 }

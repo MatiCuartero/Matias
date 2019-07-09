@@ -18,9 +18,9 @@ protected:
 
 public:
 	cColectivo_nuevo();
-	cColectivo_nuevo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
+	cColectivo_nuevo(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
 	
-	void Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3);
+	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
 	void Bajar_Personas();
 	double Cobrar_Boleto();
 	void SistemaGPS();
@@ -29,11 +29,11 @@ public:
 	void imprimir_info();
 	//Devuelvo un contador que guarda la cantidad de personas que se subieron en el colectivo.
 	int getCantidad_de_Personas() { return CantidadPersonas; }
-
+	int get_codigo() { return contador_codigo; }
 	int get_CAPMAX() { return CAPMAX; }
 
 	//No estoy seguro si se puede devolver asi el const en el .h asi.
-	string get_codigo() const { return codigo; }
+	int  get_codigo() const { return contador_codigo; }//modifique el atributo de codigo, ahora solo va a devolver un int 
 
 	friend ostream& operator<<(ostream& o, cColectivo_nuevo& colec);
 	virtual ~cColectivo_nuevo();

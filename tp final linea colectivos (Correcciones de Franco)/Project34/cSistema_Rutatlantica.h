@@ -35,6 +35,7 @@ protected:
 	///////////////////////////
 	cListaT<class cColectivo>*lista_colectivos;
 	cColectivo*colectivo;
+	cColectivo_viejo*cv;
 
 public:
 

@@ -9,7 +9,7 @@ cColectivo_viejo::cColectivo_viejo()
 	CAPMAX = L;
 }
 
-cColectivo_viejo::cColectivo_viejo(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo(_codigo,_estado,ramal)
+cColectivo_viejo::cColectivo_viejo(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo(_codigo,_estado,ramal)
 {
 	aire = _aire;
 	direccion_hidraulica = _direccion;
@@ -74,11 +74,11 @@ void cColectivo_viejo::SistemaGPS()
 
 }
 
-void cColectivo_viejo::Subir_Personas()
+void cColectivo_viejo::Subir_Personas()//aca hay que fijarse que las personas tengan o no silla de ruedas 
 {
 	int ca = 0;
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 5; i++)//
 	{
 
 		for (int j = 0; j < M; j++)
@@ -91,19 +91,6 @@ void cColectivo_viejo::Subir_Personas()
 		}
 	}
 
-	for (int i = 0; i < 5; i++)
-	{
-
-		for (int j = 0; j < M; j++)
-		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre())
-			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
-			}
-		}
-	}
-	
 
 
 }

@@ -24,31 +24,13 @@ void cSistema_Rutatlantica::agregar_colectivos()
 	cin >> ca;
 	
 	total_colectivos = ca + cv + cn;
-
+	
 	for (int i = 0; i < total_colectivos; i++)
 	{
-		string tipo;
-		cout << "Ingrese el tipo de colectivo en minusculas:" << endl;
-		getline (cin,tipo);
-		
-		if (tipo == "colectivo nuevo")
+		for (int j = 0; j < cv; j++)
 		{
-			string codigo;
-			bool estado,aire,d;
-			
-			int nramal;
-			cout << "Ingrese el codigo (debe contener letras y numeros) :" << endl;
-			getline(cin, codigo);
-			cout << "Ingrese el estado del colectivo: " << endl;
-			cin >> estado;
-			cout << "Ingrese el ramal:" << endl;
-			
-			cout << "Ingrese si tiene aire acondicionado:" << endl;
-			cin >> aire;
-			cout <<"Ingrese si tiene direccion hidraulica" << endl;
-			cin >> d;
+			lista_colectivos->operator+(new cColectivo_viejo())
 
-	
 		}
 		
 

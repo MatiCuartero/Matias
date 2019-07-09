@@ -17,8 +17,7 @@ private:
 public:
 
 	cAcordeon();
-	cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
-
+	cAcordeon(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion);
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
 	int Bajar_Personas();
 	double Cobrar_Boleto();
@@ -26,6 +25,7 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	int get_CAPMAX();
+	int get_codigo() { return contador_codigo; }
 	~cAcordeon();
 
 };
