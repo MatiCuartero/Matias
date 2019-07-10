@@ -27,6 +27,7 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	void imprimir_info();
+	void Rotura();
 	//Devuelvo un contador que guarda la cantidad de personas que se subieron en el colectivo.
 	int getCantidad_de_Personas() { return CantidadPersonas; }
 	int get_codigo() { return contador_codigo; }

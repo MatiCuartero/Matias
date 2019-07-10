@@ -29,10 +29,10 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	int get_codigo() { return contador_codigo; }
-	~cColectivo_viejo();
-	///Agrgar al uml///
 	void imprimir_info();
+	void Rotura();
 	int get_CAPMAX();
-
+	~cColectivo_viejo();
+	//agregar al uml
 };
 

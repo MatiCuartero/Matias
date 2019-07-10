@@ -25,7 +25,9 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	int get_CAPMAX();
-	int get_codigo() { return contador_codigo; }
+	void Rotura();
+	void imprimir_info();
+	int get_codigo() { int contador_codigo = 0; return contador_codigo; }
 	~cAcordeon();
 
 };

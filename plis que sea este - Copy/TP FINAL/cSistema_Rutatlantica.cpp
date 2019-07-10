@@ -169,7 +169,7 @@ void cSistema_Rutatlantica::subir_pasajeros()
 
 		cColectivo_viejo*v = dynamic_cast<cColectivo_viejo*>((*lista_colectivos)[i]);
 		cAcordeon*c = dynamic_cast<cAcordeon*>(lista_colectivos->getItem(i));
-		cColectivo_nuevo*n = dynamic_cast<cColectivo_nuevo*>(lista_colectivos[i]);
+		cColectivo_nuevo*n = dynamic_cast<cColectivo_nuevo*>((*lista_colectivos)[i]);
 		
 	
 		{	if(c!=NULL)
@@ -195,12 +195,6 @@ void cSistema_Rutatlantica::subir_pasajeros()
 	}
 	
 
-
-
-
-
-
-
 }
 cSistema_Rutatlantica::~cSistema_Rutatlantica()
 {
@@ -213,8 +207,15 @@ cSistema_Rutatlantica::~cSistema_Rutatlantica()
 	}
 	delete[]ListaParadas;
 
+	/*for (int j = 0; j < M; j++)
+	{
+		if (ListaPersona[j] != NULL)
+		{
+			ListaPersona[j] = NULL;
+		}
 
-	//ADEMAS BORRAR LAS LISTAS DE PERSONAS Y PARADAS
+	}
+	delete[]ListaPersona;*/
 	
 }
 

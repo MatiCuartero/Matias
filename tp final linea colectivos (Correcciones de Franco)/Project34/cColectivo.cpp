@@ -1,5 +1,5 @@
 #include "cColectivo.h"
-#include <time.h>
+
 
 int cColectivo::contador_codigo = 0;
 cColectivo::cColectivo():codigo(0)
@@ -69,7 +69,7 @@ double cColectivo::Cobrar_Boleto()
 		
 		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA; j++)
 		{
-			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista[]->getItem[i]->getNombre())
+			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista()->getItem[i]->getNombre())
 			{
 				posDestino = j;
 				distancia = posDestino - posActual;
@@ -168,16 +168,75 @@ bool cColectivo::Verificar_Capacidad()
 }
 
 
- cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
+int cColectivo::get_CAPMAX()
+{
+	return CAPMAX;
+}
+
+
+void cColectivo::Rotura()
+{
+	int cont_rotura = 0;//el contador llega hasta 5
+	int ult_parada;
+
+	for (int i = 1; i < 9; i++)
+	{
+		if (Parada_Actual->getCodigo() == ramal->getLista()->getItem[i]->getCodigo())
+
+		{
+			cont_rotura++;
+		}
+
+
+		//ramal 1
+		if (ramal->getNombre() == "Ramal1")
+		{
+			for (int i = 3; i <= N; i++)
+			{
+				if (ramal->getLista()->getItem[i]->getCodigo() == i)
+					Parada_Actual = ramal->getLista()->getItem[9];
+			}
+		}
+
+		//ramal 2
+		if (ramal->getNombre() == "Ramal2")
+		{
+			for (int i = 8; i >= 1; i++)
+			{
+				if (ramal->getLista()->getItem[i]->getCodigo() == i)
+					Parada_Actual = ramal->getLista()->getItem[1];
+			}
+		}
+
+		//ramal 3
+		if (ramal->getNombre() == "Ramal3")
+		{
+			for (int i = 7; i >= 1; i++)
+			{
+				if (ramal->getLista()->getItem[i]->getCodigo() == i)
+					Parada_Actual = ramal->getLista()->getItem[1];
+			}
+		}
+
+
+		if (cont_rotura == 5)
+		{
+			Estado = false;
+			Bajar_Personas();
+			Parada_Actual = ramal->getLista()->getItem[9];//ramal 1
+			Parada_Actual = ramal->getLista()->getItem[1];//ramal 2
+			Parada_Actual = ramal->getLista()->getItem[1];//ramal 3
+		}
+
+	}
+
+}
+
+cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
 {
 	 Parada_Actual = NULL;
 	 ramal = NULL;
 	 ListaPersona->~cListaT;
 	 contador_codigo--;
 
-}
-
-int cColectivo::get_CAPMAX()
-{
-	return CAPMAX;
 }

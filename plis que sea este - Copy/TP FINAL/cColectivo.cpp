@@ -5,7 +5,7 @@ cColectivo::cColectivo()
 {
 	CA = 0;
 	CAPMAX = 60;
-	precio = 0;
+	//precio = 0;
 	ramal = new cRamal();
 	Estado = true;
 	Parada_Actual = new cParada();
@@ -20,7 +20,7 @@ cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal): codi
 
 void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
+	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()[4]->getCodigo())
 	{
 		int y = rand() % 2 - 3;
 		if (y == 2)
@@ -29,12 +29,12 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 			ramal = ramal3;
 	}
 
-	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista[4]->getCodigo())
+	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()[4]->getCodigo()) 
 	{
 		ramal = ramal1;
 	}
 
-	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista[4]->getCodigo())
+	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista()[4]->getCodigo())
 	{
 		ramal = ramal1;
 	}
@@ -45,8 +45,26 @@ void cColectivo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * 
 	}*/
 }
 
-double cColectivo::Cobrar_Boleto(string l)
+double cColectivo::Cobrar_Boleto()
 {
+
+	for (int i = 0; i < 5; i++)
+	{
+		ramal->getLista()[i]->getListaPersonas[i];
+
+		for (int j = 0; j < M; j++);
+		{
+			Parada_Actual->getNombre();
+
+
+			//queremos cobrar el boleto segun la persona que esta en la parada actual hasta su destino
+			//entonces hacemos un contador si esta el destino de la persona en el ramal
+			//a tantos contadores, tanta plata. 
+
+
+			//no sabemos como hacer que nos sume 1 al contador desde la parada actual hasta la de destino.
+		}
+	}
 	return 0.0;
 }
 
@@ -132,7 +150,4 @@ bool cColectivo::Verificar_Capacidad()
 int cColectivo::get_CAPMAX()
 {
 	return CAPMAX;
-}
-
-
 }

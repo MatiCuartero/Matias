@@ -18,72 +18,47 @@ cColectivo_viejo::cColectivo_viejo(int _codigo, bool _estado, cRamal * ramal, bo
 
 void cColectivo_viejo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista[4]->getCodigo())
-	{
-		int y = rand() % 2 - 3;
-		if (y == 2)
-			ramal = ramal2;
-		else
-			ramal = ramal3;
-	}
-
-	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista[4]->getCodigo())
-	{
-		ramal = ramal1;
-	}
-
-	if (ramal->getNombre() == ramal3->getNombre() && Parada_Actual->getCodigo() == ramal3->getLista[4]->getCodigo())
-	{
-		ramal = ramal1;
-	}
+	//hereda el metodo de la clase padre
 }
 
+int cColectivo_viejo::Bajar_Personas()
+{
+	//hereda el metodo de la clase padre
+}
+
+double cColectivo_viejo::Cobrar_Boleto()
+{
+	//hereda el metodo de la clase padre
+}
 
 void cColectivo_viejo::SistemaGPS()
 {
-	int ca = 0;
-	clock_t comienzo;
-	double duracion;
-	double tiempoEspera=5.5;
-
-
-	comienzo = clock();
-	duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;
-
-	while (tiempoEspera > duracion) {
-		duracion = (clock() - comienzo) / (double)CLOCKS_PER_SEC;	
-{
-	
-	if (ramal->getNombre() == "Ramal1")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal2")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	if (ramal->getNombre() == "Ramal3")
-	{
-		Parada_Actual = ramal->getLista[ca];
-	}
-
-	
-	ca++;
-
+	//hereda el metodo de la clase padre
 }
 
 void cColectivo_viejo::Subir_Personas()//aca hay que fijarse que las personas tengan o no silla de ruedas 
 {
 	int ca = 0;
 
-	for (int i = 0; i < 5; i++)//
+	for (int i = 0; i < 5; i++)//no son 10
 	{
 
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas()[j]->getDestino() == ramal->getLista[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
 			{
 				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
 				ca++;
@@ -92,36 +67,32 @@ void cColectivo_viejo::Subir_Personas()//aca hay que fijarse que las personas te
 	}
 
 
-
 }
 
 bool cColectivo_viejo::Verificar_Capacidad()//para verificar necesito las personas que ya estan en el colectivo para comparar con mi capacidad maxima dependiendo del tipo
 {
-	for(int i =0;i<   ,i++)
+	//hereda el metodo de la clase padre
+}
 
-	if (CA < CAPMAX)
 
-		return true;
+void cColectivo_viejo::imprimir_info()
+{
+	//HACER OTRA COSA O SACARLO
+	cout << "Soy un colectivo viejo de la linea 60 " << endl;
+}
 
-	else
-		return false;
+void cColectivo_viejo::Rotura()
+{
+	//hereda el metodo de la clase padre
+}
+
+int cColectivo_viejo::get_CAPMAX()
+{
+	//hereda el metodo de la clase padre
 }
 
 cColectivo_viejo::~cColectivo_viejo()
 {
 	cout << "destruyendo colectivo viejo" << endl;
-	 ramal=NULL;
-	
-
-}
-
-void cColectivo_viejo::imprimir_info()
-{
-	//////
-
-}
-
-int cColectivo_viejo::get_CAPMAX()
-{
-	return CAPMAX;
+	ramal = NULL;
 }

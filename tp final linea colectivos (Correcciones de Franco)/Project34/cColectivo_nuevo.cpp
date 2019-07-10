@@ -15,73 +15,69 @@ cColectivo_nuevo::cColectivo_nuevo( int _codigo, bool _estado, cRamal * ramal,bo
 
 void cColectivo_nuevo::Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3)
 {
-	//copiar y pegar de el metodo del cColectivo PADRE
+	//hereda el metodo de la clase padre
 }
 
 void cColectivo_nuevo::Bajar_Personas()
 {
-	//COPIAR DEL METODO EN LA CLASE PADRE
-
+	//hereda el metodo de la clase padre
 }
 
 double cColectivo_nuevo::Cobrar_Boleto()
 {
-	//COPIAR DEL METODO EN LA CLASE PADRE
-
+	//hereda el metodo de la clase padre
 }
 
 void cColectivo_nuevo::SistemaGPS()
 {
-	//COPIAR DEL METODO EN LA CLASE PADRE
+	//hereda el metodo de la clase padre
 }
 
 void cColectivo_nuevo::Subir_Personas()
 {
+	int ca = 0;
 
-	for (int i = 0; i < 9; i++)
-	{
-		for (int j = 0; j < Parada_Actual->getListaPersonas()->getCA(); j++)
-		{
-			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista()->getItem[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
-			{
-				ListaPersona->operator+(Parada_Actual->getListaPersonas()->operator--(Parada_Actual->getListaPersonas()->getItem[j]->getCodigo()));
-				//Una vez que quito las personas de la lista de personas de la parada y la asigno a la lista de personas del colectivo, Hace falta eliminarlas de la parada tambien??
-				//ListaPersona->operator+(Parada_Actual->getListaPersonas[j]->quitar(Parada_Actual->getListaPersonas->getCodigo()));
-				CantidadPersonas++;
-			}
-		}
-	}
-
-	for (int i = 0; i < 9; i++)
+	for (int i = 0; i < 5; i++)//no son 10
 	{
 
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()->getItem[i]->getNombre())
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
 			{
-				//Lo mismo aca.
-				ListaPersona->operator+(Parada_Actual->getListaPersonas()->operator--(Parada_Actual->getListaPersonas()->getItem[j]->getCodigo()));
-				CantidadPersonas++;
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
 			}
 		}
 	}
 }
 
-
-
 bool cColectivo_nuevo::Verificar_Capacidad()
 {
-	if (CA < CAPMAX)
-		return true;
-
-	else
-		return false;
+	//hereda el metodo de la clase padre
 }
 
 void cColectivo_nuevo::imprimir_info()
 {
 	//HACER OTRA COSA O SACARLO
-	cout << "Soy un colectivo nuevo " << endl;
+	cout << "Soy un colectivo nuevo de la linea 60 " << endl;
+}
+
+void cColectivo_nuevo::Rotura()
+{
+	//hereda el metodo de la clase padre
 }
 
 
@@ -94,7 +90,7 @@ ostream & operator<<(ostream & o, cColectivo_nuevo & colec)
 	return o;
 }
 
-cColectivo_nuevo::~cColectivo_nuevo()
+ cColectivo_nuevo::~cColectivo_nuevo()
 {
 	cout << "destruyendo el colectivo nuevo" << endl;
 	ramal = NULL;
