@@ -23,7 +23,6 @@ protected:
 public:
 	cColectivo_nuevo();
 	cColectivo_nuevo(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion);
-	/*void Abrir_Puerta();*/
 	void Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3);
 	void Bajar_Personas();
 	float Cobrar_Boleto();
@@ -31,6 +30,7 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	void imprimir_info();
+	void Rotura();
 	//Devuelvo un contador que guarda la cantidad de personas que se subieron en el colectivo.
 	int getCantidad_de_Personas() { return CantidadPersonas; }
 

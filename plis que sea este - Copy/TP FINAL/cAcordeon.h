@@ -3,7 +3,7 @@
 #include <string>
 #include "cColectivo_nuevo.h"
 using namespace std;
-#define D 60 
+#define D 60 //Cantidad de personas maxima
 
 class cAcordeon : public cColectivo_nuevo
 {

@@ -8,11 +8,7 @@ using namespace std;
 class cAcordeon : public cColectivo_nuevo
 {
 private:
-	int CA;
-	int CAPMAX;
-	bool aire;
-	bool direccion_electrica;
-	cRamal *ramal;
+	
 
 public:
 
@@ -26,8 +22,13 @@ public:
 	//Fijarse el error sale que supuestamente en la clase padre pasa algo
 	void Subir_Personas();
 	bool Verificar_Capacidad();
-	
 	int get_CAPMAX();
+<<<<<<< HEAD
+	void Rotura();
+	void imprimir_info();
+	int get_codigo() { int contador_codigo = 0; return contador_codigo; }
+=======
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 	~cAcordeon();
 
 };

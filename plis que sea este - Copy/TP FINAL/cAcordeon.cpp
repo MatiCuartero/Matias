@@ -63,7 +63,7 @@ void cAcordeon::Subir_Personas()
 
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista[i]->getNombre())
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
 			{
 				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
 				ca++;

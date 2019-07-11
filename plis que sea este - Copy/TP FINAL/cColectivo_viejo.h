@@ -4,8 +4,9 @@
 #include "cColectivo.h"
 #include "cRamal.h"
 using namespace std;
+#define L 35 //Cantidad de personas maxima
 
-#define L 35 
+
 class cColectivo_viejo : public cColectivo
 {
 

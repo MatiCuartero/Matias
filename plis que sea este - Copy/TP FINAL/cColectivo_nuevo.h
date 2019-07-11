@@ -3,9 +3,10 @@
 #include <string>
 #include "cColectivo.h"
 #include "cRamal.h"
+#include <ctime>
 using namespace std;
-#define N 50 //Cantidad de personas Maxima
-#define M 20 //Cantidad de personas Maxima por Parada
+#define N 50 //Cantidad de personas maxima
+#define M 20 //Cantidad de personas maxima por Parada
 
 class cColectivo_nuevo : public cColectivo
 {

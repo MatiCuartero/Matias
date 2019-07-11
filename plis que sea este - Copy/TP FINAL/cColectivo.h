@@ -4,10 +4,11 @@
 #include "cPersona.h"
 #include "cListaT.h"
 #include "cRamal.h"
+#include <ctime>
 using namespace std;
 #define M 20
 
-enum Recorrido recorrido {};
+
 
 class cColectivo
 {
@@ -32,7 +33,7 @@ public:
 
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
 	void Bajar_Personas();
-	double Cobrar_Boleto(string l);
+	double Cobrar_Boleto();
 	void SistemaGPS();
 	virtual void Subir_Personas()=0;
 	bool Verificar_Capacidad();//verifica que la capacidad actual no sobrepase la capacidad maxima
