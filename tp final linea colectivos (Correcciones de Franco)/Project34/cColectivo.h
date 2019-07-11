@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <ctime>
 #include "cPersona.h"
 #include "cListaT.h"
 #include "cRamal.h"
@@ -16,44 +17,39 @@ protected:
 
 	int CAPMAX;//cap maxima de personas que pueden estar
 	int CA;//capacidad actual, cantidad de persona que van a estar en el colectvio
-	const string codigo;
+	static int contador_codigo;
+	const int codigo;
 	bool Estado;//true si esta andando false si no
 	cListaT<cPersona>*ListaPersona;
 	/*double precio;*/
 	cRamal *ramal;
 	cParada *Parada_Actual;
 	cSistema_Rutatlantica*sistema;
+	static int contador_codigo;
 
 
 public:
 	cColectivo();
+<<<<<<< HEAD
 	cColectivo(const string _codigo,bool _estado, cRamal *ramal);
-	/*void Abrir_Puerta();*/
-
+	void Asignar_Nuevo_Ramal(cRamal *ramal);
+=======
+	cColectivo(const int codigo,bool _estado, cRamal *ramal);
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
+>>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
 	void Bajar_Personas();
-	float Cobrar_Boleto();
+	double Cobrar_Boleto();
 	void SistemaGPS();
 	virtual void Subir_Personas()=0;
 	bool Verificar_Capacidad();//verifica que la capacidad actual no sobrepase la capacidad maxima
-
-	virtual void Abrir_Puerta()=0;//abrir puerta va a ser un metodo polimorfico que se redefine en las clases hijas dependiendo del colectivo
-
 	//suben o no las personas con sillas de ruedas
-	virtual void set_CAPMAX(int capacidad)=0;
 	int get_CAPMAX();
-	cParada* getParada_Actual(); //{ return Parada_Actual; }
-
-	////AGREGAR EN EL UML//////
+	cParada* getParada_Actual() { return Parada_Actual; }
+	int get_codigo() { return contador_codigo; }
 	virtual void imprimir_info() = 0;//metodo polimorfico
+	void Rotura();
 	virtual ~cColectivo();
 
 };
 
-
-
-
-
-//colectivo->lista_personas->agregarItem(paradaActual->lista_personas->QuitarItem(i))
-//UTILIZAR ATRIBUTO DE PARADA ACTUAL;
-//sistema GPS : HACER EL METODO GPS MATI SEGUN LAS PARADAS QUE HAY EN RAMAL AVANZAR Y TENER EN CUENTA EL CAMBIO DE RAMAL 
+ 

@@ -1,5 +1,5 @@
 #include "cColectivo.h"
-#include <time.h>
+
 
 int cColectivo::contador_codigo = 0;
 cColectivo::cColectivo():codigo(0)
@@ -13,24 +13,25 @@ cColectivo::cColectivo():codigo(0)
 	ListaPersona = new cListaT<cPersona>();
 }
 
-cColectivo::cColectivo( int _codigo, bool _estado, cRamal * ramal): codigo(contador_codigo)
+cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal)
 {
 	contador_codigo++;
 	Estado = _estado;
 	this->ramal = ramal;
 }
 
-void cColectivo::Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3)//podria ser asi
-//Asignar_Nuevo_Ramal (cRamal*ramal)
 
+void cColectivo::Asignar_Nuevo_Ramal(cRamal *ramal)
 {
-	if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem[9]->getCodigo())
+	//if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem[9]->getCodigo())
+
+	if (this->ramal->getNombre() == "Ramal1" && this->ramal->getNombre() != ramal->getNombre() && Parada_Actual->getCodigo() == 9)
 	{
 		int y = rand() % 2 - 3;
-		if (y == 2)
-			ramal = ramal2;
+		if (y == 2 && ramal->getNombre() == "Ramal2")
+			this->ramal = ramal;
 		else
-			ramal = ramal3;
+			this->ramal = ramal;
 	}
 
 	if (ramal->getNombre() == ramal2->getNombre() && Parada_Actual->getCodigo() == ramal2->getLista()->getItem[1]->getCodigo()) 
@@ -69,7 +70,11 @@ float cColectivo::Cobrar_Boleto()
 		
 		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA(); j++)
 		{
-			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista[]->getItem[i]->getNombre())
+<<<<<<< HEAD
+			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista[j]->getItem[i]->getNombre())
+=======
+			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista()->getItem[i]->getNombre())
+>>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
 			{
 				posDestino = j;
 				distancia = posDestino - posActual;
@@ -168,7 +173,71 @@ bool cColectivo::Verificar_Capacidad()
 }
 
 
- cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
+int cColectivo::get_CAPMAX()
+{
+	return CAPMAX;
+}
+
+
+void cColectivo::Rotura()
+{
+	int cont_rotura = 0;//el contador llega hasta 5
+	int ult_parada;
+
+	for (int i = 1; i < 9; i++)
+	{
+		if (Parada_Actual->getCodigo() == ramal->getLista()->getItem[i]->getCodigo())
+
+		{
+			cont_rotura++;
+		}
+
+
+		//ramal 1
+		if (ramal->getNombre() == "Ramal1")
+		{
+			for (int i = 3; i <= N; i++)
+			{
+				if (ramal->getLista()->getItem[i]->getCodigo() == i)
+					Parada_Actual = ramal->getLista()->getItem[9];
+			}
+		}
+
+		//ramal 2
+		if (ramal->getNombre() == "Ramal2")
+		{
+			for (int i = 8; i >= 1; i++)
+			{
+				if (ramal->getLista()->getItem[i]->getCodigo() == i)
+					Parada_Actual = ramal->getLista()->getItem[1];
+			}
+		}
+
+		//ramal 3
+		if (ramal->getNombre() == "Ramal3")
+		{
+			for (int i = 7; i >= 1; i++)
+			{
+				if (ramal->getLista()->getItem[i]->getCodigo() == i)
+					Parada_Actual = ramal->getLista()->getItem[1];
+			}
+		}
+
+
+		if (cont_rotura == 5)
+		{
+			Estado = false;
+			Bajar_Personas();
+			Parada_Actual = ramal->getLista()->getItem[9];//ramal 1
+			Parada_Actual = ramal->getLista()->getItem[1];//ramal 2
+			Parada_Actual = ramal->getLista()->getItem[1];//ramal 3
+		}
+
+	}
+
+}
+
+cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
 {
 	 Parada_Actual = NULL;
 	 ramal = NULL;
@@ -176,6 +245,8 @@ bool cColectivo::Verificar_Capacidad()
 	 contador_codigo--;
 
 }
+<<<<<<< HEAD
+=======
 
 int cColectivo::get_CAPMAX()
 {
@@ -186,3 +257,4 @@ cParada * cColectivo::getParada_Actual()
 {
 	return Parada_Actual;
 }
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb

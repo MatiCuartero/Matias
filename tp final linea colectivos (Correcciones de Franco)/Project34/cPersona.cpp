@@ -2,6 +2,7 @@
 
 #include "cPersona.h"
 
+int cPersona::cont_codigo = 1;
 
 cPersona::cPersona():codigo(cont_codigo)
 {
@@ -10,9 +11,7 @@ cPersona::cPersona():codigo(cont_codigo)
 	silla_ruedas = true;
 }
 
-int cPersona::cont_codigo = 1;
-
-cPersona::cPersona(string destino, bool silla_ruedas):codigo(cont_codigo)
+cPersona::cPersona(int codigo, string parada, bool silla_ruedas) :codigo(cont_codigo)
 {
 	cont_codigo++;
 	this->destino = destino;

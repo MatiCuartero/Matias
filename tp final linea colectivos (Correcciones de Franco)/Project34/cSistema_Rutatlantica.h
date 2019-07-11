@@ -37,8 +37,8 @@ protected:
 	cParada *parada5;
 	cParada *parada6;
 	cParada *parada7;
-	cParada *parada8;*/
-	cParada *parada9;
+	cParada *parada8;
+	cParada *parada9;*/
 
 	/////////////////////////////////////////
 	cPersona*persona;

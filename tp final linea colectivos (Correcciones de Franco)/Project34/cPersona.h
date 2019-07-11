@@ -23,8 +23,6 @@ public:
 	cPersona(int codigo,string parada, bool silla_ruedas);
 	string getDestino() { return destino; }
 	int getCodigo() { return codigo; }
-	
-	string Prioridad_Indicador(bool l);
 	static int getCont_Codigo();/*agregar al uml*/
 	bool getSilla_ruedas() { return silla_ruedas; }
 	~cPersona();
