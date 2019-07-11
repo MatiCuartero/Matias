@@ -28,22 +28,52 @@ protected:
 	cRamal *ramal3;
 	//////PARADAS//////
 	cParada *parada;
-	cListaT <cParada>*ListaParadas;
-	//////////////////
-	cListaT <class cPersona> *ListaPersona;
+
+	//Cree las paradas directamente adentro de la lista template de personas como habia dicho franco.
+	/*cParada *parada1;
+	cParada *parada2;
+	cParada *parada3;
+	cParada *parada4;
+	cParada *parada5;
+	cParada *parada6;
+	cParada *parada7;
+	cParada *parada8;*/
+	cParada *parada9;
+
+	/////////////////////////////////////////
 	cPersona*persona;
-	///////////////////////////
+	cListaT <class cPersona> *ListaPersona;
+	cListaT <cParada>*ListaParadas;
+
+	//Fijarse inicializacion, porque lo hago en una funcion, no como dice la teoria
+	//static cParada **ListaParadas;
+	//static int contTICKS;
+
+	//////////////COLECTIVOS/////////
 	cListaT<class cColectivo>*lista_colectivos;
+
+	/*cColectivo*colectivo1;
+	cColectivo*colectivo2;
+	cColectivo*colectivo3;
+	cColectivo*colectivo4;
+	cColectivo*colectivo5;
+	cColectivo*colectivo6;
+	cColectivo*colectivo7;
+	cColectivo*colectivo8;
+	cColectivo*colectivo9;
+	cColectivo*colectivo10;*/
+
 	cColectivo*colectivo;
-	cColectivo_viejo*cv;
 
 public:
 
 	cSistema_Rutatlantica();
+
 	int cant_Personas();
 	double monto_porColectivo();
 	void TICK_Estado();
-	double total_cant_monto();
+	//void TICK_GPS();
+	float total_cant_monto();
 	int total_cant_Personas();
 	void setRamales();
 	string getParada();

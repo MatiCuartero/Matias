@@ -18,11 +18,11 @@ public:
 	~cListaT();
 
 	//Operator+ Agrega items a la lista.
-	bool operator+(T *item);
+	bool operator +(T *item);//throw new exception
 	bool AgregarItemOrdenado(const T *item);
 
 	//Operator-- Quita elementos de la la lista segun su codigo.
-	T* operator--(int clave);
+	T* operator--(int clave);//try cath
 	T* Quitar(const T *item);
 	T* QuitarenPos(unsigned int pos);
 
@@ -32,11 +32,12 @@ public:
 	void Eliminar(unsigned int pos);
 
 	void Listar();
-	T* BuscarItem(int clave);
+	T* operator[](int pos);//throw new exception
+	//T* BuscarItem(int clave);
 	T* getItem(unsigned int pos);
 
 	unsigned int getItemPos(int clave);
-	T* operator[](int pos);
+	//T* operator[](int pos);//throw new exception
 
 	unsigned int getCA();
 	unsigned int getTAM();
@@ -70,9 +71,8 @@ cListaT<T>::cListaT(unsigned int TAM)
 
 	this->TAM = TAM;
 	CA = 0;
-
-
 }
+
 template<class T>
 cListaT<T>::~cListaT()
 {
@@ -100,9 +100,15 @@ void cListaT<T>::Listar()
 template<class T>
 bool cListaT<T>::operator+(T * item)
 {
-
-	T *i_f = BuscarItem(item->getclave());
-	if (i_f != NULL)throw new exception("Ya se encuentra en la lista");
+	try
+	{
+		T *i_f = BuscarItem(item->getclave());
+		if (i_f != NULL)
+			throw i_f;
+			//new exception("Ya se encuentra en la lista");
+	}
+	catch (T *e)
+		cout << "Ya se encuentra en la lista." << endl;
 
 	if (CA < TAM)
 		vector[CA++] = item;
@@ -124,10 +130,16 @@ bool cListaT<T>::AgregarItemOrdenado(const T * item)
 template<class T>
 T* cListaT<T>::operator--(int clave) {
 
-	unsigned int pos = getItemPos(clave);
-	if (pos >= CA)return NULL;
-	return QuitarenPos(pos);
+	try
+	{
+		unsigned int pos = getItemPos(clave);
+		if (pos >= CA)
+			throw pos;
+	}
+	catch (unsigned int g)
+		cout << "No se ha podido quitar el item." << endl;
 
+	return QuitarenPos(pos);
 }
 template<class T>
 T* cListaT<T>::Quitar(const T *item) {
@@ -183,7 +195,7 @@ void cListaT<T>::Eliminar(unsigned int pos) {
 }
 
 template<class T>
-T* cListaT<T>::BuscarItem(int clave)
+T* cListaT<T>::operator[](int clave)
 {
 	for (unsigned int i = 0; i < CA; i++)
 	{
@@ -212,8 +224,4 @@ unsigned int cListaT<T>::getItemPos(int clave)
 	return INT_MAX;
 }
 
-template<class T>
-T * cListaT<T>::operator[](int pos)
-{
-	return lista->getItem(pos);
-}
+

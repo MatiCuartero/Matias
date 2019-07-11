@@ -36,7 +36,6 @@ public:
 	void SistemaGPS();
 	virtual void Subir_Personas()=0;
 	bool Verificar_Capacidad();//verifica que la capacidad actual no sobrepase la capacidad maxima
-	//virtual void Abrir_Puerta()=0;//abrir puerta va a ser un metodo polimorfico que se redefine en las clases hijas dependiendo del colectivo
 	//suben o no las personas con sillas de ruedas
 	int get_CAPMAX();
 	cParada* getParada_Actual() { return Parada_Actual; }

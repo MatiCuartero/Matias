@@ -1,78 +1,76 @@
 
 #include "cAcordeon.h"
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 
 cAcordeon::cAcordeon()
 {
 	CA = 0;
 	CAPMAX = D;
-	ramal = new cRamal();
 }
 
+<<<<<<< HEAD
 cAcordeon::cAcordeon(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion) :cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
 {
 	
+=======
+cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo,_estado,ramal,_aire,_direccion)
+{
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 
 }
 
 
-void cAcordeon::Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2,cRamal *ramal3)
+
+
+void cAcordeon::Asignar_Nuevo_Ramal()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre
+=======
+	Asignar_Nuevo_Ramal();
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 }
 
 
 int cAcordeon::Bajar_Personas()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre	
+=======
+	Bajar_Personas();
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 }
 
 
-double cAcordeon::Cobrar_Boleto()
+float cAcordeon::Cobrar_Boleto()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre
+=======
+	return Cobrar_Boleto();
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 }
 
 
 void cAcordeon::SistemaGPS()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre
+=======
+	SistemaGPS();
+>>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 }
 
 
 void cAcordeon::Subir_Personas()
 {
-	int ca = 0;
-
-	for (int i = 0; i < 5; i++)//no son 10
-	{
-
-		for (int j = 0; j < M; j++)
-		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
-			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
-			}
-		}
-	}
-
-	for (int i = 0; i < 5; i++)
-	{
-
-		for (int j = 0; j < M; j++)
-		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
-			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
-			}
-		}
-	}
-	
+	Subir_Personas();
 }
 
-//agregar el try cath
+
 bool cAcordeon::Verificar_Capacidad()
 {
 	//hereda el metodo de la clase padre	
@@ -97,7 +95,7 @@ void cAcordeon::imprimir_info()
 
 cAcordeon::~cAcordeon()
 {
-	ramal=NULL;
+
 }
 
 
