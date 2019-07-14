@@ -19,10 +19,11 @@ public:
 
 	//Operator+ Agrega items a la lista.
 	bool operator +(T *item);//throw new exception
+	bool AgregarItem(T *item);
 	bool AgregarItemOrdenado(const T *item);
 
-	//Operator-- Quita elementos de la la lista segun su codigo.
-	T* operator--(int clave);//try cath
+
+	T* Quitar(int clave);
 	T* Quitar(const T *item);
 	T* QuitarenPos(unsigned int pos);
 
@@ -33,7 +34,7 @@ public:
 
 	void Listar();
 	T* operator[](int pos);//throw new exception
-	//T* BuscarItem(int clave);
+	T* BuscarItem(int clave);
 	T* getItem(unsigned int pos);
 
 	unsigned int getItemPos(int clave);
@@ -98,17 +99,19 @@ void cListaT<T>::Listar()
 }
 
 template<class T>
-bool cListaT<T>::operator+(T * item)
+inline bool cListaT<T>::operator+(T * item)
 {
-	try
-	{
-		T *i_f = BuscarItem(item->getclave());
-		if (i_f != NULL)
-			throw i_f;
-			//new exception("Ya se encuentra en la lista");
-	}
-	catch (T *e)
-		cout << "Ya se encuentra en la lista." << endl;
+	AgregarItem(item);
+}
+
+
+template<class T>
+inline bool cListaT<T>::AgregarItem(T *item)
+{
+	T *i_f = BuscarItem(item->getclave());
+
+	if (i_f != NULL)
+		throw new exception("Ya se encuentra en la lista");
 
 	if (CA < TAM)
 		vector[CA++] = item;
@@ -127,26 +130,28 @@ bool cListaT<T>::AgregarItemOrdenado(const T * item)
 	*/
 	return false;
 }
-template<class T>
-T* cListaT<T>::operator--(int clave) {
 
-	try
-	{
-		unsigned int pos = getItemPos(clave);
+
+template<class T>
+T* cListaT<T>::Quitar(int clave)
+{
+	unsigned int pos = getItemPos(clave);
 		if (pos >= CA)
-			throw pos;
-	}
-	catch (unsigned int g)
-		cout << "No se ha podido quitar el item." << endl;
+			throw new exception("Error al quitar el objeto");
 
 	return QuitarenPos(pos);
 }
+
+
 template<class T>
-T* cListaT<T>::Quitar(const T *item) {
+T* cListaT<T>::Quitar(const T *item) 
+{
 	unsigned int pos = getItemPos(item->getclave());
 	if (pos >= CA)return NULL;
 	return QuitarenPos(pos);
 }
+
+
 template<class T>
 T* cListaT<T>::QuitarenPos(unsigned int pos) {
 
@@ -166,20 +171,23 @@ T* cListaT<T>::QuitarenPos(unsigned int pos) {
 
 
 template<class T>
-void cListaT<T>::operator-(int clave) {
-
+void cListaT<T>::operator-(int clave) 
+{
 	unsigned int pos = getItemPos(clave);
 
 	if (pos < CA)
 		Eliminar(pos);
 	//sino algo
-
 }
+
+
 template<class T>
-void cListaT<T>::Eliminar(const T *item) {
+inline void cListaT<T>::Eliminar(const T *item) {
 
 	Eliminar(item->getclave());
 }
+
+
 template<class T>
 void cListaT<T>::Eliminar(unsigned int pos) {
 	if (pos >= CA)return;// o Throw no pude eliminar
@@ -195,7 +203,13 @@ void cListaT<T>::Eliminar(unsigned int pos) {
 }
 
 template<class T>
-T* cListaT<T>::operator[](int clave)
+inline T* cListaT<T>::operator[](int clave)
+{
+	BuscarItem(clave);
+}
+
+template<class T>
+inline T* cListaT<T>::BuscarItem(int clave)
 {
 	for (unsigned int i = 0; i < CA; i++)
 	{
@@ -206,12 +220,14 @@ T* cListaT<T>::operator[](int clave)
 }
 
 template<class T>
-T* cListaT<T>::getItem(unsigned int pos)
+inline T* cListaT<T>::getItem(unsigned int pos)
 {
 	if (pos < CA)
 		return vector[pos];
 	else return NULL;
 }
+
+
 template<class T>
 unsigned int cListaT<T>::getItemPos(int clave)
 {

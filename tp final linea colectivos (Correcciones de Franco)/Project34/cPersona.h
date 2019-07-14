@@ -2,8 +2,8 @@
 #include <iostream>
 #include <string>
 #include "cListaT.h"
+#include "cPersona.h"
 using namespace std;
-
 
 
 class cPersona

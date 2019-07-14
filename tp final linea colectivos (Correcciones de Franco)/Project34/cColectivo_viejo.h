@@ -10,7 +10,7 @@ using namespace std;
 
 class cColectivo_viejo : public cColectivo
 {
-
+	//COMENTADO...
 protected:
 	
 	bool aire;
@@ -20,7 +20,6 @@ protected:
 public:
 	cColectivo_viejo();
 	cColectivo_viejo(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion);
-	/*void Abrir_Puerta();*/
 	void Asignar_Nuevo_Ramal();
 	int Bajar_Personas();
 	float Cobrar_Boleto();
@@ -28,6 +27,10 @@ public:
 	void Subir_Personas();
 	bool Verificar_Capacidad();
 	int get_codigo() { return contador_codigo; }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 	///Agrgar al uml///
 	void imprimir_info();
 	void Rotura();

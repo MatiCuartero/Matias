@@ -9,21 +9,17 @@ using namespace std;
 
 class cColectivo_nuevo : public cColectivo
 {
-
+	//COMENTADO...
 protected:
+
 	bool aire;
 	bool direccion_electrica;
-	int CantidadPersonas;
-	//cRamal *ramal;
-	//int CA;
-	//int CAPMAX; Ya lo heredo de la clase cColectivo y vale 60.
-	/*cPersona**Lista_Personas;*/
 
 
 public:
 	cColectivo_nuevo();
 	cColectivo_nuevo(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion);
-	void Asignar_Nuevo_Ramal(cRamal * ramal1, cRamal * ramal2, cRamal * ramal3);
+	void Asignar_Nuevo_Ramal(cRamal *ramal);
 	void Bajar_Personas();
 	float Cobrar_Boleto();
 	void SistemaGPS();
@@ -31,14 +27,12 @@ public:
 	bool Verificar_Capacidad();
 	void imprimir_info();
 	void Rotura();
-	//Devuelvo un contador que guarda la cantidad de personas que se subieron en el colectivo.
-	int getCantidad_de_Personas() { return CantidadPersonas; }
 
 	/*void set_CAPMAX(int capacidad);*/
 	int get_CAPMAX() { return CAPMAX; }
 
-	//No estoy seguro si se puede devolver asi el const en el .h asi.
-	string get_codigo() const { return codigo; }
+	//No estoy seguro si se puede devolver asi el const en el .h asi. MAL
+	string get_codigo() const;
 
 	friend ostream& operator<<(ostream& o, cColectivo_nuevo& colec);
 	~cColectivo_nuevo();

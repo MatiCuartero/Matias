@@ -17,8 +17,8 @@ int main()
 
 	cSistema_Rutatlantica *sistema = new cSistema_Rutatlantica();
 	sistema->agregar_colectivos();
-	sistema->agregar_paradas();
-	sistema->TICK_Estado();
+	//sistema->agregar_paradas();
+	//sistema->TICK_Estado();
 	
 
 	

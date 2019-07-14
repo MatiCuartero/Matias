@@ -1,6 +1,9 @@
 
 #include "cAcordeon.h"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 
 cAcordeon::cAcordeon()
 {
@@ -8,7 +11,11 @@ cAcordeon::cAcordeon()
 	CAPMAX = D;
 }
 
+<<<<<<< HEAD
 cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
+=======
+cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion) :cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 {
 
 }
@@ -16,37 +23,55 @@ cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal *ramal, bool _ai
 /*cAcordeon::cAcordeon(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion) : cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
 {
 
+<<<<<<< HEAD
 }*/
 
 
 void cAcordeon::Asignar_Nuevo_Ramal()
 {
 	//hereda el metodo de la clase padre
+=======
+void cAcordeon::Asignar_Nuevo_Ramal()
+{
+	Asignar_Nuevo_Ramal();
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 
 int cAcordeon::Bajar_Personas()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre	
+=======
+	return Bajar_Personas();
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 
 float cAcordeon::Cobrar_Boleto()
 {
+<<<<<<< HEAD
 
 	//hereda el metodo de la clase padre
 
 	return Cobrar_Boleto();
 
+=======
+	return Cobrar_Boleto();
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 
 void cAcordeon::SistemaGPS()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre
 
 	SistemaGPS();
 
+=======
+	SistemaGPS();
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 
@@ -88,18 +113,18 @@ void cAcordeon::Subir_Personas()
 
 bool cAcordeon::Verificar_Capacidad()
 {
-	//hereda el metodo de la clase padre	
+	return Verificar_Capacidad();
 }
 
 
 int cAcordeon::get_CAPMAX()
 {
-	//hereda el metodo de la clase padre
+	return get_CAPMAX();
 }
 
 void cAcordeon::Rotura()
 {
-	//hereda el metodo de la clase padre
+	Rotura();
 }
 
 void cAcordeon::imprimir_info()
@@ -112,7 +137,6 @@ void cAcordeon::imprimir_info()
 
 cAcordeon::~cAcordeon()
 {
-
 }
 
 

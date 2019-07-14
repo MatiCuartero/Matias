@@ -17,14 +17,19 @@ cColectivo_viejo::cColectivo_viejo(const string _codigo, bool _estado, cRamal *r
 
 void cColectivo_viejo::Asignar_Nuevo_Ramal()
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre
+=======
+	Asignar_Nuevo_Ramal();
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 int cColectivo_viejo::Bajar_Personas()
 {
-	//hereda el metodo de la clase padre
+	return Bajar_Personas();
 }
 
+<<<<<<< HEAD
 float cColectivo_viejo::Cobrar_Boleto()
 {
 	//hereda el metodo de la clase padre
@@ -53,6 +58,8 @@ void cColectivo_viejo::SistemaGPS()
 		ramal = ramal1;
 	}*/
 }
+=======
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 
 
 float cColectivo_viejo::Cobrar_Boleto()
@@ -65,11 +72,15 @@ void cColectivo_viejo::SistemaGPS()
 {
 	//hereda el metodo de la clase padre
 	SistemaGPS();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 void cColectivo_viejo::Subir_Personas()
 {
+<<<<<<< HEAD
 
 
 	for (int i = 0; i < 5; i++)//no son 10
@@ -91,24 +102,28 @@ void cColectivo_viejo::Subir_Personas()
 	}
 
 
+=======
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 	for (int i = 0; i < 5; i++)
 	{
-
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
+			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == *ramal->getLista[i]->getNombre() && *Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
 			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
+				ListaPersona->operator+(Parada_Actual->getListaPersonas()->Quitar(j));
 			}
 		}
 	}
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 }
 
 bool cColectivo_viejo::Verificar_Capacidad()//para verificar necesito las personas que ya estan en el colectivo para comparar con mi capacidad maxima dependiendo del tipo
 {
+<<<<<<< HEAD
 	//hereda el metodo de la clase padre
 }
 
@@ -126,11 +141,17 @@ int cColectivo_viejo::get_CAPMAX()
 	/*for(int i =0;i<   ,i++)
 
 	if (CA < CAPMAX)
+=======
+	return Verificar_Capacidad();
+}
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 
-		return true;
 
+<<<<<<< HEAD
 	else
 		return false;*/
+=======
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 
 void cColectivo_viejo::imprimir_info()
 {
@@ -138,10 +159,27 @@ void cColectivo_viejo::imprimir_info()
 	cout << "Si el colectivo tiene aire=1, si no =0" << endl;
 	cout << "Aire:" << aire << endl;
 	cout << "Direccion hidraulica:" << direccion_hidraulica << endl;
+<<<<<<< HEAD
 
 }
 
 
+=======
+}
+
+
+void cColectivo_viejo::Rotura()
+{
+	Rotura();
+}
+
+
+int cColectivo_viejo::get_CAPMAX()
+{
+	return get_CAPMAX();
+}
+
+>>>>>>> 23b67fe552bdbaea02b22b34bffd0c661c5c88d4
 cColectivo_viejo::~cColectivo_viejo()
 {
 	cout << "destruyendo colectivo viejo" << endl;
