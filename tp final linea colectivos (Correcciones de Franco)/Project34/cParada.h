@@ -1,11 +1,14 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "cSistema_Rutatlantica.h"
-using namespace std;
+#include "cListaT.h"
+//#include "cPersona.h"
+//#include "cSistema_Rutatlantica.h"
 #define N 9
 #define M 20
+using namespace std;
 
+class cPersona;
 ////////TENEMOS QUE CREAR UNA LISTA DE PERSONAS Y AGREGAR PARADAS 
 class cParada
 
@@ -15,7 +18,7 @@ protected:
 	int codigo_identificativo;
 	const string nombre;
 	string direccion;
-	cListaT<cPersona>* ListaPersonas;
+	cListaT<class cPersona> *ListaPersonas;
 
 
 public:
@@ -25,7 +28,7 @@ public:
 	int getCodigo() { return codigo_identificativo; }
 	string getNombre() { return nombre; }
 	void Llenar_Listas(cPersona *persona);
-	cListaT<cPersona> *getListaPersonas() { return ListaPersonas; }
+	cListaT<class cPersona> *getListaPersonas() { return ListaPersonas; }
 	~cParada();
 };
 

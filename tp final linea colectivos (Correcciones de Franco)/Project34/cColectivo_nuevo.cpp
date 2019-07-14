@@ -1,11 +1,6 @@
 #include "cColectivo_nuevo.h"
 
-cColectivo_nuevo::cColectivo_nuevo()
-{
-	aire = true;
-	direccion_electrica = true;
-	CantidadPersonas = 0;
-}
+
 
 cColectivo_nuevo::cColectivo_nuevo(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion) :cColectivo(_codigo, _estado, ramal)
 {
@@ -13,57 +8,59 @@ cColectivo_nuevo::cColectivo_nuevo(const string _codigo, bool _estado, cRamal *r
 	direccion_electrica = _direccion;
 }
 
-
-void cColectivo_nuevo::Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3)
+cColectivo_nuevo::cColectivo_nuevo()
 {
-	//hereda el metodo de la clase padre
+	aire = true;
+	direccion_electrica = true;
+	CantidadPersonas = 0;
+}
+
+void cColectivo_nuevo::Asignar_Nuevo_Ramal(cRamal *ramal)
+{
+	Asignar_Nuevo_Ramal(ramal);
 }
 
 void cColectivo_nuevo::Bajar_Personas()
 {
-	//hereda el metodo de la clase padre
+	Bajar_Personas();
 }
 
 float cColectivo_nuevo::Cobrar_Boleto()
 {
-<<<<<<< HEAD
-	//COPIAR DEL METODO EN LA CLASE PADRE
 	return Cobrar_Boleto();
-=======
-	//hereda el metodo de la clase padre
->>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
 }
 
 void cColectivo_nuevo::SistemaGPS()
 {
-	//hereda el metodo de la clase padre
+	SistemaGPS();
 }
 
 void cColectivo_nuevo::Subir_Personas()
 {
-	int ca = 0;
-
-	for (int i = 0; i < 5; i++)//no son 10
+	for (int i = 0; i < 9; i++)
 	{
-
-		for (int j = 0; j < M; j++)
+		for (int j = 0; j < Parada_Actual->getListaPersonas()->getCA(); j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista()->getItem(i)->getNombre() && Parada_Actual->getListaPersonas(j)->getItem(i)->getSilla_ruedas() == true)
 			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
+				ListaPersona->operator+(Parada_Actual->getListaPersonas()->Quitar(Parada_Actual->getListaPersonas()->getItem(j)->getCodigo()));
+				//Una vez que quito las personas de la lista de personas de la parada y la asigno a la lista de personas del colectivo, Hace falta eliminarlas de la parada tambien??
+				//ListaPersona->operator+(Parada_Actual->getListaPersonas[j]->quitar(Parada_Actual->getListaPersonas->getCodigo()));
+				CantidadPersonas++;
 			}
 		}
 	}
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 9; i++)
 	{
+
 		for (int j = 0; j < M; j++)
 		{
-			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
+			if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista()->getItem(j)->getNombre())
 			{
-				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
-				ca++;
+				//Lo mismo aca.
+				ListaPersona->operator+(Parada_Actual->getListaPersonas()->Quitar(Parada_Actual->getListaPersonas()->getItem(i)->getCodigo()));
+				CantidadPersonas++;
 			}
 		}
 	}
@@ -71,7 +68,7 @@ void cColectivo_nuevo::Subir_Personas()
 
 bool cColectivo_nuevo::Verificar_Capacidad()
 {
-	//hereda el metodo de la clase padre
+	return Verificar_Capacidad();
 }
 
 void cColectivo_nuevo::imprimir_info()
@@ -88,14 +85,19 @@ void cColectivo_nuevo::Rotura()
 
 ostream & operator<<(ostream &o, cColectivo_nuevo &colec)
 {
-	o << "El codigo del colectivo es:" << colec.codigo << endl;
+	/*o << "El codigo del colectivo es:" << colec.codigo << endl;
 	o << " El colectivo tiene aire :" << colec.aire << endl;
 	o << "El colectivo tiene direccion electrica" << colec.direccion_electrica << endl;
-	o << "El colectivo tiene capacidad para" << colec.CAPMAX << "personas " << endl;
+	o << "El colectivo tiene capacidad para" << colec.CAPMAX << "personas " << endl;*/
 	return o;
 }
 
- cColectivo_nuevo::~cColectivo_nuevo()
+string cColectivo_nuevo::get_codigo() const
+{
+	return codigo;
+}
+
+cColectivo_nuevo::~cColectivo_nuevo()
 {
 	cout << "destruyendo el colectivo nuevo" << endl;
 	ramal = NULL;

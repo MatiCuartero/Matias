@@ -19,22 +19,12 @@ cPersona::cPersona(int codigo, string parada, bool silla_ruedas) :codigo(cont_co
 }
 
 
-string cPersona::Prioridad_Indicador(bool l)
-{
-
-	return  NULL;
-}
 
 int cPersona::getCont_Codigo()
 {
 	return cont_codigo;
 }
 
-
-void cPersona::set_Parada(string l)
-{
-
-}
 
 
 cPersona::~cPersona()

@@ -3,9 +3,9 @@
 #include <iostream>
 #include <ctime>
 #include "cColectivo.h"
-#include "cColectivo_nuevo.h"
-#include "cColectivo_viejo.h"
-#include "cAcordeon.h"
+//#include "cColectivo_nuevo.h"
+//#include "cColectivo_viejo.h"
+//#include "cAcordeon.h"
 #include "cListaT.h"
 #include "cRamal.h"
 #include "cParada.h"
@@ -14,43 +14,38 @@
 
 using namespace std;
 
+class cRamal;
+//class cColectivo;
+class cColectivo_nuevo;
+class cColectivo_viejo;
+class cAcordeon;
+class cParada;
+class cPersona;
 
 class cSistema_Rutatlantica
 {
-	friend class cParada;
+	//friend class cParada;
 protected:
 
-	
 	
 	//////RAMALES///////
 	cRamal *ramal1;
 	cRamal *ramal2;
 	cRamal *ramal3;
+
 	//////PARADAS//////
 	cParada *parada;
-
-	//Cree las paradas directamente adentro de la lista template de personas como habia dicho franco.
-	/*cParada *parada1;
-	cParada *parada2;
-	cParada *parada3;
-	cParada *parada4;
-	cParada *parada5;
-	cParada *parada6;
-	cParada *parada7;
-	cParada *parada8;
-	cParada *parada9;*/
 
 	/////////////////////////////////////////
 	cPersona*persona;
 	cListaT <class cPersona> *ListaPersona;
-	cListaT <cParada>*ListaParadas;
+	cListaT <class cParada> *ListaParadas;
 
 	//Fijarse inicializacion, porque lo hago en una funcion, no como dice la teoria
-	//static cParada **ListaParadas;
 	//static int contTICKS;
 
 	//////////////COLECTIVOS/////////
-	cListaT<class cColectivo>*lista_colectivos;
+	cListaT<class cColectivo> *lista_colectivos;
 
 	/*cColectivo*colectivo1;
 	cColectivo*colectivo2;
@@ -63,20 +58,18 @@ protected:
 	cColectivo*colectivo9;
 	cColectivo*colectivo10;*/
 
-	cColectivo*colectivo;
 
 public:
 
 	cSistema_Rutatlantica();
 
 	int cant_Personas();
-	double monto_porColectivo();
+	//float monto_porColectivo();
 	void TICK_Estado();
-	//void TICK_GPS();
 	float total_cant_monto();
 	int total_cant_Personas();
-	void setRamales();
-	string getParada();
+	//void setRamales();
+	//string getParada();
 	void  subir_pasajeros();
 	~cSistema_Rutatlantica();
 	////AGREGAR UML//
