@@ -21,7 +21,14 @@ cColectivo::cColectivo(const string _codigo, bool _estado, cRamal * ramal)
 }
 
 
-void cColectivo::Asignar_Nuevo_Ramal(cRamal *ramal)
+cColectivo::cColectivo(const int codigo, bool _estado, cRamal * ramal)//faltaba hacer este si no me equivoco, sino saquenlo
+{
+	contador_codigo++;
+	Estado = _estado;
+	this->ramal = ramal;
+}
+
+void cColectivo::Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3)
 {
 	//if (ramal->getNombre() == ramal1->getNombre() && Parada_Actual->getCodigo() == ramal1->getLista()->getItem[9]->getCodigo())
 
@@ -70,11 +77,10 @@ float cColectivo::Cobrar_Boleto()
 		
 		for (int j = 0; j <= Parada_Actual->getListaPersonas()->getCA(); j++)
 		{
-<<<<<<< HEAD
+
 			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista[j]->getItem[i]->getNombre())
-=======
+
 			if (Parada_Actual->getListaPersonas()->getItem[j]->getDestino() == ramal->getLista()->getItem[i]->getNombre())
->>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
 			{
 				posDestino = j;
 				distancia = posDestino - posActual;
@@ -237,16 +243,6 @@ void cColectivo::Rotura()
 
 }
 
-cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
-{
-	 Parada_Actual = NULL;
-	 ramal = NULL;
-	 ListaPersona->~cListaT;
-	 contador_codigo--;
-
-}
-<<<<<<< HEAD
-=======
 
 int cColectivo::get_CAPMAX()
 {
@@ -257,4 +253,16 @@ cParada * cColectivo::getParada_Actual()
 {
 	return Parada_Actual;
 }
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
+
+
+cColectivo:: ~cColectivo()//hay que agregar el virtual al destructor?
+{
+	 Parada_Actual = NULL;
+	 ramal = NULL;
+	 ListaPersona->~cListaT;
+	 contador_codigo--;
+
+}
+
+
+

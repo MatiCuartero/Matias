@@ -68,9 +68,8 @@ protected:
 public:
 
 	cSistema_Rutatlantica();
-
 	int cant_Personas();
-	double monto_porColectivo();
+	void monto_porColectivo();
 	void TICK_Estado();
 	//void TICK_GPS();
 	float total_cant_monto();

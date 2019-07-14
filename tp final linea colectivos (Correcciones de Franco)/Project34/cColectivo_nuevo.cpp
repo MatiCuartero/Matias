@@ -26,17 +26,14 @@ void cColectivo_nuevo::Bajar_Personas()
 
 float cColectivo_nuevo::Cobrar_Boleto()
 {
-<<<<<<< HEAD
-	//COPIAR DEL METODO EN LA CLASE PADRE
 	return Cobrar_Boleto();
-=======
+
 	//hereda el metodo de la clase padre
->>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
 }
 
 void cColectivo_nuevo::SistemaGPS()
 {
-	//hereda el metodo de la clase padre
+	SistemaGPS();
 }
 
 void cColectivo_nuevo::Subir_Personas()
@@ -69,15 +66,18 @@ void cColectivo_nuevo::Subir_Personas()
 	}
 }
 
-bool cColectivo_nuevo::Verificar_Capacidad()
+bool cColectivo_nuevo::Verificar_Capacidad()//para verificar necesito las personas que ya estan en el colectivo para comparar con mi capacidad maxima dependiendo del tipo
 {
 	//hereda el metodo de la clase padre
 }
 
 void cColectivo_nuevo::imprimir_info()
 {
-	//HACER OTRA COSA O SACARLO
-	cout << "Soy un colectivo nuevo de la linea 60 " << endl;
+	cout << "Soy un colectivo nuevo" << endl;
+	cout << "Si el colectivo tiene aire = 1, si no = 0" << endl;
+	cout << "Aire:" << aire << endl;
+	cout << "Direccion electrica:" << direccion_electrica << endl;
+
 }
 
 void cColectivo_nuevo::Rotura()

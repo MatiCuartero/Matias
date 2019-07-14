@@ -30,15 +30,12 @@ protected:
 
 public:
 	cColectivo();
-<<<<<<< HEAD
 	cColectivo(const string _codigo,bool _estado, cRamal *ramal);
-	void Asignar_Nuevo_Ramal(cRamal *ramal);
-=======
+	//void Asignar_Nuevo_Ramal(cRamal *ramal); es lo mismo que el que esta dos metodos abajo, pero solo con *ramal tiraba error
 	cColectivo(const int codigo,bool _estado, cRamal *ramal);
 	void Asignar_Nuevo_Ramal(cRamal *ramal1, cRamal *ramal2, cRamal *ramal3);
->>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
 	void Bajar_Personas();
-	double Cobrar_Boleto();
+	float Cobrar_Boleto();
 	void SistemaGPS();
 	virtual void Subir_Personas()=0;
 	bool Verificar_Capacidad();//verifica que la capacidad actual no sobrepase la capacidad maxima

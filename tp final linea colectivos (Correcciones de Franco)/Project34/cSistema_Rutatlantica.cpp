@@ -1,10 +1,5 @@
 #include "cSistema_Rutatlantica.h"
-<<<<<<< HEAD
-
-=======
 #include <ctime>
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
-
 
 cSistema_Rutatlantica::cSistema_Rutatlantica()
 {
@@ -28,7 +23,7 @@ cSistema_Rutatlantica::cSistema_Rutatlantica()
 //este metodo va a gregar a la lista_colectivos mis colectivos,nuevos,viejos y acordeon
 void cSistema_Rutatlantica::agregar_colectivos()
 {
-<<<<<<< HEAD
+
 	int total_colectivos;
 	int cv,cn,ca;
 	cout << "Ingrese la cantidad de colectivos viejos:" << endl,
@@ -53,9 +48,7 @@ void cSistema_Rutatlantica::agregar_colectivos()
 	}
 	
 	/*lista_colectivos->operator+(new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
-=======
 	lista_colectivos->operator+(new cColectivo_nuevo("AG-JI-34", true, ramal1, true, true));
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 	lista_colectivos->operator+(new cColectivo_nuevo("AS-JT-77", true, ramal2, true, true));
 	lista_colectivos->operator+(new cColectivo_nuevo("AS-JY-33", true, ramal3, true, true);
 	lista_colectivos->operator+(new cColectivo_viejo("BB-GG-77", true, ramal2, false, false));
@@ -334,11 +327,10 @@ void cSistema_Rutatlantica::subir_pasajeros()
 	for (int i = 0; i < 10; i++)
 	{
 
-<<<<<<< HEAD
 		cColectivo_viejo*v = dynamic_cast<cColectivo_viejo*>(lista_colectivos->getItem[i]);
-=======
+
 		cColectivo_viejo*v = dynamic_cast<cColectivo_viejo*>((*lista_colectivos)[i]);
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
+
 		cAcordeon*c = dynamic_cast<cAcordeon*>(lista_colectivos->getItem(i));
 		cColectivo_nuevo*n = dynamic_cast<cColectivo_nuevo*>(lista_colectivos->getItem[i]);
 		
@@ -362,8 +354,42 @@ void cSistema_Rutatlantica::subir_pasajeros()
 			cout << "El colectivo viejo no permite subir pasajeron con sillas de ruedas " << endl;
 		}
 	}
-	
 }
+
+void cSistema_Rutatlantica::monto_porColectivo()
+{
+	float cont_monto = 0;
+
+
+	for (int i = 0, i <= lista_colectivos->getCA(), i++)
+	{
+		if (lista_colectivos[i]->getclave() == clave)
+			return lista_colectivos[i];
+
+		lista_colectivos->Cobrar_Boleto();
+		cont_monto++;
+
+	}
+
+}
+
+
+int cSistema_Rutatlantica::cant_Personas()
+{
+	int cant_personas = 0;
+
+	for (int i = 0, i <= ListaPersona->getCA(), i++)
+	{
+		if (ListaPersona[i]->getclave() == clave)
+			return ListaPersona[i];
+
+		ListaPersona->getDestino();
+		cant_personas++;
+
+	}
+}
+
+
 cSistema_Rutatlantica::~cSistema_Rutatlantica()
 {
 	//delete ListaParadas;
@@ -381,9 +407,4 @@ cSistema_Rutatlantica::~cSistema_Rutatlantica()
 	delete[]ListaPersona;*/
 	
 }
-
-
-
-
-
 

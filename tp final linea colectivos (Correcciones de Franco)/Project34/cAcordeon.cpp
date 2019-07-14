@@ -1,9 +1,6 @@
 
 #include "cAcordeon.h"
-<<<<<<< HEAD
 
-=======
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 
 cAcordeon::cAcordeon()
 {
@@ -11,67 +8,81 @@ cAcordeon::cAcordeon()
 	CAPMAX = D;
 }
 
-<<<<<<< HEAD
-cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo,_estado,ramal,_aire,_direccion)
-=======
-<<<<<<< HEAD
-cAcordeon::cAcordeon(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion) :cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
+cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal *ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
 {
-	
-=======
-cAcordeon::cAcordeon(const string _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion):cColectivo_nuevo(_codigo,_estado,ramal,_aire,_direccion)
->>>>>>> 93efea4b1196dbf839a42684acbae98ec9dedb11
-{
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 
 }
 
+/*cAcordeon::cAcordeon(int _codigo, bool _estado, cRamal * ramal, bool _aire, bool _direccion) : cColectivo_nuevo(_codigo, _estado, ramal, _aire, _direccion)
+{
 
+}*/
 
 
 void cAcordeon::Asignar_Nuevo_Ramal()
 {
-<<<<<<< HEAD
 	//hereda el metodo de la clase padre
-=======
-	Asignar_Nuevo_Ramal();
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 }
 
 
 int cAcordeon::Bajar_Personas()
 {
-<<<<<<< HEAD
 	//hereda el metodo de la clase padre	
-=======
-	Bajar_Personas();
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 }
 
 
 float cAcordeon::Cobrar_Boleto()
 {
-<<<<<<< HEAD
+
 	//hereda el metodo de la clase padre
-=======
+
 	return Cobrar_Boleto();
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
+
 }
 
 
 void cAcordeon::SistemaGPS()
 {
-<<<<<<< HEAD
 	//hereda el metodo de la clase padre
-=======
+
 	SistemaGPS();
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
+
 }
 
 
 void cAcordeon::Subir_Personas()
 {
-	Subir_Personas();
+	for (int i = 0; i < 5; i++)//no son 10
+
+		for (int i = 0; i < 5; i++)
+
+		{
+			for (int j = 0; j < M; j++)
+			{
+
+				if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+
+					if (Parada_Actual->getListaPersonas()->getItem(j)->getDestino() == ramal->getLista[i]->getNombre() && Parada_Actual->getListaPersonas[j]->getSilla_ruedas() == true)
+
+					{
+						ListaPersona + (Parada_Actual->getListaPersonas--(j));
+					}
+			}
+		}
+
+
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int j = 0; j < M; j++)
+		{
+			if (Parada_Actual->getListaPersonas[j]->getDestino() == ramal->getLista()[i]->getNombre())
+			{
+				Lista_Personas[ca] = Parada_Actual->getListaPersonas[i]->quitar(Parada_Actual->getListaPersonas->getCodigo());
+				ca++;
+			}
+		}
+	}
 }
 
 
@@ -93,8 +104,10 @@ void cAcordeon::Rotura()
 
 void cAcordeon::imprimir_info()
 {
-	//HACER OTRA COSA O SACARLO
-	cout << "Soy un colectivo acordeon de la linea 60" << endl;
+	cout << "Soy un colectivo acordeon" << endl;
+	cout << "Si el colectivo tiene aire = 1, si no = 0" << endl;
+	cout << "Aire:" << aire << endl;
+	cout << "Direccion hidraulica:" << direccion_electrica << endl;
 }
 
 cAcordeon::~cAcordeon()

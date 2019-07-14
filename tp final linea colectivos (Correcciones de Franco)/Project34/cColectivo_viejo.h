@@ -27,12 +27,8 @@ public:
 	void SistemaGPS();
 	void Subir_Personas();
 	bool Verificar_Capacidad();
-<<<<<<< HEAD
 	int get_codigo() { return contador_codigo; }
-=======
-	~cColectivo_viejo();
 	///Agrgar al uml///
->>>>>>> b4a0ed8751876c2e13e49383f8718492009903eb
 	void imprimir_info();
 	void Rotura();
 	int get_CAPMAX();
