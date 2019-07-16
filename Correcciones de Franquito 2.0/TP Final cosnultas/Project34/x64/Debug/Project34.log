@@ -1,0 +1,54 @@
+﻿  cAcordeon.cpp
+  cColectivo.cpp
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo.cpp(52): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo.cpp(78): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo.cpp(90): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo.cpp(92): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo.cpp(171): warning C4018: '<': signed/unsigned mismatch
+  cColectivo_nuevo.cpp
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_nuevo.cpp(44): warning C4018: '<': signed/unsigned mismatch
+  cColectivo_viejo.cpp
+  cParada.cpp
+  cPersona.cpp
+  cRamal.cpp
+  cSistema_Rutatlantica.cpp
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(280): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(304): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(313): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(325): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(339): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(352): warning C4018: '<=': signed/unsigned mismatch
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\clistat.h(216): error C2039: 'getclave': is not a member of 'cColectivo'
+  c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo.h(14): note: see declaration of 'cColectivo'
+  c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\clistat.h(213): note: while compiling class template member function 'T *cListaT<T>::BuscarItem(int)'
+          with
+          [
+              T=cColectivo
+          ]
+  c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(282): note: see reference to function template instantiation 'T *cListaT<T>::BuscarItem(int)' being compiled
+          with
+          [
+              T=cColectivo
+          ]
+  c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\csistema_rutatlantica.cpp(13): note: see reference to class template instantiation 'cListaT<cColectivo>' being compiled
+  main.cpp
+  Generating Code...
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(23): warning C4717: 'cColectivo_viejo::Asignar_Nuevo_Ramal': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(28): warning C4717: 'cColectivo_viejo::Bajar_Personas': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(35): warning C4717: 'cColectivo_viejo::Cobrar_Boleto': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(60): warning C4717: 'cColectivo_viejo::Verificar_Capacidad': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(40): warning C4717: 'cColectivo_viejo::SistemaGPS': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(76): warning C4717: 'cColectivo_viejo::Rotura': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_viejo.cpp(82): warning C4717: 'cColectivo_viejo::get_CAPMAX': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_nuevo.cpp(28): warning C4717: 'cColectivo_nuevo::Bajar_Personas': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_nuevo.cpp(23): warning C4717: 'cColectivo_nuevo::Asignar_Nuevo_Ramal': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_nuevo.cpp(33): warning C4717: 'cColectivo_nuevo::Cobrar_Boleto': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_nuevo.cpp(74): warning C4717: 'cColectivo_nuevo::Verificar_Capacidad': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\ccolectivo_nuevo.cpp(38): warning C4717: 'cColectivo_nuevo::SistemaGPS': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(25): warning C4717: 'cAcordeon::Bajar_Personas': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(31): warning C4717: 'cAcordeon::Cobrar_Boleto': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(49): warning C4717: 'cAcordeon::Verificar_Capacidad': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(55): warning C4717: 'cAcordeon::get_CAPMAX': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(19): warning C4717: 'cAcordeon::Asignar_Nuevo_Ramal': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(37): warning C4717: 'cAcordeon::SistemaGPS': recursive on all control paths, function will cause runtime stack overflow
+c:\users\fede\desktop\favaloro\labo prog\tp final\correcciones de franquito 2.0\tp final cosnultas\project34\cacordeon.cpp(60): warning C4717: 'cAcordeon::Rotura': recursive on all control paths, function will cause runtime stack overflow
